@@ -5,7 +5,7 @@
 ![Luogu](https://img.shields.io/badge/Luogu-500%2B%20problems-blue)
 ![Python](https://img.shields.io/badge/Python-%E2%9C%94-blue)
 ![C++](https://img.shields.io/badge/C%2B%2B-%E2%9C%94-blue)
-![MIT License]([https://img.shields.io/github/license/yourusername/your-repo](https://github.com/tkzzzzzz6/Algorithm_beginner_learning_notes/))
+![MIT License]([https://img.shields.io/github/license/tkzzzzzz6/Algorithm_beginner_learning_notes])
 
 ## Hi,欢迎来到我的算法之旅！🚀
 
