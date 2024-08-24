@@ -33,8 +33,8 @@ int main() {
         cout << 4.0/3*pi*r*r*r << endl;
     } else if (T == 9) {
         int remain = 1;
-        for (int i = 1; i <= 4; i++) {
-            remain = (remain ) * 2+1;
+        for (int i = 1; i <= 3; i++) {
+            remain = (remain+1)*2 ;
         }
         cout << remain << endl;
     } else if (T == 10) {
@@ -46,10 +46,10 @@ int main() {
         cout << (char)('A'+17) << endl;
     } else if (T == 13) {
         double PI = 3.141593;
-        double volume = 4.0/3*PI*14*14*14;
+        double volume = 4.0/3*PI*(1000+64);
         double prism;
-        prism = pow(volume,1.0/3);
-        cout << int(prism) <<endl;
+        prism = pow(volume,1.0/3); 
+        printf("%.0lf\n",prism);
     } else if (T == 14) {
         double a = -1,b=100,c=-2400;
         double discriminant = b*b-4*a*c;
@@ -58,13 +58,13 @@ int main() {
             double x1 = (-b+sqrt(discriminant))/(2*a);
             double x2 = (-b-sqrt(discriminant))/(2*a);
             if (x1 > x2) {
-                cout << int(x2) << endl;
+                printf("%.0lf\n",110.0-x1);
             } else {
-                cout << int(x1) << endl;
+                printf("%.0lf\n",110.0-x2);
             }
         } else if (discriminant == 0) {
             double x = -b/(2*a);
-            cout << int(x) << endl;
+            printf("%.0lf\n",110.0-x);
         } else {
             cout << "No answer" << endl;
         }
