@@ -11,7 +11,7 @@ void move(int n,char start,char temp,char end){
     if(n == 1){
         print(start,end);
     }else{
-        move(n-1,start,end,temp);
+        move(n-1,start,end,temp); 
         print(start,end);
         move(n-1,temp,start,end);
     }
