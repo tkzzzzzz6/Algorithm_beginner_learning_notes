@@ -1,37 +1,50 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "version": "0.2.0",
+      "configurations": [
         {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "MyLaunch",              //  强制：就一个名字而已，但是是必须要有的（取任意自己喜欢的名字即可）
-            "type": "cppdbg",                    //  强制：调试器的类型，Node debugger for  node, php for PHP , go for GO (C语言就固定是cppdbg)           
-            "request": "launch",                 //  强制：launch/attach
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe", // 可执行文件的路径
-            "miDebuggerPath": "D:\\MinGW\\C\\mingw64\\bin\\gdb.exe",    //  调试器的位置（根据实际情况调整）
-            "preLaunchTask": "C/C++: g++.exe 生成活动文件",             //  强制：调试前编译任务名称（要和tasks.json中的lable字段一样）
-            "args": [],                          //  调试参数
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",         //  当前工作目录
-            "environment": [],                   //  当前项目环境变量
-            "externalConsole": true,
-            "MIMode": "gdb",                     //  调试器模式/类型
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
+          "name": "MyLaunch",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+          "miDebuggerPath": "D:\\MinGW\\C\\mingw64\\bin\\gdb.exe",
+          "preLaunchTask": "C/C++: g++.exe 生成活动文件",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": true,
+          "MIMode": "gdb",
+          "setupCommands": [
+            {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+            }
+          ]
         }
-    ]
-}
-    ]
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/algorithm/class_learning",
+      "program": "d:/algorithm/class_learning/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
 }
