@@ -31,7 +31,7 @@ int main (){
     for (i = 0; i < MAXN; i++){
         a[i] = (double)i;
     }
-
+    
     start = clock();
     for (i = 0; i < MAXK; i++){
         f1(MAXN-1, a, 1.1);
