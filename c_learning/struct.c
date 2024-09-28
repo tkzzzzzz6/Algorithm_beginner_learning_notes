@@ -123,20 +123,24 @@
 // }
 
 typedef struct student{
-    string name;
+    char name[20];
     int age;
-    string hobby;
+    char hobby[20];
 } stu1;
 
 int main(){
-    stu1 arrstu[4];
-    arrstu[0] = {"张三", 20, "篮球"};
-    arrstu[1] = {"李四", 21, "足球"};
-    arrstu[2] = {"王五", 22, "乒乓球"};
-
-    for (int i = 0; i < 3;i++){
-        printf("学生的姓名:%s\n", arrstu[i].name);
-        printf("学生的年龄:%d\n", arrstu[i].age);
-        printf("学生的爱好:%s\n", arrstu[i].hobby);
+    stu1 arrstu[4] = {
+        {"张三", 20, "篮球"},
+        {"李四", 21, "足球"},
+        {"王五", 22, "乒乓球"},
+        {"赵六", 23, "羽毛球"}
+    };
+    stu1 *pStu;
+    for (int i = 0; i < 3; i++){
+        pStu = &arrstu[i];
+        printf("学生的姓名:%s\n", pStu->name);
+        printf("学生的年龄:%d\n", pStu->age);
+        printf("学生的爱好:%s\n", pStu->hobby);
     }
+    return 0;
 }

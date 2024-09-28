@@ -51,7 +51,10 @@
     "xstring": "cpp",
     "xtr1common": "cpp",
     "xutility": "cpp",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "array": "cpp",
+    "string_view": "cpp",
+    "*.cpp#nan,1": "c"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
