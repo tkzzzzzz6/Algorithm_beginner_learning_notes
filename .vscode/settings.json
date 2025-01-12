@@ -54,7 +54,8 @@
     "stdio.h": "c",
     "array": "cpp",
     "string_view": "cpp",
-    "*.cpp#nan,1": "c"
+    "*.cpp#nan,1": "c",
+    "algorithm": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
