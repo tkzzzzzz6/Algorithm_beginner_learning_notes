@@ -9,7 +9,7 @@ int n, m;
 // 将找到的方案转换为字符串形式并计数
 void leijia(int a)
 {                   
-    int b = 262144;
+    int b = 262144;//表示处理到第10中配料
     while (a)
     {
         tot += a / b + '0';
