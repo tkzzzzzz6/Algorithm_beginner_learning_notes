@@ -1,4 +1,4 @@
-#include <bits/c++.h>
+#include <iostream>
 //DFS深度优先搜索
 
 using namespace std;
@@ -12,7 +12,7 @@ void leijia(int a)
     int b = 262144;//表示处理到第10中配料
     while (a)
     {
-        tot += a / b + '0';
+        tot += to_string(a / b);
         tot += ' ';
         a %= b;
         b /= 4;
