@@ -1,0 +1,93 @@
+#include <stdio.h>
+#define MaxSize 100
+
+typedef struct city{
+    char code[3];
+    char city_name[20];
+    char explain[100];
+}ElemType;
+
+typedef struct{
+    ElemType data[MaxSize];
+    int length;
+}SqList;
+ 
+ SqList *L = (SqList *)malloc(sizeof(SqList));
+
+void InitList(SqList *&L){
+    L = (SqList *)malloc(sizeof(SqList));
+}
+
+void DestroyList(SqList *&L){
+    free(L);
+}
+
+int ListEmpty(SqList *L){
+    return L->length == 0;
+}
+
+int ListLength(SqList *L){
+    return L->length;
+}
+
+void DisplayList(SqList *L){
+    int i;
+    for (i = 0; i < L->length;i++){
+        printf("%c", L->data[i]);//假设元素类型为char
+    }
+    printf("\n");
+}
+
+int GetElem(SqList *L,int i,ElemType &e){
+    if(i<1 || i>L->length)
+        return 0;
+    else{
+        e = L->data[i-1]; 
+        return 1;
+    }
+}
+
+int LocateElem1(SqList *L,ElemType e){
+    for (int i = 0; i < L->length; i++){
+        if(L->data[i] == e)
+            return i+1;
+    }
+    return 0;
+}
+
+int LocateElem2(SqList *L,ElemType e){
+    int i = 0;
+    while (i<L->length && L->data[i] !=e)
+        i++;
+    if(i>=L->length)
+        return 0;
+    else
+        return i + 1;
+}
+
+int ListInsert(SqList *&L,int i,ElemType e){
+    if(i<1 || i>L->length+1)
+        return 0;
+    i--;//将顺序表逻辑位序转化为物理位序
+    if(L->length >= MaxSize)
+        return 0;
+    for (int j = L->length; j > i;j--){
+        L->data[j] = L->data[j-1];
+    }
+    L->data[i] = e;
+    L->length++;//顺序表长加1
+    return 1;
+}
+
+int ListDelete(SqList *&L, int i,ElemType &e){
+    if (i < 1 || i > L->length)
+        return 0;
+    if (ListEmpty(L))
+        return 0;
+    i--;//将顺序表逻辑位序转化为物理位序
+    for (int j = i; j < L->length - 1;j++){
+        L->data[j] = L->data[j + 1];
+    }
+    L->length--;//顺序表长减1
+    return 1;
+}
