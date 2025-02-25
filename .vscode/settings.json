@@ -55,6 +55,7 @@
     "array": "cpp",
     "string_view": "cpp",
     "*.cpp#nan,1": "c",
+<<<<<<< HEAD
     "related_function": "cpp",
     "numeric": "cpp",
     "any": "cpp",
@@ -76,6 +77,11 @@
     "regex": "cpp",
     "valarray": "cpp",
     "variant": "cpp"
+=======
+    "algorithm": "cpp",
+    "queue": "cpp",
+    "random": "cpp"
+>>>>>>> 3eceba873e4e096e38c0c48e75a442e8e57cfbcb
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
