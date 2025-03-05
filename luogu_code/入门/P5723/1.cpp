@@ -1,27 +1,39 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
-bool is_prime(int x){
-    if(x <= 1)
-        return false;
-    for (int i = 2;i <=sqrt(x);i++){
-        if(x % i == 0)
-            return false;
+void PrimeList(vector<int> &Prime, vector<bool> &isPrime, int n)
+{
+    isPrime.assign(n + 1, true);
+    isPrime[0] = isPrime[1] = false; // 0 and 1 are not prime numbers
+
+    for (int i = 2; i <= n; i++)
+    {
+        if (isPrime[i])
+        {
+            Prime.push_back(i);
+            for (int j = i * 2; j <= n; j += i)
+            {
+                isPrime[j] = false;
+            }
+        }
     }
-    return true;
 }
 
-int main(){
-    int L;
+int main() {
+    int L, cnt = 0;
     cin >> L;
-    for(int i = 2; ;i++){
-        if(is_prime(i))
-            cout << i << endl;
-        L--;
-        if(L == 0)
-            break;
+    vector<int> Prime;
+    vector<bool> isPrime;
+    PrimeList(Prime, isPrime, L); // Precompute primes up to L
+    for (int i = 0; i < Prime.size() && L > 0; i++) {
+        if (Prime[i] <= L) {
+            L -= Prime[i];
+            cout << Prime[i] << endl;
+            cnt++;
+        }
     }
+    cout << cnt << endl;
     return 0;
 }
-
