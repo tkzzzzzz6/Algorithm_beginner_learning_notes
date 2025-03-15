@@ -2,6 +2,11 @@
 #include <iostream>
 #include <set>
 
+// 遍历所有可能的二进制数。
+// 检查每个二进制数中连续的“1”对应的“10”相加是否等于70。
+// 使用集合确保每个满足条件的组合是唯一的。
+// 最后输出满足条件的组合数量。
+
 // 使用标准命名空间
 using namespace std;
 
@@ -43,7 +48,7 @@ int main()
                     s.insert(pre); // 将组合插入集合中
                     // 取消下面注释可以输出调试信息
                     // printf("Case %d:\n",ans);
-                    // for (RI k=0;k<=j;++k) printf("%d ",(i>>k)&1);
+                    // for (int k=0;k<=j;++k) printf("%d ",(i>>k)&1);
                     // putchar('\n');
                 }
             }
