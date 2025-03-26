@@ -1,0 +1,1 @@
+{"name":"Local: 1","url":"d:\\code\\Algorithm_beginner_learning_notes\\open_judge\\NOIP2014\\1.cpp","tests":[{"id":1742364618657,"input":"10 5 6\n0 1 2 3 4\n0 3 4 2 1 0","output":"6 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\code\\Algorithm_beginner_learning_notes\\open_judge\\NOIP2014\\1.cpp","group":"local","local":true}
