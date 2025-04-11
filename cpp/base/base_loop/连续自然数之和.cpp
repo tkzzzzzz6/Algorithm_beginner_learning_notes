@@ -3,7 +3,6 @@
 #include <iomanip>
 #include <vector>
 
-// 多重循环的顺序可以类比时钟的顺序
 using namespace std;
 
 void contiguousSegment(long long M)
