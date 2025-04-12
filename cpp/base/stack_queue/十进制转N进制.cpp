@@ -12,7 +12,7 @@ int main()
     int N, origin;
     int digits[101];
     int top = 0;
-    cout << "请输入对一个的进制和对应的数字" << endl;
+    cout << "请输入对一个的进制,对应的数字" << endl;
     cin >> N >> origin;
     if (origin == 0)
         cout << 0 << endl;
