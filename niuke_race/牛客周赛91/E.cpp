@@ -124,21 +124,27 @@ bool checkOneRowOneColumn(const vector<string> &matrix)
 }
 
 // 改进版的一行一列检查
-bool checkOneRowOneColumnOptimized(const vector<string> &matrix) {
+bool checkOneRowOneColumnOptimized(const vector<string> &matrix)
+{
     int n = matrix.size();
     int m = matrix[0].size();
-    
+
     // 特殊情况：如果只有一个1，肯定不能通过一行一列翻转得到全0
     int totalOnes = 0;
-    for (const auto &row : matrix) {
-        for (char c : row) {
-            if (c == '1') totalOnes++;
+    for (const auto &row : matrix)
+    {
+        for (char c : row)
+        {
+            if (c == '1')
+                totalOnes++;
         }
     }
-    
-    if (totalOnes == 1) return false;
-    if (totalOnes == 0) return true;
-    
+
+    if (totalOnes == 1)
+        return false;
+    if (totalOnes == 0)
+        return true;
+
     // 普通情况继续暴力检查
     return checkOneRowOneColumn(matrix);
 }
