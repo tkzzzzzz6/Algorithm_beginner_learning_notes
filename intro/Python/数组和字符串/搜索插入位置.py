@@ -16,4 +16,3 @@ class Solution:
         
         return left  # 返回应该插入的位置id-1
         
-print((1+3)/2)
