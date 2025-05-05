@@ -45,7 +45,7 @@ int main(){
         double phi = asin(r / len);
         
         // 存储该地雷的覆盖角度范围
-        radians.emplace_back(theta - phi, theta + phi);
+        radians.emplace_back(theta - phi, theta + phi); // 直接在尾部“就地”构造元素，而不是先创建一个临时对象再拷贝或移动进去。
     }
     
     // 按起始角度排序
