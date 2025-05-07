@@ -57,8 +57,20 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
+    "*.asm": "assembly",
     "iostream": "cpp",
     "*.tcc": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "deque": "cpp",
+    "initializer_list": "cpp",
+    "list": "cpp",
+    "queue": "cpp",
+    "random": "cpp",
+    "type_traits": "cpp",
+    "vector": "cpp",
+    "xhash": "cpp",
+    "xstring": "cpp",
+    "xtree": "cpp",
+    "xutility": "cpp"
   }
 }

@@ -10,7 +10,7 @@ int main()
     {
         cin >> a[i];
     }
-    sort(a + 1, a + N + 1);`
+    sort(a + 1, a + N + 1);
     for (int i = 1; i <= N; i++)
     {
         // 使用二分查找计算满足 A-B=C 的数对数量
