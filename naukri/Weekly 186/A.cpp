@@ -1,36 +1,38 @@
-#include <bits/stdc++.h> 
-int goodnessScore(string s) {
-    // 使用数组统计，索引0-25对应a-z，索引26-51对应A-Z
-    int count[52] = {0};
+#include <bits/stdc++.h>
+int goodnessScore(string s)
+{
+    // Write your code here.
+    int goodnessScore = 0;
+
+    int count[26] = {0};
 
     for (char c : s)
     {
         if (c >= 'a' && c <= 'z')
         {
-            count[c - 'a']--; // 小写字母
+            count[c - 'a']++;
         }
-        else if (c >= 'A' && c <= 'Z')
+        else
         {
-            count[c - 'A']++; // 大写字母
+            count[c - 'A']--;
         }
     }
 
-    int goodnessScore = 0;
-
-    for (int i = 0; i < 26; i++)
+    for (int i = 0; i < 26; ++i)
     {
-        int caseCount = count[i];     
+        int caseCount = count[i];
 
         if (caseCount > 0)
+            goodnessScore--;
+        else if (caseCount < 0)
         {
             goodnessScore++;
         }
         else
         {
-            goodnessScore--;
+            continue;
         }
     }
 
     return goodnessScore;
 }
-
