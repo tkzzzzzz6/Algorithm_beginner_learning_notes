@@ -1,0 +1,4 @@
+*.ipch filter=lfs diff=lfs merge=binary -text
+*.db filter=lfs diff=lfs merge=binary -text
+*.exe filter=lfs diff=lfs merge=binary -text
+*.png filter=lfs diff=lfs merge=binary -text

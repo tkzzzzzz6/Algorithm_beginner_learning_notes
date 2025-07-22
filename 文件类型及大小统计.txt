@@ -1,0 +1,30 @@
+--------------------------------------------------------------
+   Type   |  Size Count(Top 300)  |   File Count   |   File Extension 
+--------------------------------------------------------------
+  Binary        229.50 MB             7 files       *.ipch
+  Binary         45.77 MB             6 files       *.db
+  Binary         20.91 MB           135 files       *.exe
+  ?               7.90 MB             3 files       *.db-wal
+  ?             393.38 KB             6 files       *.vsidx
+  Text          308.01 KB           283 files       *.cpp
+  ?             176.00 KB             1 files       *.sqlite
+  ?              96.00 KB             3 files       *.db-shm
+  Text           87.65 KB            21 files       *.md
+  ?              42.71 KB             2 files       *.ipynb
+  Text           33.64 KB            57 files       *.py
+  ?              22.00 KB             2 files       *.wsuo
+  Binary         16.27 KB             3 files       *.png
+  ?              10.53 KB            21 files       *.prob
+  Text            8.26 KB             8 files       *.json
+  ?               5.89 KB             1 files       93e9e3fb-6498-42cd-9bc8-5bc95864cf55
+  Text            2.00 KB             2 files       *.c
+  ?               1.86 KB             1 files       related_function
+  Text            1.85 KB             1 files       *.java
+  ?               1.51 KB             2 files       *.kt
+  ?               1.06 KB             1 files       LICENSE
+  Text            0.84 KB             1 files       *.txt
+  Text            0.68 KB             1 files       *.CPP
+  Text            0.44 KB             1 files       *.cs
+  ?               0.03 KB             1 files       *.gitignore
+  ?               0.01 KB             1 files       *.opendb
+
