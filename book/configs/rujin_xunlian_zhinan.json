@@ -1,0 +1,112 @@
+{
+  "name": "rujin_xunlian_zhinan",
+  "title": "算法竞赛入门经典——训练指南",
+  "english_title": "Beginning Algorithm Contests - Training Guide",
+  "author": "刘汝佳, 陈锋",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Algorithm Design",
+      "name_cn": "算法设计基础",
+      "name_en": "algorithm_design",
+      "description": "算法设计技巧、复杂度分析、程序调试",
+      "sections": [
+        "algorithm_analysis",
+        "debugging_techniques",
+        "program_optimization",
+        "testing_strategies"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Mathematics",
+      "name_cn": "数学基础",
+      "name_en": "mathematics",
+      "description": "数论、组合数学、概率论、线性代数",
+      "sections": [
+        "number_theory_advanced",
+        "combinatorial_mathematics",
+        "probability_theory",
+        "linear_algebra"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Data Structures",
+      "name_cn": "数据结构",
+      "name_en": "data_structures",
+      "description": "高级数据结构：线段树、树状数组、并查集等",
+      "sections": [
+        "segment_tree",
+        "binary_indexed_tree",
+        "disjoint_set_union",
+        "balanced_trees"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Dynamic Programming",
+      "name_cn": "动态规划",
+      "name_en": "dynamic_programming",
+      "description": "各类动态规划问题和优化技巧",
+      "sections": [
+        "interval_dp",
+        "tree_dp",
+        "digit_dp",
+        "state_compression_dp"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Graph Theory",
+      "name_cn": "图论",
+      "name_en": "graph_theory",
+      "description": "深度图论算法和应用",
+      "sections": [
+        "advanced_shortest_paths",
+        "strongly_connected_components",
+        "bridges_and_cut_vertices",
+        "euler_hamilton_paths"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Network Flow",
+      "name_cn": "网络流",
+      "name_en": "network_flow",
+      "description": "最大流、最小费用流、二分匹配",
+      "sections": [
+        "maximum_flow",
+        "minimum_cost_flow",
+        "bipartite_matching",
+        "general_matching"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "String Algorithms",
+      "name_cn": "字符串",
+      "name_en": "string_algorithms",
+      "description": "KMP、AC自动机、后缀数组等字符串算法",
+      "sections": [
+        "kmp_algorithm",
+        "aho_corasick",
+        "suffix_array",
+        "string_hash"
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Computational Geometry",
+      "name_cn": "计算几何",
+      "name_en": "computational_geometry",
+      "description": "平面几何、三维几何算法",
+      "sections": [
+        "basic_geometry_operations",
+        "convex_hull_algorithms",
+        "closest_pair",
+        "geometric_intersection"
+      ]
+    }
+  ]
+}
