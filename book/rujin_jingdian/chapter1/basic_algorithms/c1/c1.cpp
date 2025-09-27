@@ -6,7 +6,7 @@ int h;
 const double PI = 3.1415926;
 
 void showArea(float r,int h){
-    printf("Area: %.2f\n", PI*r*r*h);
+    printf("Area: %.3f\n", 2*PI*r*(r+h));
 }
 
 int main(){
