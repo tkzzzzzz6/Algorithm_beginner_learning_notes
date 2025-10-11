@@ -3,10 +3,12 @@
 
 
 int main() {
-    double n;
-    if(scanf("%lf",&n)!=1)return 1;
-    printf("%f\n",sin(n));
-    printf("%f\n",cos(n));
+    int number;
+    if(scanf("%d", &number)==1){
+        int amount = number*95;
+        if(amount >= 300)printf("%.2lf\n", (double)(amount*0.85));
+        else printf("%.2lf\n", (double)amount);
+    }
 
     return 0;
 }
