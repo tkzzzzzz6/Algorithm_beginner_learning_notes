@@ -1,0 +1,25 @@
+#pragma once
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <algorithm>
+#include <string>
+#include <vector>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <queue>
+#include <stack>
+#include <list>
+#include <deque>
+#include <bitset>
+#include <numeric>
+#include <functional>
+#include <tuple>
+#include <sstream>
+#include <fstream>
+#include <iterator>
+#include <chrono>
+#include <thread>
+using namespace std;
