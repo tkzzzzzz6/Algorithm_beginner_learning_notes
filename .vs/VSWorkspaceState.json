@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\hydro_oj",
-    "\\hydro_oj\\NTU_2025_Freshman_Algo_Comp_OuterField",
     "\\leetcode",
     "\\leetcode\\Study Plan",
-    "\\leetcode\\Study Plan\\11. \u76DB\u6700\u591A\u6C34\u7684\u5BB9\u5668",
-    "\\leetcode\\Study Plan\\42. \u63A5\u96E8\u6C34"
+    "\\leetcode\\Study Plan\\3341_\u5230\u8FBE\u6700\u540E\u4E00\u4E2A\u623F\u95F4\u7684\u6700\u5C11\u65F6\u95F4_I",
+    "\\leetcode\\Study Plan\\3350. \u68C0\u6D4B\u76F8\u90BB\u9012\u589E\u5B50\u6570\u7EC4 II"
   ],
+  "SelectedNode": "\\leetcode\\Study Plan\\3350. \u68C0\u6D4B\u76F8\u90BB\u9012\u589E\u5B50\u6570\u7EC4 II\\1.py",
   "PreviewInSolutionExplorer": false
 }
