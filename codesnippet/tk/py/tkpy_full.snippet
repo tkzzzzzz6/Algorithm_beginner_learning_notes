@@ -2,15 +2,35 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>tkpy</Title>
-      <Shortcut>tkpy</Shortcut>
-      <Description>Python 竞赛快速 I/O 模板（适合大数据量）</Description>
+      <Title>tkpyfull</Title>
+      <Shortcut>tkpyfull</Shortcut>
+      <Description>Python 竞赛完整模板（包含常用导入和工具函数）</Description>
       <Author>ttkqwe</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>sys</Namespace>
+        </Import>
+        <Import>
+          <Namespace>collections</Namespace>
+        </Import>
+        <Import>
+          <Namespace>heapq</Namespace>
+        </Import>
+        <Import>
+          <Namespace>bisect</Namespace>
+        </Import>
+        <Import>
+          <Namespace>itertools</Namespace>
+        </Import>
+        <Import>
+          <Namespace>math</Namespace>
+        </Import>
+      </Imports>
       <Declarations>
         <Literal Editable="true">
           <ID>test_cases</ID>
@@ -18,14 +38,7 @@
           <Default>False</Default>
         </Literal>
       </Declarations>
-      <Code Language="python"><![CDATA[import sys
-from collections import defaultdict, deque, Counter
-from heapq import heappush, heappop
-from bisect import bisect_left, bisect_right
-from itertools import permutations, combinations
-from math import gcd, lcm, sqrt, ceil, floor
-
-input = sys.stdin.readline
+      <Code Language="Python"><![CDATA[input = sys.stdin.readline
 
 def solve():
     $end$

@@ -2,29 +2,26 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>tkcpp</Title>
-      <Shortcut>tkcpp</Shortcut>
-      <Description>C++ 竞赛模板（使用 bits/stdc++.h）</Description>
+      <Title>tkpy_basic</Title>
+      <Shortcut>tkpy_basic</Shortcut>
+      <Description>Python 竞赛基础模板</Description>
       <Author>ttkqwe</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-
-      <Code Language="cpp"><![CDATA[
-#include <bits/stdc++.h>
-using namespace std;
-
-typedef long long ll;
-
-int main() {
-    ios::sync_with_stdio(false),cin.tie(0);
-    
+      <Imports>
+        <Import>
+          <Namespace>sys</Namespace>
+        </Import>
+      </Imports>
+      <Code Language="Python"><![CDATA[def solve():
     $end$
-    
-    return 0;
-}]]></Code>
+    pass
+
+if __name__ == "__main__":
+    solve()]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
