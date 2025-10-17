@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tkcpp</Title>
+      <Shortcut>tkcpp</Shortcut>
+      <Description>C++ 竞赛/练习快速模板（标准 C++）</Description>
+      <Author>ttkqwe</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>namespace</ID>
+          <ToolTip>命名空间（默认 std）</ToolTip>
+          <Default>std</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp"><![CDATA[
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
+#include <cmath>
+#include <cstring>
+using namespace $namespace$;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    $end$
+    
+    return 0;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tkcpp_full</Title>
+      <Shortcut>tkcpp_full</Shortcut>
+      <Description>C++ 竞赛完整模板（包含常用宏和类型定义）</Description>
+      <Author>ttkqwe</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>typedef_name</ID>
+          <ToolTip>长整型类型别名</ToolTip>
+          <Default>ll</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>debug_flag</ID>
+          <ToolTip>是否启用调试输出</ToolTip>
+          <Default>0</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp"><![CDATA[
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
+#include <deque>
+#include <cmath>
+#include <cstring>
+#include <numeric>
+using namespace std;
+
+typedef long long $typedef_name$;
+typedef pair<int, int> pii;
+typedef vector<int> vi;
+
+#define DEBUG $debug_flag$
+#if DEBUG
+#define debug(x) cout << #x << " = " << (x) << endl
+#else
+#define debug(x)
+#endif
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    $end$
+    
+    return 0;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

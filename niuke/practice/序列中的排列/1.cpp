@@ -11,10 +11,6 @@ int main() {
 	while (T--) {
 		int n, k;
 		cin >> n >> k;
-		if (n < k) {
-			cout << "NO" << endl;
-			continue;
-		}
 		set<int> s;
 		for (int i = 0; i < n; ++i) {
 			//we can't use because it can be multi-digits-numbers

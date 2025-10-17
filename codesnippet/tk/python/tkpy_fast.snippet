@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tkpy_fast</Title>
+      <Shortcut>tkpy_fast</Shortcut>
+      <Description>Python 竞赛快速 I/O 模板（适合大数据量）</Description>
+      <Author>ttkqwe</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>test_cases</ID>
+          <ToolTip>是否多组测试用例（默认 False）</ToolTip>
+          <Default>False</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="python"><![CDATA[import sys
+from collections import defaultdict, deque, Counter
+from heapq import heappush, heappop
+from bisect import bisect_left, bisect_right
+from itertools import permutations, combinations
+from math import gcd, lcm, sqrt, ceil, floor
+
+input = sys.stdin.readline
+
+def solve():
+    $end$
+    pass
+
+def main():
+    if $test_cases$:
+        t = int(input())
+        for _ in range(t):
+            solve()
+    else:
+        solve()
+
+if __name__ == "__main__":
+    main()]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
