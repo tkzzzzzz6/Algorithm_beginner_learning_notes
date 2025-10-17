@@ -2,8 +2,8 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>tkcpp_bits</Title>
-      <Shortcut>tkcpp_bits</Shortcut>
+      <Title>tkcppbits</Title>
+      <Shortcut>tkcppbits</Shortcut>
       <Description>C++ 竞赛模板（使用 bits/stdc++.h）</Description>
       <Author>ttkqwe</Author>
       <SnippetTypes>
@@ -13,17 +13,16 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>typedef_name</ID>
+          <ID>typedefname</ID>
           <ToolTip>长整型类型别名（默认 ll）</ToolTip>
           <Default>ll</Default>
         </Literal>
       </Declarations>
       <Code Language="cpp"><![CDATA[
-
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long $typedef_name$;
+typedef long long $typedefname$;
 
 int main() {
     ios::sync_with_stdio(false);
