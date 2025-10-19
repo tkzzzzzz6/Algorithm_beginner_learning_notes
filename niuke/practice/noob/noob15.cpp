@@ -6,11 +6,15 @@ typedef long long ll;
 
 int main() {
     ios::sync_with_stdio(false), cin.tie(0);
-    //cout << fixed << setprecision(3);
+    
+    int n,ans = 0;
+    cin >> n;
 
-    int a;
-    cin >> a;
-    cout << floor(sqrt(a));
-    cout.flush();
+    do {
+        ans += n % 10;
+    } while (n /= 10);
+
+    cout << ans;
+
     return 0;
-}c
+}
