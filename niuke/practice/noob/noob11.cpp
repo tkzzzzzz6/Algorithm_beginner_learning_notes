@@ -10,12 +10,7 @@ int main() {
 
     int a;
     cin >> a;
-    if (a > 0) {
-        cout << a / 10 % 10;
-    }
-    else {
-        cout << -a / 10 % 10;
-    }
+    cout << sqrt(s)
     cout.flush();
     return 0;
 }
