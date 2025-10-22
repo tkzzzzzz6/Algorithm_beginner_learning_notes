@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -25,10 +24,8 @@ ll gcd3(ll x, ll y, ll z) {
     return gcd2(gcd2(x, y), z);
 }
 
-
 int main() {
     ios::sync_with_stdio(false), cin.tie(0);
-
     int n, h;
     cin >> n >> h;
     while (n--) {
@@ -41,14 +38,12 @@ int main() {
         //确保x,y和z_img和都是正数,这里题目数据都是正数可以不用llabs
         ll g = gcd3(llabs(x), llabs(y), llabs(z_img));
 
+        //这里必须要使用ll,使用int会溢出,有6组用例无法通过
         ll i = x / g;
         ll j = y / g;
         ll k = z_img / g;
 
-
         cout << i << ' ' << j << ' ' << k << '\n';
-
     }
-
     return 0;
 }
