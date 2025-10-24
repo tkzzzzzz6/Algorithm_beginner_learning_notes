@@ -13,15 +13,15 @@ int main()
         cin >> a[i];
     }
 
-    // Ö»ĞèÒª¼ÆËãÒ»´Î×î´ó×îĞ¡Öµ
+    // åªéœ€è¦è®¡ç®—ä¸€æ¬¡æœ€å¤§æœ€å°å€¼
     int max_val = *max_element(a.begin(), a.end());
     int min_val = *min_element(a.begin(), a.end());
     
-    // Ö±½Ó¼ÆËã×îÖÕÆ½¾ùÖµºÍ²Ù×÷´ÎÊı
+    // ç›´æ¥è®¡ç®—æœ€ç»ˆå¹³å‡å€¼å’Œæ“ä½œæ¬¡æ•°
     int average = (max_val + min_val + 1) / 2;
-    long long cnt = 0;  // Ê¹ÓÃlong long·ÀÖ¹Òç³ö
+    long long cnt = 0;  // ä½¿ç”¨long longé˜²æ­¢æº¢å‡º
     
-    // Ò»´ÎĞÔ¼ÆËãËùÓĞĞèÒªµÄ²Ù×÷´ÎÊı
+    // ä¸€æ¬¡æ€§è®¡ç®—æ‰€æœ‰éœ€è¦çš„æ“ä½œæ¬¡æ•°
     for (int i = 0; i < n; i++)
     {
         if (a[i] < average)
