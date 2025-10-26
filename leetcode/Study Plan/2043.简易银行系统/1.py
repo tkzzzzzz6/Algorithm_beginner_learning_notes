@@ -28,3 +28,4 @@ class Bank:
 # param_1 = obj.transfer(account1,account2,money)
 # param_2 = obj.deposit(account,money)
 # param_3 = obj.withdraw(account,money)
+
