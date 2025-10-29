@@ -28,3 +28,22 @@ select device_id,gender,age,university,gpa from user_profile where university = 
 
 -- 13
 select device_id,gender,age,university,gpa from user_profile where university in ('北京大学','复旦大学','山东大学');
+
+--14
+
+select device_id,gender,age,university,gpa from user_profile 
+where (university = '山东大学' and gpa > 3.5) 
+or (university = '复旦大学' and gpa > 3.8) 
+order by device_id ;
+
+--15
+select device_id,age,university from user_profile where university like '%北京%';
+
+--16
+select gpa from user_profile where university = '复旦大学' order by gpa desc limit 1;
+
+--17
+select count(*) as male_num,avg(gpa) as avg_gpa from user_profile where gender = 'male';
+
+-- 18
+select gender,university,count(*) as user_num,round(avg(active_days_within_30),1) as avg_active_day,round(avg(question_cnt),1) as avg_question_cnt from user_profile group by gender,university order by gender,university;
