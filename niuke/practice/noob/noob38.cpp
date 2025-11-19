@@ -2,6 +2,11 @@
 #define il inline
 using namespace std;
 
+#define pb push_back
+#define fastio \
+  ios::sync_with_stdio(false); \
+  cin.tie(0);
+
 typedef long long ll;
 typedef unsigned long long ull;
 
@@ -12,14 +17,14 @@ const double PI = 3.1415926;
 il void solve(){
     int n;
     cin >> n;
-    int f[2] = {1,1};
-    for (int i = 3; i <= n;++i)
+    for (int i = 1; i <= n;++i)
     {
-        int temp = f[0];
-        f[0] = f[1];
-        f[1] = temp + f[0];
+        if (i % 4 == 0 || to_string(i).find('4') != string::npos)
+        {
+            continue;
+        }
+        cout << i << endl;
     }
-    cout << f[1] << endl;
 }
 
 int main()
