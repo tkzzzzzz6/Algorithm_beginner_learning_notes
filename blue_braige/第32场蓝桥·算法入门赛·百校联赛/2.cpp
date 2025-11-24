@@ -1,32 +1,35 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #define il inline
 using namespace std;
 
 #define pb push_back
-#define fastio \
-  ios::sync_with_stdio(false); \
-  cin.tie(0);
+#define fastio                   \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);
 
 typedef long long ll;
 typedef unsigned long long ull;
 
-const ll N = 5e5+5, mod = 1e9+7, inf = 2e18;
+const ll N = 5e5 + 5, mod = 1e9 + 7, inf = 2e18;
 const double eps = 1e-9;
 const double PI = 3.1415926;
 
-il void solve(){
+il void solve()
+{
     int n;
     cin >> n;
-    unordered_map<int,int> mp;
-    for (int i = 0; i < n;++i)
+    unordered_map<int, int> mp;
+    for (int i = 0; i < n; ++i)
     {
         int x;
         cin >> x;
-        if(mp.count(x) > 1)
+        if (mp.count(x) > 0)
         {
             cout << "NO" << endl;
             return;
-        }else{
+        }
+        else
+        {
             mp[x]++;
         }
     }
@@ -36,14 +39,14 @@ il void solve(){
 int main()
 {
     fastio
-    
-    int t = 1;
+
+        int t = 1;
     // cin >> t;
-    while(t--)
+    while (t--)
     {
         solve();
     }
-    
+
     return 0;
 }
 
