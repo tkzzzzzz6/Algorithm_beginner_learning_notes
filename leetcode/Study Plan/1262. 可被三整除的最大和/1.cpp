@@ -3,7 +3,7 @@ class Solution {
         int maxSumDivThree(vector<int>& nums) {
             // 计算所有数字的总和
             int s = accumulate(nums.begin(), nums.end(), 0);
-            
+
             // 如果总和已经能被3整除，直接返回
             if(s % 3 == 0) return s;
 

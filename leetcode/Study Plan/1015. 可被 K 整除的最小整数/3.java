@@ -18,13 +18,13 @@ class Solution {
                 // 检查 i 是否是周期
                 if (pow(10, i, mod) == 1) {
                     ans = Math.min(ans, i);
-                }
+            }
                 // 检查 m/i 是否是周期
                 if (pow(10, m / i, mod) == 1) {
                     ans = Math.min(ans, m / i);
-                }
             }
         }
+    }
 
         return ans == Integer.MAX_VALUE ? -1 : ans;
     }
