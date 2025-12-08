@@ -1,0 +1,45 @@
+{
+	"template": {
+	  "prefix": "ac",
+	  "body": [
+		"package main",
+		"",
+		"import (",
+		"    \"bufio\"",
+		"    \"fmt\"",
+		"    \"os\"",
+		"    \"strconv\"",
+		"    \"strings\"",
+		")",
+		"",
+		"var sc = bufio.NewScanner(os.Stdin)",
+		"var out = bufio.NewWriter(os.Stdout)",
+		"",
+		"func next() string {",
+		"    sc.Scan()",
+		"    return sc.Text()",
+		"}",
+		"",
+		"func nextInt() int {",
+		"    v, _ := strconv.Atoi(next())",
+		"    return v",
+		"}",
+		"",
+		"func main() {",
+		"    defer out.Flush()",
+		"    sc.Split(bufio.ScanWords)",
+		"    t := 1",
+		"    // t = nextInt()",
+		"    for ; t > 0; t-- {",
+		"        solve()",
+		"    }",
+		"}",
+		"",
+		"func solve() {",
+		"    $0",
+		"}"
+	  ],
+	  "description": "Go 通用算法模板（快读 + solve 结构）"
+	}
+  }
+  

@@ -1,0 +1,54 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": { 代码段名称
+	// 	"prefix": "log", 代码段触发关键字
+	// 	"body": [ 代码段主体
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console" 代码段介绍
+	// }
+	"template": {
+		"prefix": "ac",
+		"body": [
+			"#include<bits/stdc++.h>",
+			"#define il inline",
+			"using namespace std;",
+			"",
+			"#define pb push_back",
+			"#define fastio \\",
+			"  ios::sync_with_stdio(false); \\",
+    		"  cin.tie(0);",
+			"",
+			"typedef long long ll;",
+			"typedef unsigned long long ull;",
+			"",
+			"const ll N = 5e5+5, mod = 1e9+7, inf = 2e18;",
+			"const double eps = 1e-9;",
+			"const double PI = 3.1415926;",
+			"",
+			"il void solve(){",
+			"$0"
+			"}",
+			"",
+			"int main()",
+			"{",
+			"    fastio",
+			"    ",
+			"    int t = 1;",
+			"    cin >> t;",
+			"    while(t--)",
+			"    {",
+			"        solve();",
+			"    }",
+			"    ",
+			"    return 0;",
+			"}"
+		],
+		"description": "template of acm"
+	}
+}
