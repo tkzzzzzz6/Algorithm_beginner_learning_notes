@@ -58,9 +58,9 @@ il void solve() {
 }
 
 int main() {
-    fastio // 快速输入输出
+    fastio; // 快速输入输出
 
-        int t = 1;
+    int t = 1;
     // cin >> t;  // 多组测试数据时取消注释
     while (t--) {
         solve();
