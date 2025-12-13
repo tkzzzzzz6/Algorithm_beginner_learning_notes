@@ -23,10 +23,9 @@ double getDistance(point P, line L) {
     double dx = L.point_A.x - L.point_B.x;
     double dy = L.point_A.y - L.point_B.y;
     double k = dy / dx;
-    double b1 = L.point_A.y - k*L.point_A.x;
-    double distance = fabs(k*P.x - P.y + b1) / sqrt(k*k + 1);
+    double b1 = L.point_A.y - k * L.point_A.x;
+    double distance = fabs(k * P.x - P.y + b1) / sqrt(k * k + 1);
     return distance;
-
 }
 
 int main() {
