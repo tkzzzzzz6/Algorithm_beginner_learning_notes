@@ -18,13 +18,20 @@ struct line {
 };
 
 double getDistance(point P, line L) {
-    // TODO: 计算点P到直线L的距离
-    // 常规方法
-    double dx = L.point_A.x - L.point_B.x;
-    double dy = L.point_A.y - L.point_B.y;
-    double k = dy / dx;
-    double b1 = L.point_A.y - k * L.point_A.x;
-    double distance = fabs(k * P.x - P.y + b1) / sqrt(k * k + 1);
+    // 计算点P到直线L的距离
+    // 使用向量叉积公式: distance = |cross product| / |line length|
+    // 这个方法适用于所有情况，包括垂直线和水平线
+    double dx = L.point_B.x - L.point_A.x;
+    double dy = L.point_B.y - L.point_A.y;
+    
+    // 计算叉积的绝对值: |(B-A) × (A-P)|
+    double crossProduct = fabs(dx * (L.point_A.y - P.y) - (L.point_A.x - P.x) * dy);
+    
+    // 计算线段长度: |B-A|
+    double lineLength = sqrt(dx * dx + dy * dy);
+    
+    // 距离 = 叉积 / 线段长度
+    double distance = crossProduct / lineLength;
     return distance;
 }
 
