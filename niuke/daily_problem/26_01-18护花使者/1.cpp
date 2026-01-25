@@ -1,3 +1,9 @@
+/*
+ * @Author: tkzzzzzz6
+ * @Date: 2026-01-19 00:23:46
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-01-22 11:36:48
+ */
 #include <algorithm>
 #include <iostream>
 #include <numeric>
@@ -30,4 +36,3 @@ int main() {
 
     cout << ans << endl;
 }
-// 64 位输出请用 printf("%lld")
