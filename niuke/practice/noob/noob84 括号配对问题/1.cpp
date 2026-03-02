@@ -1,9 +1,3 @@
-/*
- * @Author: tkzzzzzz6
- * @Date: 2026-03-02 22:35:09
- * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-03-02 22:35:15
- */
 #include <iostream>
 #include <stack>
 #include <string>
