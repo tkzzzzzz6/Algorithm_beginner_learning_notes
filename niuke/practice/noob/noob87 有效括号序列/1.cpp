@@ -1,9 +1,8 @@
-/*
- * @Author: tkzzzzzz6
- * @Date: 2026-03-02 22:35:39
- * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-03-02 22:35:46
- */
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
 class Solution {
    public:
     /**
@@ -16,16 +15,36 @@ class Solution {
     bool isValid(string s) {
         // write code here
         vector<char> st;
-        bool ok;
         for (char c : s) {
             switch (c) {
             case '[':
             case '(':
             case '{':
                 st.push_back(c);
+                break;
             case ']':
-                if (!st.empty() && st)
+                if (!st.empty() && st.back() == '[') {
+                    st.pop_back();
+                } else {
+                    return false;
+                }
+                break;
+            case ')':
+                if (!st.empty() && st.back() == '(') {
+                    st.pop_back();
+                } else {
+                    return false;
+                }
+                break;
+            case '}':
+                if (!st.empty() && st.back() == '{') {
+                    st.pop_back();
+                } else {
+                    return false;
+                }
+                break;
             }
         }
+        return st.empty() ? true : false;
     }
 };
