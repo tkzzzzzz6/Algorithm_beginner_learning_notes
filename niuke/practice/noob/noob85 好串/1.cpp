@@ -1,3 +1,9 @@
+/*
+ * @Author: tkzzzzzz6
+ * @Date: 2026-03-02 22:34:50
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-03-02 22:39:03
+ */
 #include <iostream>
 #include <string>
 using namespace std;
@@ -7,13 +13,14 @@ int main() {
     cin >> s;
     int a_cnt = 0;
     bool ok = true;
-    for(char c:s){
-        if(c == 'a')++a_cnt;
-        else{
-            if(a_cnt == 0){
+    for (char c : s) {
+        if (c == 'a')
+            ++a_cnt;
+        else {
+            if (a_cnt == 0) {
                 ok = false;
                 break;
-            }else{
+            } else {
                 --a_cnt;
             }
         }

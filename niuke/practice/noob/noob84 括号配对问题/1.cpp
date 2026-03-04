@@ -11,29 +11,36 @@ int main() {
     cin >> s;
     stack<char> st;
     bool ok = true;
-    for(char c : s){
-        switch(c){
-            case '(':
-            case '[':
-            case '{':
-                st.push(c);
-                break;
-            case ')':
-                if(st.empty() || st.top() != '(') ok = false;
-                else st.pop();
-                break;
-            case ']':
-                if(st.empty() || st.top() != '[') ok = false;
-                else st.pop();
-                break;
-            case '}':
-                if(st.empty() || st.top() != '{') ok = false;
-                else st.pop();
-                break;
-            default:
-                break;
+    for (char c : s) {
+        switch (c) {
+        case '(':
+        case '[':
+        case '{':
+            st.push(c);
+            break;
+        case ')':
+            if (st.empty() || st.top() != '(')
+                ok = false;
+            else
+                st.pop();
+            break;
+        case ']':
+            if (st.empty() || st.top() != '[')
+                ok = false;
+            else
+                st.pop();
+            break;
+        case '}':
+            if (st.empty() || st.top() != '{')
+                ok = false;
+            else
+                st.pop();
+            break;
+        default:
+            break;
         }
-        if(!ok)break;
+        if (!ok)
+            break;
     }
     ok = ok && st.empty();
     cout << (ok ? "true" : "false") << endl;
