@@ -4,3 +4,4 @@
 .cache/
 *.exe
 .cph
+.DS_Store
