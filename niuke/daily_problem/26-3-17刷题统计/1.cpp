@@ -2,7 +2,7 @@
  * @Author: tkzzzzzz6
  * @Date: 2026-03-15 00:10:38
  * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-03-18 23:21:56
+ * @LastEditTime: 2026-03-18 23:37:10
  */
 #include <iostream>
 #include <vector>
@@ -23,7 +23,10 @@ const double eps = 1e-9;
 const double PI = 3.1415926;
 
 il void solve(){
-
+    int n,a,b,c,d;
+    cin >> n >> a >> b >> c >> d;
+    int ans = ((a + b + c) - n - d) /2;
+    cout << ans << endl;
 }
 
 int main()
