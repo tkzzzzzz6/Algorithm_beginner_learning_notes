@@ -1,0 +1,47 @@
+/*
+ * @Author: tkzzzzzz6
+ * @Date: 2026-04-01 00:03:32
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-04-01 00:23:41
+    参考链接:https://www.bilibili.com/video/BV1pFjUzvES2/?spm_id_from=333.337.search-card.all.click&vd_source=0ca07f837bf8ee7607324d7927199dcc
+ */
+
+const int MAXN = 100;
+int father[MAXN];
+
+// 初始化,将所有元素指向自己
+void init() {
+    for (int i = 0; i < sizeof(father) / sizeof(int); ++i) {
+        father[i] = i; // 指向自己
+    }
+}
+
+// 查找
+int find(int u) {
+    if(father[u] == u)
+        return u;
+    father[u] = find(father[u]);
+    return father[u];
+}
+
+// 采用三元表达式的方法
+// int find(int u){
+//     return (father[u] == u) ? u : (father[u] = find(father[u]));
+// }
+
+// 合并
+void join(int a, int b) {
+    a = find(a);
+    b = find(b);
+    if (a == b)  // a 和 b 已经是根节点，直接比较根是否相同
+        return;
+    father[a] = b;
+}
+
+bool isSame(int a,int b) {
+    a = find(a);
+    b = find(b);
+    if(a == b)
+        return true;
+    return false;
+}
