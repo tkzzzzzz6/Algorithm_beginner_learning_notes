@@ -1,3 +1,5 @@
+#include <vector>
+#include <numeric>
 class Solution {
     public:
         int countPartitions(vector<int>& nums) {
