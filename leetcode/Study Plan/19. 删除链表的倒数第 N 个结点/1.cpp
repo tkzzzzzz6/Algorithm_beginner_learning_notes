@@ -1,0 +1,39 @@
+/*
+ * @Author: tkzzzzzz6
+ * @Date: 2026-04-10 00:20:33
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-04-10 00:26:02
+ */
+// 采用快慢指针的写法
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+  ListNode *removeNthFromEnd(ListNode *head, int n) {
+    ListNode *dummy = new ListNode(0, head);
+    ListNode *fast = dummy;
+    ListNode *slow = dummy;
+    ++n; // 这里 ++n是因为我们要删除链表的一个节点,需要知道对应节点的前节点
+    while (n-- && fast != NULL) { // 这里的操作可以理解为 将 fast 移动到和 slow
+                                  // 相差 n 的位置,后续再同时易懂 slow 和
+                                  // fast,当 fast指向尾节点的时候,slow
+                                  // 就指向的是我们要删除的节点的前一个节点
+      fast = fast->next;
+    }
+    while (fast != NULL) {
+      slow = slow->next;
+      fast = fast->next;
+    }
+    slow->next = slow->next->next;
+    return dummy->next;
+  }
+};
