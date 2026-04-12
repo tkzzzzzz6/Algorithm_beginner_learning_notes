@@ -1,3 +1,9 @@
 Diagnostics:
   UnusedIncludes: Strict
   MissingIncludes: Strict
+
+# 格式化使用 .clang-format 配置
+Format:
+  BasedOnStyle: Google
+  IndentWidth: 4
+  TabWidth: 4

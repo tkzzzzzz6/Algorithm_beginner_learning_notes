@@ -1,0 +1,22 @@
+# Google C++ 代码风格配置
+BasedOnStyle: Google
+# 缩进宽度 4 个空格
+IndentWidth: 4
+# 制表符宽度 4
+TabWidth: 4
+# 使用空格代替制表符
+UseTab: Never
+# public 访问修饰符缩进 0（相对于 class）
+AccessModifierOffset: -4
+# 缩进命名空间内容
+IndentPPDirectives: AfterHash
+# 最大行长度
+ColumnLimit: 80
+# 让右括号单独占一行
+BreakBeforeBraces: Attach
+# 对指针和引用，让*和&靠近变量名
+PointerAlignment: Right
+# 允许短的命名空间不缩进
+IndentNestedNamespaces: true
+# 对 case 标签缩进
+IndentCaseLabels: true
