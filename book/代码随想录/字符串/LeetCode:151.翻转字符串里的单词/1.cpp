@@ -1,12 +1,3 @@
-<!--
- * @Author: tkzzzzzz6
- * @Date: 2026-04-12 15:21:24
- * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-04-12 15:21:39
--->
-
-
-```cpp
 /*
  * @Author: tkzzzzzz6
  * @Date: 2026-04-12 15:32:25
@@ -46,5 +37,3 @@ public:
     return s;
   }
 };
-
-```
