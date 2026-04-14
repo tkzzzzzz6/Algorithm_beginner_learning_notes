@@ -2,7 +2,7 @@
  * @Author: tkzzzzzz6
  * @Date: 2026-04-14 15:13:11
  * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-04-14 15:59:39
+ * @LastEditTime: 2026-04-14 21:35:34
  */
 /*
  * @lc app=leetcode.cn id=225 lang=cpp
@@ -11,6 +11,7 @@
  * [225] 用队列实现栈
  */
 
+//  使用单个队列实现
 
 // @lcpr-template-start
 using namespace std;
@@ -33,7 +34,7 @@ using namespace std;
 // @lc code=start
 class MyStack {
 public:
-    queue<int> q1,q2; //q2用于备份
+    queue<int> q1; 
     MyStack() {
         
     }
@@ -47,15 +48,12 @@ public:
         if(n < 1)return -1;
         --n;
         while(n--){
-            q2.push(q1.front());
+            q1.push(q1.front());
             q1.pop();
         }
 
         int res = q1.front();
         q1.pop();
-
-        q1 = q2;
-        while(!q2.empty())q2.pop();
         return res;
     }
     
@@ -64,15 +62,13 @@ public:
         if(n < 1)return -1;
         --n;
         while(n--){
-            q2.push(q1.front());
+            q1.push(q1.front());
             q1.pop();
         }
 
         int res = q1.front();
-        q2.push(q1.front());
-
-        q1 = q2;
-        while(!q2.empty())q2.pop();
+        q1.push(q1.front());
+        q1.pop();
         return res;
     }
     
