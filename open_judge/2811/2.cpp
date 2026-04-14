@@ -1,16 +1,17 @@
+#include <string>
 #include <iostream>
 #include <cstring>
 #include <algorithm>
 using namespace std;
 
 // g数组存储灯的状态，backup为备份数组，res存储操作结果（按下哪些开关）
-int g[5][6], backup[5][6], res[5][6];                   
+int g[5][6], backup[5][6], res[5][6];
 // dx和dy数组用于表示自身及四个方向（上、右、下、左、自身）的坐标偏移
-int dx[5] = {-1, 0, 1, 0, 0}, dy[5] = {0, 1, 0, -1, 0}; 
+int dx[5] = {-1, 0, 1, 0, 0}, dy[5] = {0, 1, 0, -1, 0};
 
 // 按下(a,b)位置的开关
 void turn(int a, int b)
-{ 
+{
     res[a][b] = 1;  // 记录在(a,b)位置按下了开关
     for (int i = 0; i < 5; ++i)
     {
@@ -30,7 +31,7 @@ int main()
     cin >> n;  // 输入谜题数量
     for (int p = 1; p <= n; ++p)
     { // 处理每个谜题
-        
+
         // 输入灯的初始状态
         for (int i = 0; i < 5; ++i)
             for (int j = 0; j < 6; ++j)
@@ -41,11 +42,11 @@ int main()
 
         // 枚举第一行所有可能的按法（2^6=64种可能）
         for (int op = 0; op < (1 << 6); ++op)
-        { 
+        {
             // 恢复初始状态
-            memcpy(g, backup, sizeof backup); 
+            memcpy(g, backup, sizeof backup);
             memset(res, 0, sizeof res);       // 清空操作记录
-                                        
+
             // 处理第一行的按法
             for (int j = 0; j < 6; ++j)
             {

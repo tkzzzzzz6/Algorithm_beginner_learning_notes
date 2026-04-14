@@ -1,3 +1,4 @@
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,27 +8,27 @@ int main() {
     int n;
     cin >> n;
 
-    // 检查 k=0
+    //  k=0
     if (n % 8 == 0) {
         cout << 0 << '\n';
         return 0;
     }
 
-    // 枚举 k=1 到 99
+    // 枚 k=1  99
     for (int k = 1; k <= 99; k++) {
-        // 只需要检查最后3位
+        // 只要3位
         long long new_num;
 
         if (k < 10) {
-            // 添加1位
+            // 1位
             new_num = (long long)n * 10 + k;
         }
         else {
-            // 添加2位
+            // 2位
             new_num = (long long)n * 100 + k;
         }
 
-        // 只检查最后3位（取模1000）
+        // 只3位取模1000
         if (new_num % 8 == 0) {
             cout << k << '\n';
             return 0;

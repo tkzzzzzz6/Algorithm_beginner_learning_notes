@@ -1,3 +1,4 @@
+#include <vector>
 #include <bits/stdc++.h>
 
 // 查找第一个等于target的位置

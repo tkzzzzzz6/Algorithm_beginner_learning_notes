@@ -1,3 +1,4 @@
+#include <string>
 #include <bits/stdc++.h>
 int goodnessScore(string s)
 {

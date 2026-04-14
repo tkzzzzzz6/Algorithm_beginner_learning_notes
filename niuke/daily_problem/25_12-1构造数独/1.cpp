@@ -1,3 +1,4 @@
+#include <iostream>
 // 采用对角矩阵的方法构造
 #include<bits/stdc++.h>
 #define il inline
@@ -38,13 +39,13 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     int t = 1;
     // cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

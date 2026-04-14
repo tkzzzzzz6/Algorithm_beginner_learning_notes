@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 // 最小生成树的问题,我们先使用prim算法
 // 实际上，这个题更像是TSP问题，使用状态压缩+记忆化搜索
 

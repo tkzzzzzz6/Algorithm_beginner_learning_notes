@@ -41,6 +41,6 @@ void solutionFree(Solution* obj) {
  * Your Solution struct will be instantiated and called as such:
  * Solution* obj = solutionCreate(head);
  * int param_1 = solutionGetRandom(obj);
- 
+
  * solutionFree(obj);
 */

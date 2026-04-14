@@ -1,8 +1,10 @@
+#include <iostream>
+#include <vector>
 #include <algorithm>
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-int main() 
+int main()
 {
     int n;
     cin>>n;

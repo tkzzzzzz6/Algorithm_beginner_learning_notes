@@ -1,3 +1,4 @@
+#include <string>
 #include <iostream>
 #include <vector>
 #include <cstring>
@@ -16,7 +17,7 @@ void turn(int a,int b){
             continue;
         g[x][y] ^= 1;
     }
-    
+
 }
 
 int main()
@@ -61,7 +62,7 @@ int main()
             }
             break;
         }
-            
+
     }
     return 0;
 }

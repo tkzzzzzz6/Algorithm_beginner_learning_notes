@@ -32,7 +32,7 @@ public:
         while(q.size()){
             State s = q.top();
             q.pop();
-            //如果该点已经访问    
+            //如果该点已经访问
             if(v[s.x][s.y])
                 continue;
             //标记为已经访问

@@ -1,3 +1,5 @@
+#include <string>
+#include <iostream>
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -29,6 +31,6 @@ int main() {
             add(row,col);
         }
     }
-    cout << sum << endl;    
+    cout << sum << endl;
     return 0;
 }

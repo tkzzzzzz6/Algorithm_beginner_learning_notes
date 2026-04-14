@@ -1,3 +1,4 @@
+#include <string>
 #include <iostream>
 #include <cstring>
 #include <cstdio>
@@ -27,7 +28,7 @@ int main() {
             printf("%3d", a[i][j]);
         cout << endl;
     }
-    
+
     cout << endl;
     return 0;
 }

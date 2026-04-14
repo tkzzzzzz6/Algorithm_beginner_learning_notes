@@ -39,7 +39,7 @@ class UnionFind:
         self._fa[x] = y
         self.cc -= 1
         return True
-    
+
 class Solution:
     def maxStability(self, n: int, edges: List[List[int]], k: int) -> int:
         must_uf = UnionFind(n)
@@ -77,5 +77,5 @@ class Solution:
             if check(mid):
                 left = mid
             else:
-                right = mid 
+                right = mid
         return left

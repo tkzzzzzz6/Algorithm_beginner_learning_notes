@@ -15,7 +15,7 @@ int main(){
     int T;
     cin >> T;
     int a[T];
-    
+
     for(int i = 0;i < T;i++){
         int x, y, N;
         cin >> x >> y;

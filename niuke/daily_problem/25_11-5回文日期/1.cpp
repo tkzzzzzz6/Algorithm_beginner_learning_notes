@@ -1,3 +1,5 @@
+#include <string>
+#include <iostream>
 // 一个日期用 𝑌𝑌𝑌𝑌𝑀𝑀𝐷𝐷 的 8 位数字表示，其中前四位为年份，接着两位为月份，最后两位为日期。
 #include<bits/stdc++.h>
 using namespace std;

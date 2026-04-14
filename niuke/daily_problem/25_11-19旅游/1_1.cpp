@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 // FZANOTFOUND
 #include <bits/stdc++.h>
 using namespace std;

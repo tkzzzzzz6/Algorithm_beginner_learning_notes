@@ -43,6 +43,6 @@ int main(){
         murname();
         cout << '\n';
     }
-    
+
     return 0;
 }

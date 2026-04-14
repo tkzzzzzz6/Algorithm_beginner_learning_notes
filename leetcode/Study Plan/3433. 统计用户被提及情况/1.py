@@ -12,11 +12,11 @@ class Solution:
             curr_t = int(timestamp)
             # Handle OFFLINE event: user goes offline for 60 seconds
             if type_ == "OFFLINE":
-                online_t[int(mention)] = curr_t + 60 
+                online_t[int(mention)] = curr_t + 60
             # Handle ALL mentions: all users are mentioned
             elif mention == "ALL":
                 for i in range(numberOfUsers):
-                    ans[i] += 1 
+                    ans[i] += 1
             # Handle HERE mentions: only currently online users are mentioned
             elif mention == "HERE":
                 for i,t in enumerate(online_t):

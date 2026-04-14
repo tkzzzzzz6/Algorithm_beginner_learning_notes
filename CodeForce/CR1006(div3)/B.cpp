@@ -1,3 +1,4 @@
+#include <string>
 // 引入输入输出流头文件
 #include <iostream>
 

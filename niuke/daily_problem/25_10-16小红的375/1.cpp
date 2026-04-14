@@ -1,3 +1,6 @@
+#include <string>
+#include <iostream>
+#include <vector>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -19,7 +22,7 @@ int main() {
 
 	for (char c : str)digits[c - '0']++;
 
-	//judge if str can be div by 
+	//judge if str can be div by
 	int sum = 0;
 	for (char c : str)sum += c - '0';
 	if (sum % 3 != 0) {
@@ -75,4 +78,4 @@ int main() {
 	return 0;
 
 }
-// 64 位输出请用 printf("%lld")
+// 64 位 printf("%lld")

@@ -1,3 +1,5 @@
+#include <string>
+#include <iostream>
 /*
  * @Author: tkzzzzzz6
  * @Date: 2026-02-02 21:39:02
@@ -62,13 +64,13 @@ il void solve(){
 int main()
 {
     fastio;
-    
+
     int t = 1;
     // cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

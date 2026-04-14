@@ -6,7 +6,7 @@ li1 = [1,2]
 
 li2 = [3,4]
 
-li = li1 + li2  
+li = li1 + li2
 
 li = [i for i in range(10000)]
 
@@ -34,16 +34,16 @@ def test5():
         li.extend([i])
 
 
-timer1 = Timer("test1()","from __main__ import test1") 
+timer1 = Timer("test1()","from __main__ import test1")
 print("append:",timer1.timeit(1000))
 
-timer2 = Timer("test2()","from __main__ import test2") 
+timer2 = Timer("test2()","from __main__ import test2")
 print("+:",timer2.timeit(1000))
 
-timer3 = Timer("test3()","from __main__ import test3") 
+timer3 = Timer("test3()","from __main__ import test3")
 print("列表推导式:",timer3.timeit(1000))
 
-timer4 = Timer("test4()","from __main__ import test4") 
+timer4 = Timer("test4()","from __main__ import test4")
 print("构建list:",timer4.timeit(1000))
 
 timer5 = Timer("test5","from __main__ import test5")

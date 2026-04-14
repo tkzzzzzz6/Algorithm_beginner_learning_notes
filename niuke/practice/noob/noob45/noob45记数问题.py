@@ -11,8 +11,8 @@ def solve():
         cnt += s1.count(str(x))
 
     print(cnt)
-        
-    
+
+
 
 if __name__ == "__main__":
     sys.setrecursionlimit(10**7)

@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 // brute solution,有问题
 #include <bits/stdc++.h>
 using namespace std;

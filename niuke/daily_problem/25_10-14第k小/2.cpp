@@ -1,5 +1,7 @@
+#include <queue>
+#include <iostream>
 #include <bits/stdc++.h>
-//运行超时
+//谐时
 
 using namespace std;
 
@@ -19,24 +21,24 @@ void manipulate1(priority_queue<int>& pq,int k) {
 
 void manipulate2(priority_queue<int> pq, int k) {
 	if (pq.size() < k)cout << -1 << endl;
-	else cout << pq.top() << endl;//堆顶就是第k小的数
+	else cout << pq.top() << endl;//讯堑k小
 }
 
 int main() {
 	int n, m, k;
 	cin >> n >> m >> k;
 
-	priority_queue<int> pq; // 最大堆,堆顶是最大值
+	priority_queue<int> pq; // ,讯值
 
 	for (int i = 0; i < n; ++i) {
 		int num;
 		cin >> num;
 
 		if (pq.size() < k) {
-			pq.push(num);//堆未满,直接加入
+			pq.push(num);//未,直蛹
 		}
-		else if (num < pq.top()) {//新数比堆顶小
-			pq.pop();//弹出最大的
+		else if (num < pq.top()) {//榷讯小
+			pq.pop();//
 			pq.push(num);
 		}
 	}

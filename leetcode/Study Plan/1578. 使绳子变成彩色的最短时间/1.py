@@ -18,9 +18,9 @@ class Solution:
                 maxValue = max(maxValue, neededTime[i]) # 删除成本最高的颜色，这里的成本指的是序号的长度
                 total += neededTime[i]
                 i += 1
-            
+
             res += total - maxValue
-        
+
         return res
 =======
 class Solution:
@@ -42,8 +42,8 @@ class Solution:
                 maxValue = max(maxValue, neededTime[i]) # 删除成本最高的颜色，这里的成本指的是序号的长度
                 total += neededTime[i]
                 i += 1
-            
+
             res += total - maxValue
-        
+
         return res
 >>>>>>> 6948676579abca6ba4f3824e53edf9bbb7e1b238

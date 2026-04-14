@@ -1,3 +1,4 @@
+#include <iostream>
 // 不妨将第i个数是否与i+1合并设为一种状态，很明显有n-1种状态
 // 每种状态都有合并和不合并两种情况，那么一共就有2的n-1次方种可能
 #include<bits/stdc++.h>
@@ -18,7 +19,7 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
- 
+
     int t;cin >> t;long long n,x;
     while(t--) {
         cin >> n;

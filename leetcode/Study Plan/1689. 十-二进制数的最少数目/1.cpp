@@ -1,3 +1,4 @@
+#include <string>
 class Solution {
 public:
     int minPartitions(string n) {

@@ -1,3 +1,4 @@
+#include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -11,10 +12,10 @@ int main()
     ll a, b, c, x, y, z;
     cin >> a >> b >> c >> x >> y >> z;
 
-    // 贪心策略：
-    // 牛牛的石头(a) 对 牛可乐的剪刀(y) -> 赢 min(a, y) 局
-    // 牛牛的剪刀(b) 对 牛可乐的布(z)   -> 赢 min(b, z) 局
-    // 牛牛的布(c)   对 牛可乐的石头(x) -> 赢 min(c, x) 局
+    // 贪牟裕
+    // 牛牛石头(a)  牛值募(y) -> 赢 min(a, y)
+    // 牛牛募(b)  牛值牟(z)   -> 赢 min(b, z)
+    // 牛牛牟(c)    牛值石头(x) -> 赢 min(c, x)
 
     ll win_cnt = min(a, y) + min(b, z) + min(c, x);
 

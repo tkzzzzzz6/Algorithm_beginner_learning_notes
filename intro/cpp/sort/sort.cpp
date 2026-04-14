@@ -1,3 +1,4 @@
+#include <string>
 #define FILE_IO
 #define bob_sort
 #include <stdio.h>
@@ -34,9 +35,9 @@ int main(){
 
     // output the sorted array
     for (int i = 0; i < size;++i)
-        printf("%d ", a[i]);    
+        printf("%d ", a[i]);
     printf("\n");
-    
+
 
     return 0;
 }

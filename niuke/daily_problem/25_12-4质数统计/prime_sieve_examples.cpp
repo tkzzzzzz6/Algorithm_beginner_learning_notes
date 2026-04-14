@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -31,13 +33,13 @@ const int MAXN = 10000006;
 vector<int> eratosthenesSieve(int n) {
     vector<bool> isPrime(n + 1, true);
     vector<int> primes;
-    
+
     isPrime[0] = isPrime[1] = false;  // 0和1不是质数
-    
+
     for (int i = 2; i <= n; i++) {
         if (isPrime[i]) {
             primes.push_back(i);  // i是质数，加入结果
-            
+
             // 标记i的所有倍数为合数
             // 优化：从i*i开始，因为i*(i-1)之前的已经被更小的质数标记过了
             for (int j = i * i; j <= n; j += i) {
@@ -45,7 +47,7 @@ vector<int> eratosthenesSieve(int n) {
             }
         }
     }
-    
+
     return primes;
 }
 
@@ -53,7 +55,7 @@ vector<int> eratosthenesSieve(int n) {
 void eratosthenesSieveMark(vector<bool>& isPrime, int n) {
     isPrime.assign(n + 1, true);
     isPrime[0] = isPrime[1] = false;
-    
+
     for (int i = 2; i * i <= n; i++) {  // 只需遍历到sqrt(n)
         if (isPrime[i]) {
             for (int j = i * i; j <= n; j += i) {
@@ -75,19 +77,19 @@ void eratosthenesSieveMark(vector<bool>& isPrime, int n) {
 vector<int> eulerSieve(int n) {
     vector<bool> isPrime(n + 1, true);
     vector<int> primes;
-    
+
     isPrime[0] = isPrime[1] = false;
-    
+
     for (int i = 2; i <= n; i++) {
         // 如果i是质数，加入质数列表
         if (isPrime[i]) {
             primes.push_back(i);
         }
-        
+
         // 用已知的质数去筛 i * primes[j]
         for (int j = 0; j < primes.size() && primes[j] * i <= n; j++) {
             isPrime[primes[j] * i] = false;  // 标记为合数
-            
+
             // 关键优化：当i能被primes[j]整除时停止
             // 这样可以保证每个合数只被它的最小质因数筛一次
             // 例如：i=4, primes[j]=2时，4*2=8被筛掉，此时停止
@@ -97,7 +99,7 @@ vector<int> eulerSieve(int n) {
             }
         }
     }
-    
+
     return primes;
 }
 
@@ -106,12 +108,12 @@ void eulerSieveMark(vector<bool>& isPrime, vector<int>& primes, int n) {
     isPrime.assign(n + 1, true);
     isPrime[0] = isPrime[1] = false;
     primes.clear();
-    
+
     for (int i = 2; i <= n; i++) {
         if (isPrime[i]) {
             primes.push_back(i);
         }
-        
+
         for (int j = 0; j < primes.size() && primes[j] * i <= n; j++) {
             isPrime[primes[j] * i] = false;
             if (i % primes[j] == 0) {
@@ -124,7 +126,7 @@ void eulerSieveMark(vector<bool>& isPrime, vector<int>& primes, int n) {
 // ==================== 使用示例 ====================
 int main() {
     int n = 100;
-    
+
     cout << "=== 埃拉托斯特尼筛法 ===" << endl;
     vector<int> primes1 = eratosthenesSieve(n);
     cout << "质数数量: " << primes1.size() << endl;
@@ -133,7 +135,7 @@ int main() {
         cout << primes1[i] << " ";
     }
     cout << endl;
-    
+
     cout << "\n=== 欧拉筛（线性筛）===" << endl;
     vector<int> primes2 = eulerSieve(n);
     cout << "质数数量: " << primes2.size() << endl;
@@ -142,7 +144,7 @@ int main() {
         cout << primes2[i] << " ";
     }
     cout << endl;
-    
+
     // 验证两种方法结果一致
     cout << "\n=== 验证结果一致性 ===" << endl;
     if (primes1 == primes2) {
@@ -150,6 +152,6 @@ int main() {
     } else {
         cout << "✗ 结果不一致" << endl;
     }
-    
+
     return 0;
 }

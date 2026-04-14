@@ -23,7 +23,7 @@ def solve():
         while current_n > 0:
             digit_sum += current_n % 10
             current_n //= 10
-        
+
         if digit_sum == K:
             ans += 1
 

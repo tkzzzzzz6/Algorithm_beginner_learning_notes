@@ -1,3 +1,4 @@
+#include <string>
 #include <cstring>
 constexpr int MAXN = 100000; // 此处 MAXN 是数组内元素的界
 

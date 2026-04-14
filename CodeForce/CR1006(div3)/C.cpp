@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -19,7 +21,7 @@ void solve()
     }
 
     std::vector<int> ans(n);
-    
+
     // 创建一个长度为n的数组来存储结果
     // sum用来存储按位或的结果
     // max记录最大可用的数字

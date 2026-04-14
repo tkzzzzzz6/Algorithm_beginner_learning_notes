@@ -1,3 +1,6 @@
+#include <string>
+#include <iostream>
+#include <vector>
 <<<<<<< HEAD
 #include <bits/stdc++.h>
 using namespace std;

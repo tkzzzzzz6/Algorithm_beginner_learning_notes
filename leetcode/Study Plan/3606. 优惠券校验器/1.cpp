@@ -1,3 +1,5 @@
+#include <string>
+#include <vector>
 #include<vector>
 #include<string>
 #include<algorithm>
@@ -18,7 +20,7 @@ public:
         }
         // Sort by priority first, then by code lexicographically
         sort(ans.begin(), ans.end());
-        
+
         // Extract just the codes for the result
         vector<string> result;
         for(auto &p : ans)
@@ -27,7 +29,7 @@ public:
         }
         return result;
     }
-    
+
 private:
     vector<string> vaild_business = {
         "electronics",
@@ -35,7 +37,7 @@ private:
         "pharmacy",
         "restaurant"
     };
-    
+
     // Get priority of business line (0 = highest priority)
     int getBusinessPriority(const string &b)
     {
@@ -43,7 +45,7 @@ private:
         if(it == vaild_business.end()) return -1;
         return it - vaild_business.begin();
     }
-    
+
     bool isValid(const string &c, const string &b)
     {
         if(find(vaild_business.begin(), vaild_business.end(), b) == vaild_business.end())
@@ -55,7 +57,7 @@ private:
             bool isAlpha = (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
             bool isDigit = ch >= '0' && ch <= '9';
             bool isUnderscore = ch == '_';
-            
+
             if(!isAlpha && !isDigit && !isUnderscore)
                 return false;
         }

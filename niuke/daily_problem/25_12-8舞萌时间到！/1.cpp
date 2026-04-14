@@ -1,3 +1,6 @@
+#include <string>
+#include <iostream>
+#include <vector>
 #include<iostream>
 #include<string>
 #include<vector>
@@ -48,13 +51,13 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     int t = 1;
     while(t--)
     // cin >> t;
     {
         solve();
     }
-    
+
     return 0;
 }

@@ -1,10 +1,12 @@
+#include <iostream>
+#include <vector>
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
 
 const ll MOD = 998244353;
 
-// 快速幂
+//
 ll power(ll a, ll b, ll mod) {
     ll result = 1;
     a %= mod;
@@ -16,16 +18,16 @@ ll power(ll a, ll b, ll mod) {
     return result;
 }
 
-// 逆元
+// 元
 ll inv(ll a, ll mod) {
     return power(a, mod - 2, mod);
 }
 
-// 计算 C(n) - C(n-1)
+//  C(n) - C(n-1)
 ll solve(int n) {
     if (n == 1) return 0;
 
-    // 预计算阶乘
+    // 预壮
     vector<ll> fact(2 * n + 1);
     fact[0] = 1;
     for (int i = 1; i <= 2 * n; i++) {

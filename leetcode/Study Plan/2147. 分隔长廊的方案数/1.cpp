@@ -1,3 +1,4 @@
+#include <string>
 #include<string>
 using namespace std;
 class Solution {

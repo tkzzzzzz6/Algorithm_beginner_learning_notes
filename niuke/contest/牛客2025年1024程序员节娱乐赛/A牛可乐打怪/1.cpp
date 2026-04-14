@@ -1,3 +1,4 @@
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -9,7 +10,7 @@ int main() {
     ll a, n;
     cin >> a >> n;
 
-    
+
     int k_min = (n + a - 1) / a;
 
     ll dmg1 = (n + k_min - 1) / k_min;
