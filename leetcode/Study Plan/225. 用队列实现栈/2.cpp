@@ -2,7 +2,7 @@
  * @Author: tkzzzzzz6
  * @Date: 2026-04-14 15:13:11
  * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-04-14 21:35:34
+ * @LastEditTime: 2026-04-15 22:13:33
  */
 /*
  * @lc app=leetcode.cn id=225 lang=cpp
@@ -19,7 +19,7 @@ using namespace std;
 #include <array>
 #include <bitset>
 #include <climits>
-#include <deque>
+#finclude <deque>
 #include <functional>
 #include <iostream>
 #include <list>
