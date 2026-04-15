@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 //使用向上取整计算吃掉的苹果数的方法

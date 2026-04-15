@@ -1,5 +1,6 @@
 // 使用柱状图的优化暴力方法
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 class Solution {

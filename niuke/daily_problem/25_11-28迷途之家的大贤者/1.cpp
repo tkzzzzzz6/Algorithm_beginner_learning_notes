@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include<bits/stdc++.h>
+#include <algorithm>
 #define il inline
 using namespace std;
 

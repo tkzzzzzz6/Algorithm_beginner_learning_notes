@@ -2,6 +2,7 @@
 #include <vector>
 // brute solution,有问题
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 
 typedef long long ll;

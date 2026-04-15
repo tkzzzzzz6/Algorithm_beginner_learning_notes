@@ -4,6 +4,7 @@
 #include<string>
 #include<algorithm>
 #include<vector>
+#include <algorithm>
 #define il inline
 using namespace std;
 

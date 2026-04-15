@@ -8,6 +8,7 @@
  * @LastEditTime: 2026-02-05 16:06:15
  */
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 
 int main() {

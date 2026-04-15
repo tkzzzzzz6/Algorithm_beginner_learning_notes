@@ -3,6 +3,7 @@
 // 包含C++标准库和atcoder的并查集库
 #include <bits/stdc++.h>
 #include <atcoder/dsu>
+#include <algorithm>
 
 // 使用标准命名空间和atcoder命名空间
 using namespace std;

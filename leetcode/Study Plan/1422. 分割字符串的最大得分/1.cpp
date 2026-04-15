@@ -1,4 +1,5 @@
 #include <string>
+#include <algorithm>
 class Solution {
    public:
     int maxScore(string s) {

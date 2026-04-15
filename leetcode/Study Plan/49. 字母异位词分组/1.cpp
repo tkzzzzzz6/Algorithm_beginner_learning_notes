@@ -4,6 +4,7 @@
 #include<string>
 #include<unordered_map>
 #include<algorithm>
+#include <algorithm>
 using namespace std;
 class Solution {
 public:

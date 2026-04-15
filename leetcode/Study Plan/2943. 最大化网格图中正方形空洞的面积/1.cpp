@@ -1,4 +1,5 @@
 #include <vector>
+#include <algorithm>
 class Solution {
   int f(vector<int> &a) {
     ranges::sort(a);

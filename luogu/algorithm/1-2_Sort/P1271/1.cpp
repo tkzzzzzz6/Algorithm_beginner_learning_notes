@@ -1,5 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h> // 包含C++标准库
+#include <algorithm>
 
 using namespace std;
 int a[2000000], n, m; // 定义数组a和变量n,m。n是范围上限,m是输入数的个数

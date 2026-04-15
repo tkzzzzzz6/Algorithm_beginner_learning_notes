@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 
 using ll = long long;

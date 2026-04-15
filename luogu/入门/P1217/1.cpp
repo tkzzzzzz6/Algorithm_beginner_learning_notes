@@ -1,5 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 int l, r;
 bool check1(int x) // 检查位数

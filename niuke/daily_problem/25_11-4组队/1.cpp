@@ -46,6 +46,7 @@ int main()
     return 0;
 =======
 #include<bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 const int MAXN = 200020;  // 定义数组最大长度
 

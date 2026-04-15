@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <algorithm>
 #define int long long
 using namespace std;
 const int N = 1e4 + 5, M = 1e7 + 5;

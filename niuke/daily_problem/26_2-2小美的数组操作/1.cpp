@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h>
+#include <algorithm>
 #define endl '\n'
 using namespace std;
 

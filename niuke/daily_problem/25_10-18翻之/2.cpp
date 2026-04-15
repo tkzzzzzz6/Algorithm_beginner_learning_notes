@@ -3,6 +3,7 @@
 #include <vector>
 
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 
 typedef long long ll;

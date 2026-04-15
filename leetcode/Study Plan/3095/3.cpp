@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <bits/c++.h>
+#include <algorithm>
 
 // 滑动窗口
 

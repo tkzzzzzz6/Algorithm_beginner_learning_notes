@@ -1,6 +1,7 @@
 #include <queue>
 #include <string>
 #include <iostream>
+#include <algorithm>
 // 编译优化指令，提高代码运行速度
 #pragma GCC optimize(2)
 #pragma GCC optimize(3,"Ofast","inline")

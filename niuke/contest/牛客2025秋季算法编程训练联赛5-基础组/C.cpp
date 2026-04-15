@@ -1,6 +1,7 @@
 #include <iostream>
 #include<bits/stdc++.h>
 #include<iomanip>
+#include <algorithm>
 
 using namespace std;
 
@@ -25,5 +26,4 @@ int main()
     cout << setprecision(6) << (double)ans << '\n';
     return 0;
 }
-
 

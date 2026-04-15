@@ -1,5 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 const int maxn = 1e5 + 10;
 int edge[maxn];

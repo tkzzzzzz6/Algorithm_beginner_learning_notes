@@ -3,6 +3,7 @@
 #include <vector>
 // 包含C++标准库的头文件
 #include <bits/stdc++.h>
+#include <algorithm>
 
 // 使用标准命名空间
 using namespace std;

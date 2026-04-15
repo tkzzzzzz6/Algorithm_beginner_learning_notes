@@ -7,6 +7,7 @@
  * @LastEditTime: 2026-02-03 17:27:19
  */
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 
 using int64 = long long;

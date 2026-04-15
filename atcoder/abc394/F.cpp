@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <bits/stdc++.h> // 包含C++标准库
+#include <algorithm>
 
 using namespace std; // 使用标准命名空间
 

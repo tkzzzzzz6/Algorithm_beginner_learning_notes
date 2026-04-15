@@ -2,6 +2,7 @@
 #include <vector>
 // FZANOTFOUND
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 
 #define pb push_back
