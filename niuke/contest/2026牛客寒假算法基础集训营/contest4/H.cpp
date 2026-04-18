@@ -5,6 +5,7 @@
  * @LastEditTime: 2026-02-09 15:02:11
  */
 #include <bits/stdc++.h>
+#include <vector>
 #define il inline
 #define endl '\n'
 using namespace std;
@@ -84,3 +85,4 @@ int main() {
 
     return 0;
 }
+

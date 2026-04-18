@@ -36,6 +36,6 @@ class Solution:
         # 如果list2还有剩余节点，将其连接到当前节点
         elif list2:
             current.next = list2
-        
+
         # 返回合并后的链表的起点（哑节点的下一个节点）
         return dummy.next

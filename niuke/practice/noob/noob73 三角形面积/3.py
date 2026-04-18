@@ -34,13 +34,13 @@ def get_area(T):
 def main():
     x, y = map(int, input().split())
     a = Point(x, y)
-    
+
     x, y = map(int, input().split())
     b = Point(x, y)
-    
+
     x, y = map(int, input().split())
     c = Point(x, y)
-    
+
     T = Triangle(a, b, c)
     print("{:.2f}".format(get_area(T)))
 

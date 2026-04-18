@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 int main()
@@ -181,3 +182,4 @@ int main()
     return 0;
 }
 >>>>>>> 6948676579abca6ba4f3824e53edf9bbb7e1b238
+

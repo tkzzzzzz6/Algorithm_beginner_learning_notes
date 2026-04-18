@@ -9,7 +9,7 @@ ll lastNonZeroDigit_factorial(ll n) {
     for (int i = 2; i <= n; ++i) {
         ans *= i;
         while (ans % 10 == 0)ans /= 10;
-        ans %= int(1e9); // 1e9是double需要强制转换
+        ans %= int(1e9); // 1e9double要强转
     }
     return ans;
 }

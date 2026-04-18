@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 #define il inline
 using namespace std;
 
@@ -46,3 +47,4 @@ int main()
 
     return 0;
 }
+

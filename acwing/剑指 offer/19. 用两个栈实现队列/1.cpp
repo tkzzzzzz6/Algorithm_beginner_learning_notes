@@ -17,14 +17,14 @@ public:
     /** Initialize your data structure here. */
     stack<int> st1,st2;
     MyQueue() {
-        
+
     }
-    
+
     /** Push element x to the back of queue. */
     void push(int x) {
         st1.push(x);
     }
-    
+
     /** Removes the element from in front of queue and returns that element. */
     int pop() {
         if(!st2.empty()){
@@ -45,7 +45,7 @@ public:
             }
         }
     }
-    
+
     /** Get the front element. */
     int peek() {
         if(!st2.empty()){
@@ -53,7 +53,7 @@ public:
         }else{
             while(!st1.empty()){
                 st2.push(st1.top());
-                st1.pop();   
+                st1.pop();
             }
             if(!st2.empty()){
                 return st2.top();
@@ -62,7 +62,7 @@ public:
             }
         }
     }
-    
+
     /** Returns whether the queue is empty. */
     bool empty() {
         return st1.empty() && st2.empty();

@@ -1,4 +1,5 @@
 #include<vector>
+#include <vector>
 #include<string>
 using namespace std;
 class Solution {
@@ -8,9 +9,10 @@ public:
         int ans = 0;
         for(int i = left;i<=right;++i)
         {
-            ans += (vowels.find(words[i][0]) != string::npos) 
+            ans += (vowels.find(words[i][0]) != string::npos)
             && (vowels.find(words[i].back()) != string::npos);
         }
         return ans;
     }
 };
+

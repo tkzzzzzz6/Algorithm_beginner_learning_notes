@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
+#include <vector>
 class Solution {
 public:
     int findSmallestInteger(vector<int>& nums, int value) {
         unordered_map<int,int> mp;
 
-     
+
         for (auto x : nums) {
             int mod = ((x % value) + value) % value;
             mp[mod]++;
@@ -19,3 +20,4 @@ public:
         return mex;
     }
 };
+

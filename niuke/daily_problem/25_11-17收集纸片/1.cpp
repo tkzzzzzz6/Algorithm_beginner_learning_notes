@@ -2,6 +2,7 @@
 // 实际上，这个题更像是TSP问题，使用状态压缩+记忆化搜索
 
 #include <bits/stdc++.h>
+#include <vector>
 #define il inline
 using namespace std;
 
@@ -93,3 +94,4 @@ int main()
 
     return 0;
 }
+

@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 typedef long long ll;
 using namespace std;
 
@@ -26,9 +27,10 @@ int main() {
     sort(a.begin(), a.end());
     sort(b.begin(), b.end());
     if (a[n] > b[1])ans += 2 * (a[n] - b[1]);
-    
+
     cout << ans << '\n';
     cout.flush();
 
     return 0;
 }
+

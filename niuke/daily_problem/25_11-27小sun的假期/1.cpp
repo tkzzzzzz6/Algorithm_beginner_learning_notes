@@ -1,4 +1,5 @@
 #include<iostream>
+#include <vector>
 #include<vector>
 #include<algorithm>
 using namespace std;
@@ -12,7 +13,7 @@ typedef long long ll;
 void solve(){
     int n, m;
     cin >> n >> m;
-    
+
     vector<pair<int, int>> segs;
     for(int i = 0; i < m; ++i) {
         int l, r;
@@ -57,3 +58,4 @@ int main()
     solve();
     return 0;
 }
+

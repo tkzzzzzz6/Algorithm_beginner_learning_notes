@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 
@@ -6,12 +7,12 @@ int main() {
     int n;
     cin >> n;
     vector<long long> a(n); // 使用vector存储输入的数
-    
+
     // 读入n个数
     for(int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    
+
     // 排序
     sort(a.begin(), a.end());
 
@@ -29,3 +30,4 @@ int main() {
     return 0;
 
 }
+

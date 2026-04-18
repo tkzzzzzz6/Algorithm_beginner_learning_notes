@@ -13,10 +13,10 @@ def solve():
         op1 = dp[i-1] #skip
         op2 = dp[i-3] + a[i-2] #take
         dp[i] = max(op1,op2)
-        
+
 
     print(dp[n])
-    
+
 if __name__ == "__main__":
 
     solve()

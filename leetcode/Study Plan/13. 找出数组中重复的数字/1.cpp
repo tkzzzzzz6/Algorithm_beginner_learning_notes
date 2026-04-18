@@ -7,6 +7,7 @@
 class Solution {
 public:
     int duplicateInArray(vector<int>& nums) {
-        
+
     }
 };
+

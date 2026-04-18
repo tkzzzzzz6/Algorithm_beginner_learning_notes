@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 struct DSU
@@ -133,3 +134,4 @@ int main()
     }
     return 0;
 }
+

@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 
 // 查找第一个等于target的位置
 int findFirst(vector<int> &arr, int target)
@@ -92,6 +93,7 @@ int maxFXVI(int n, vector<int> &arr)
     }
     return maxF;
 }
+
 
 
 

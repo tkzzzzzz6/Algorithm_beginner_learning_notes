@@ -1,5 +1,6 @@
 
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 typedef long long ll;
@@ -17,7 +18,7 @@ int pancakeSort(vector<int>& arr) {
         for (int i = 1; i < currSize; ++i) {
             if (arr[i] > arr[maxidx])maxidx = i;
         }
-        
+
         if (maxidx == currSize - 1)continue;
 
         if (maxidx > 0) {
@@ -41,8 +42,9 @@ int main() {
 
     vector<int> redius(n);
     for (int i = 0; i < n; i++)cin >> redius[i];
-   
+
     cout << pancakeSort(redius) << '\n';
 
     return 0;
 }
+

@@ -6,6 +6,7 @@
  */
 
 #include <bits/stdc++.h>
+#include <vector>
 #include <climits>
 
 using namespace std;
@@ -60,3 +61,4 @@ signed main(){
     solve();
     return 0;
 }
+

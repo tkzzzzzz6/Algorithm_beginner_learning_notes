@@ -1,8 +1,9 @@
 #include <algorithm>
+#include <vector>
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-int main() 
+int main()
 {
     int n;
     cin>>n;
@@ -25,3 +26,4 @@ int main()
     cout<<ans<<'\n';
     return 0;
 }
+

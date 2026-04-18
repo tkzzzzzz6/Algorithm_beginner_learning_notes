@@ -2,7 +2,7 @@ n = int(input())
 
 
 a = list(map(int,input().split()))
-    
+
 max_value = max(a)
 min_value = min(a)
 

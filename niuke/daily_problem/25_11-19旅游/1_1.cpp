@@ -1,5 +1,6 @@
 // FZANOTFOUND
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 #define pb push_back
@@ -232,3 +233,4 @@ int main()
         solve();
     }
 }
+

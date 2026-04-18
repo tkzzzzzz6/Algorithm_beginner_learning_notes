@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 
@@ -39,3 +40,4 @@ int main(){
     cout << a[n][m] << endl;
     return 0;
 }
+

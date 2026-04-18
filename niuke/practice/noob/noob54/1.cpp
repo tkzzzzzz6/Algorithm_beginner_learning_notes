@@ -10,7 +10,7 @@ using namespace std;
 
 rules = {
     "elephant" : 'tiger',
-    
+
 }
 
 int main() {

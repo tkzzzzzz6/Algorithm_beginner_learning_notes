@@ -5,6 +5,7 @@
  * @LastEditTime: 2026-02-07 16:04:33
  */
 #include <bits/stdc++.h>
+#include <vector>
 #define il inline
 #define endl '\n'
 using namespace std;
@@ -76,3 +77,4 @@ int main() {
 
     return 0;
 }
+

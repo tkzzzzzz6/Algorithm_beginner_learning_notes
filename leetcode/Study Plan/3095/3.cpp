@@ -1,4 +1,5 @@
 #include <bits/c++.h>
+#include <vector>
 
 // 滑动窗口
 
@@ -66,3 +67,4 @@ int main()
 
     return 0;
 }
+

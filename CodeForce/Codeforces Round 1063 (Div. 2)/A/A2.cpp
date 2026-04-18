@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+
     int t;
     cin >> t;
     while (t--) {
@@ -12,7 +13,7 @@ int main() {
         cin >> n;
         vector<int> a(n);
         for (int i = 0; i < n; ++i) cin >> a[i];
-        
+
         // 判断是否有重复元素
         sort(a.begin(), a.end());
         bool hasDuplicate = false;
@@ -26,3 +27,4 @@ int main() {
     }
     return 0;
 }
+

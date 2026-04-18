@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 typedef long long ll;
@@ -12,7 +13,7 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+
     int t,x;
     cin >> t;
     while(t--)
@@ -37,6 +38,7 @@ int main()
         }
 
     }
-    
+
     return 0;
 }
+

@@ -1,4 +1,5 @@
 #include<iostream>
+#include <vector>
 #include<string>
 #include<vector>
 #define il inline
@@ -48,13 +49,14 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     int t = 1;
     while(t--)
     // cin >> t;
     {
         solve();
     }
-    
+
     return 0;
 }
+

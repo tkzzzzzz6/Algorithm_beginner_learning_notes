@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 int main()
@@ -25,3 +26,4 @@ int main()
     cout << (rule1 || rule2 ? "Yes" : "No") << '\n';
     return 0;
 }
+

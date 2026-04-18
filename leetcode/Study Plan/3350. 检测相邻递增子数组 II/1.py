@@ -18,10 +18,10 @@ class Solution(object):
         max_k = 0
 
         for i in range(n-1):
-            # 两个递增段是连续的
+            #
             max_k = max(inc_len[i]//2,max_k)
 
-            # 两个递增段不是连续的
+            # 尾
             j = i + inc_len[i]
             if j < n:
                 max_k = max(max_k,min(inc_len[i],inc_len[j]))

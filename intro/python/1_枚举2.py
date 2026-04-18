@@ -12,5 +12,5 @@ for a in range(1001):
                 i += 1
 
 end_time = time.time()
-print(f"Time taken: {end_time - start_time} seconds") 
+print(f"Time taken: {end_time - start_time} seconds")
 print("finished")

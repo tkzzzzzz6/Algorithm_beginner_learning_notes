@@ -14,4 +14,4 @@ if max_value > 8:
 else:
     print(0)
 
-        
+

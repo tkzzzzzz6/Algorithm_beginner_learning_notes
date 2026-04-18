@@ -1,4 +1,5 @@
 #include<iostream>
+#include <vector>
 #include<vector>
 #define il inline
 using namespace std;
@@ -80,13 +81,14 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     int t = 1;
     // cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }
+

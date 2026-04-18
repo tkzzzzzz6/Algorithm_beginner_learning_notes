@@ -13,7 +13,7 @@ def tail_recur(n,res):
     # 尾递归我感觉就是输出的结果放在了递归函数的参数中,不断的更新
     if n == 0:
         return res
-    
+
     tail_recur(n-1,res+n)
 
 def fib(n:int)->int:
@@ -22,7 +22,7 @@ def fib(n:int)->int:
         return 0
     elif n == 2:
         return 1
-    
+
     ans = fib(n-1) + fib(n-2)
 
     return ans

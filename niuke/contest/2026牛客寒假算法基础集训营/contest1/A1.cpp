@@ -5,6 +5,7 @@
  * @LastEditTime: 2026-02-03 17:13:54
  */
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 static const long long MOD = 998244353;
@@ -137,3 +138,4 @@ int main() {
     }
     return 0;
 }
+

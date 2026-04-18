@@ -5,18 +5,18 @@ class Solution:
         # 每个方向的单位向量
         dx = [1, 0, -1, 0]
         dy = [0, 1, 0, -1]
-        
+
         # 标记警卫的位置，并将每个警卫四个方向的初始视线入队
         for i, j in guards:
             grid[i][j] = -1  # -1 代表这个格子是警卫
             for k in range(4):
                 # (i, j, k) 表示从(i, j)出发向第k个方向(0-3)发射视线
                 q.append((i, j, k))
-        
+
         # 标记墙的位置
         for i, j in walls:
             grid[i][j] = -2  # -2 代表这个格子是墙
-        
+
         # BFS 遍历所有视线
         while q:
             x, y, k = q.popleft()
@@ -28,7 +28,7 @@ class Solution:
                     grid[nx][ny] |= (1 << k)
                     # 将下一个视线状态入队，继续往前推进
                     q.append((nx, ny, k))
-        
+
         # 统计未被任何视线、警卫或墙覆盖的格子的数量
         res = 0
         for i in range(m):

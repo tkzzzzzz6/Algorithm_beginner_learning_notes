@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 
@@ -35,7 +36,7 @@ int main()
         {
             cout << "NO" << endl;
             return 0;
-        } 
+        }
     }
     cout << "YES" << endl;
 
@@ -46,3 +47,4 @@ int main()
 
 
 }
+

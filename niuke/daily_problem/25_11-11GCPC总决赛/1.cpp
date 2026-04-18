@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 typedef long long ll;
@@ -49,3 +50,4 @@ int main()
     cout << win << ' ' << lose << ' ' << draw << '\n';
     return 0;
 }
+

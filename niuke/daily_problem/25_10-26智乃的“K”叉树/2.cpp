@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 #define ll long long
@@ -56,3 +57,4 @@ int main()
     cout << min_k << " " << best_root << endl;
     return 0;
 }
+
