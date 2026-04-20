@@ -1,0 +1,155 @@
+{
+    "contestId": 132152,
+    "problems": [
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 459,
+                "submitCount": 984,
+                "avgScore": 0,
+                "tagId": 306309,
+                "index": "A",
+                "myStatus": "通过",
+                "problemId": 316088,
+                "title": "Reachability Count",
+                "totalScore": 100,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11650824",
+                "subTagId": "1",
+                "doneQuestionId": "132152",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 给定一条无限长的数轴，数轴上有若干个红色整数点，其坐标组成可重集合 $\\Bbb A = \\{a_1, a_2, \\dots, a_n\\}$ 。  \n$\\hspace{15pt}$ 一个机器人初始位于坐标为 $1$ 的位置。机器人在每一时刻可以执行以下两种操作之一：  \n$\\hspace{23pt}\\bullet\\,$ 向右跳跃，从当前位置 $x$ 移动到 $x + k$ 。  \n$\\hspace{23pt}\\bullet\\,$ 向左跳跃，若当前位置 $x > k$ ，则可以从 $x$ 移动到 $x - k$ 。  \n$\\hspace{15pt}$ 问在可重集合 $\\Bbb A$ 中，有多少个元素（红色整数点坐标）是机器人可以到达的。若多个红色整数点坐标相同且可达，则分别计数。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 第一行输入两个正整数 $n,k \\left(1 \\le n \\le 10^5;\\, 1 \\le k \\le 10^9 \\right)$ ，表示红色整数点的数量、每次跳跃的步长。  \n$\\hspace{15pt}$ 第二行输入 $n$ 个正整数 $a_1, a_2, \\dots, a_n \\left(1 \\le a_i \\le 10^{18} \\right)$ ，表示每个红色整数点的坐标。  \n  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 输出一个整数，表示能够被跳到的红色整数点数量。  \n  \n\n\n",
+                "examples": [
+                    {
+                        "input": "5 3\n1 4 7 2 10",
+                        "output": "4",
+                        "tips": ""
+                    },
+                    {
+                        "input": "3 2\n1 1 1",
+                        "output": "3",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 357,
+                "submitCount": 780,
+                "avgScore": 0,
+                "tagId": 306336,
+                "index": "B",
+                "myStatus": "通过",
+                "problemId": 316378,
+                "title": "Strictly Increasing",
+                "totalScore": 100,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11654446",
+                "subTagId": "1",
+                "doneQuestionId": "132152",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 给定一个长度为 $n$ 的正整数序列 $a_1, a_2, \\dots, a_n$ 。  \n$\\hspace{15pt}$ 你可以对序列中的每个元素 $a_i$ 分别独立地执行以下操作任意次（可以不执行）：  \n$\\hspace{23pt}\\bullet\\,$ 选择一个正整数 $x$ ，并将 $a_i$ 替换为 $a_i \\bmod x$ 。  \n$\\hspace{15pt}$ 你的目标是判断，是否可以通过上述操作，使原序列严格递增，即满足 $a_1 < a_2 < \\dots < a_n$ 。  \n\n【名词解释】  \n$\\hspace{15pt}$  $\\bmod$ ：代表取模运算。例如， $5$ 除以 $3$ 的余数为 $2$ ，因此式子 $5 \\bmod 3$ 的值为 $2$ 。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 第一行输入一个整数 $n \\left(1 \\le n \\le 10^5 \\right)$ ，表示序列的长度。  \n$\\hspace{15pt}$ 第二行输入 $n$ 个整数 $a_1, a_2, \\dots, a_n \\left(1 \\le a_i \\le 10^9 \\right)$ 。  \n  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 如果可以构造出严格递增序列，输出 $\\texttt{YES}$ ，否则输出 $\\texttt{NO}$ 。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "7\n15 15 15 4 15 15 15",
+                        "output": "YES",
+                        "tips": ""
+                    },
+                    {
+                        "input": "7\n10 10 10 10 10 10 10",
+                        "output": "NO",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 281,
+                "submitCount": 672,
+                "avgScore": 0,
+                "tagId": 306311,
+                "index": "C",
+                "myStatus": "未通过",
+                "problemId": 316098,
+                "title": "Swap Sorting",
+                "totalScore": 100,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11650848",
+                "subTagId": "1",
+                "doneQuestionId": "132152",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 给定长度为 $n$ 的正整数数组 $a_1, a_2, \\dots, a_n$ ，共有 $q$ 次独立询问。每次询问给定一个正整数 $x$ ，请判断在数组**原始状态**下，是否可以通过若干次操作（可以不操作）将数组变为升序：  \n$\\hspace{23pt}\\bullet\\,$ 选择两个下标 $i$ 和 $j$ ，满足 $a_i \\times a_j \\ge x$ ，交换 $a_i$ 和 $a_j$ 。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 第一行输入两个整数 $n, q \\left(1 \\le n,q \\le 10^5 \\right)$ 。  \n$\\hspace{15pt}$ 第二行输入 $n$ 个整数，表示数组 $a_1, a_2, \\dots, a_n \\left(1 \\le a_i \\le 10^9 \\right)$ 。  \n$\\hspace{15pt}$ 此后 $q$ 行，第 $i$ 行输入一个正整数 $x_i \\left(1 \\le x_i \\le 10^{18} \\right)$ 。  \n  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 对于每一次询问，新起一行。如果能通过若干次操作将数组变为升序，输出 $\\texttt{Yes}$ ，否则输出 $\\texttt{No}$ 。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "5 4\n1 4 3 10 9\n15\n35\n100\n5",
+                        "output": "Yes\nNo\nNo\nYes",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 68,
+                "submitCount": 641,
+                "avgScore": 0,
+                "tagId": 306312,
+                "index": "D",
+                "myStatus": "未通过",
+                "problemId": 316187,
+                "title": "Orientation Maximize",
+                "totalScore": 100,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 17,
+                "submitCount": 90,
+                "avgScore": 0,
+                "tagId": 306313,
+                "index": "E",
+                "myStatus": "未通过",
+                "problemId": 316175,
+                "title": "AND XOR",
+                "totalScore": 100,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 3,
+                "submitCount": 11,
+                "avgScore": 0,
+                "tagId": 306314,
+                "index": "F",
+                "myStatus": "未通过",
+                "problemId": 316149,
+                "title": "Connected Graph",
+                "totalScore": 100,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "",
+                "questionId": "",
+                "subTagId": "",
+                "doneQuestionId": "",
+                "content": "## 题目描述\n\n\n\n## 输入描述\n\n\n\n## 输出描述\n\n\n\n",
+                "examples": []
+            }
+        }
+    ]
+}
