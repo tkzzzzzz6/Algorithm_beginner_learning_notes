@@ -1,3 +1,4 @@
+#include <unordered_map>
 #include <bits/stdc++.h>
 #include <vector>
 class Solution {
@@ -20,4 +21,3 @@ public:
         return mex;
     }
 };
-

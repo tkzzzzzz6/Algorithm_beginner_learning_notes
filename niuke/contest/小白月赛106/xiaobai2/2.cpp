@@ -38,4 +38,3 @@ int main()
     cout << cnt << " " << average << endl;
     return 0;
 }
-

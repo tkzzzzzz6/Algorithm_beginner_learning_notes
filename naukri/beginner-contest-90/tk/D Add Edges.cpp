@@ -49,4 +49,3 @@ long long maxEdges(int n, vector<pair<int, int>> edges)
 
     return maxPossibleEdges - existingEdges;
 }
-

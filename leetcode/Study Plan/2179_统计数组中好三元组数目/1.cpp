@@ -1,3 +1,4 @@
+#include <vector>
 // 树状数组类，用于高效处理前缀和查询和单点更新
 class FenwickTree
 {
@@ -76,4 +77,3 @@ public:
         return res;
     }
 };
-

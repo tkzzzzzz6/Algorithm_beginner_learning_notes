@@ -23,4 +23,3 @@ int main(){
     else
         cout << a[i - 1];
 }
-

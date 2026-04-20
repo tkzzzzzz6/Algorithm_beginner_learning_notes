@@ -74,4 +74,3 @@ int main(){
     cout << fixed << setprecision(3) << 1 - sum / atan2(1, 0) << endl;
     return 0;
 }
-

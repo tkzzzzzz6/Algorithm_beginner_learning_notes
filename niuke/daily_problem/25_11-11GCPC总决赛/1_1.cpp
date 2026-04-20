@@ -53,4 +53,3 @@ int main()
     // 输出胜、负、平的场数
     cout << win << " " << lose << " " << draw << endl;
 }
-

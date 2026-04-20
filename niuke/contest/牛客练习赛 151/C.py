@@ -25,7 +25,7 @@ def solve():
             input()
             print("Yes")
         return
-    
+
     s.sort()
     mn,mx = s[0],s[-1]
 

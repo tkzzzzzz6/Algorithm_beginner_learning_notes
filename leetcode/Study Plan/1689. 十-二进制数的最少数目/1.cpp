@@ -4,4 +4,3 @@ public:
         return ranges::max(n) - '0';
     }
 };
-

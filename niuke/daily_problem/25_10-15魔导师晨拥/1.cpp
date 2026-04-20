@@ -19,4 +19,3 @@ int main() {
 	}
 	cout << damage2hero << endl;
 }
-

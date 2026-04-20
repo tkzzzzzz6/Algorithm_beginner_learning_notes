@@ -53,4 +53,3 @@ int main() {
     cout << ans_max << " " << ans_min << endl;
 
 }
-

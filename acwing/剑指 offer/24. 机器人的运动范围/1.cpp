@@ -24,7 +24,7 @@ public:
         return getSingleSum(p.first) + getSingleSum(p.second);
     }
 
-    
+
     int movingCount(int threshold, int rows, int cols)
     {
         if(!rows || !cols)return 0;

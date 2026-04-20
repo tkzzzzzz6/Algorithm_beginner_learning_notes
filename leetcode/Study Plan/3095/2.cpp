@@ -1,3 +1,4 @@
+#include <vector>
 class Solution
 {
 public:
@@ -41,4 +42,3 @@ public:
         return min_len == n + 1 ? -1 : min_len;
     }
 };
-

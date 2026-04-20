@@ -23,4 +23,3 @@ int main()
     } while (next_permutation(a.begin(), a.end()));
     return 0;
 }
-

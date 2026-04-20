@@ -50,4 +50,3 @@ int main()
     cout << win << ' ' << lose << ' ' << draw << '\n';
     return 0;
 }
-

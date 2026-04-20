@@ -26,4 +26,3 @@ int main() {
         ans ^= B[i];
     cout << ans;
 }
-

@@ -1,3 +1,4 @@
+#include <vector>
 class Solution {
     public:
         int maxSumDivThree(vector<int>& nums) {
@@ -35,4 +36,3 @@ class Solution {
             return ans;
         }
     };
-

@@ -100,5 +100,3 @@ int maxFXVI(int n, vector<int> &arr)
 
 
 
-
-

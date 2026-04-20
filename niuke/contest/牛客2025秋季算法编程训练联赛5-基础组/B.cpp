@@ -26,4 +26,3 @@ int main()
     cout << (rule1 || rule2 ? "Yes" : "No") << '\n';
     return 0;
 }
-

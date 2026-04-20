@@ -57,4 +57,3 @@ int main()
     cout << min_k << " " << best_root << endl;
     return 0;
 }
-

@@ -1,3 +1,4 @@
+#include <iostream>
 #include<iostream>
 using namespace std;
 bool isprime(int x){ //判断质数的函数，应该不用我多解释

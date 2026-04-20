@@ -1,3 +1,4 @@
+#include <vector>
 class Solution
 {
 public:
@@ -22,4 +23,3 @@ public:
         return digits;
     }
 };
-

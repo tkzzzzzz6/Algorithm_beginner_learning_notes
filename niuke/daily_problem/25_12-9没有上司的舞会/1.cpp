@@ -1,3 +1,4 @@
+#include <iostream>
 #include<vector>
 #include <vector>
 #include<iostream>
@@ -87,4 +88,3 @@ int main()
 
     return 0;
 }
-

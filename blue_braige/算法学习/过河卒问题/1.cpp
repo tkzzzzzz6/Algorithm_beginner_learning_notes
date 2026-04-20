@@ -40,4 +40,3 @@ int main(){
     cout << a[n][m] << endl;
     return 0;
 }
-

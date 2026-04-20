@@ -1,3 +1,4 @@
+#include <vector>
 class Solution
 {
 public:
@@ -16,4 +17,3 @@ public:
         return i;
     }
 };
-

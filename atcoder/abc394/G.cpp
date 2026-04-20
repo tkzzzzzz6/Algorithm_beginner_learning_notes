@@ -97,4 +97,3 @@ int main(void)
         cout << (y[i] + z[i] - 2 * min(l[i], min(y[i], z[i]))) << endl;
     return 0;
 }
-

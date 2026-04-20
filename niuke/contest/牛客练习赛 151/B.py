@@ -22,7 +22,7 @@ def solve():
             print("NO\n")
             return
     print("YES\n")
-    
+
 if __name__ == "__main__":
     sys.setrecursionlimit(10**7)
     t = 1

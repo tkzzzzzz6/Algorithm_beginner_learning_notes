@@ -1,3 +1,5 @@
+#include <unordered_map>
+#include <vector>
 class Solution{
     public:
     int numIdenticalPairs(vector<int>& nums) {
