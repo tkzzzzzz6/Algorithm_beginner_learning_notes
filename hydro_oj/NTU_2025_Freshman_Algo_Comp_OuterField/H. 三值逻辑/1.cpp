@@ -5,7 +5,7 @@ int main() {
     char a, b;
     cin >> a >> b;
 
-    // A && B 
+    // A && B
     char and_result;
     if (a == 'F' || b == 'F') {
         and_result = 'F';
@@ -15,7 +15,7 @@ int main() {
         and_result = '0';
     }
 
-    // A || B 
+    // A || B
     char or_result;
     if (a == 'T' || b == 'T') {
         or_result = 'T';

@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 typedef long long ll;
 
@@ -27,7 +28,7 @@ int main() {
     int n;
     cin >> n;
 
-    map<int, int> cnt;  // 统计每个值出现的次数
+    map<int, int> cnt;  // 统每值值拇
     for (int i = 0; i < n; ++i) {
         int a;
         cin >> a;
@@ -37,13 +38,13 @@ int main() {
     CombinationDP cdp(n);
     ll ans = 0;
 
-    // 枚举所有值对 (val1, val2)
+    // 枚值 (val1, val2)
     for (auto& [val1, c1] : cnt) {
         for (auto& [val2, c2] : cnt) {
-            if (val1 < val2) {  // 避免重复计数
-                // 情况1: 选2个val1 + 1个val2
+            if (val1 < val2) {  // 馗
+                // 1: 选2val1 + 1val2
                 ans += cdp.getC(c1, 2) * c2;
-                // 情况2: 选1个val1 + 2个val2
+                // 2: 选1val1 + 2val2
                 ans += c1 * cdp.getC(c2, 2);
             }
         }

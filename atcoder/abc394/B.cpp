@@ -1,5 +1,6 @@
 // 包含C++标准库的头文件
 #include <bits/stdc++.h>
+#include <vector>
 
 // 使用标准命名空间
 using namespace std;

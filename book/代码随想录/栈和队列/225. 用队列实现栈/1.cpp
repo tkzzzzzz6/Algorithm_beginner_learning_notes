@@ -35,13 +35,13 @@ class MyStack {
 public:
     queue<int> q1,q2; //q2用于备份
     MyStack() {
-        
+
     }
-    
+
     void push(int x) {
         q1.push(x);
     }
-    
+
     int pop() {
         int n = q1.size();
         if(n < 1)return -1;
@@ -58,7 +58,7 @@ public:
         while(!q2.empty())q2.pop();
         return res;
     }
-    
+
     int top() {
         int n = q1.size();
         if(n < 1)return -1;
@@ -75,7 +75,7 @@ public:
         while(!q2.empty())q2.pop();
         return res;
     }
-    
+
     bool empty() {
         return q1.empty();
     }
@@ -99,4 +99,3 @@ public:
 // @lcpr case=end
 
  */
-

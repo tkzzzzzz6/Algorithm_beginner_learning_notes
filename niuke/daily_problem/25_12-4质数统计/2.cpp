@@ -1,4 +1,6 @@
+#include <iostream>
 #include<iostream>
+#include <vector>
 #include<vector>
 #define il inline
 using namespace std;
@@ -12,7 +14,7 @@ typedef long long ll;
 const ll N = 10000006;
 vector<int> primes;
 vector<int> s(N+1);
-vector<bool> isPrime(N+1,true);        
+vector<bool> isPrime(N+1,true);
 
 void eulerSieve()
 {
@@ -25,7 +27,7 @@ void eulerSieve()
             primes.push_back(i);
             s[i]++;
         }
-        for(ll q = 0;q<primes.size() && primes[q] * i <= N;++q)  // 从0开始，因为vector索引从0开始 
+        for(ll q = 0;q<primes.size() && primes[q] * i <= N;++q)  // 从0开始，因为vector索引从0开始
         {
             isPrime[primes[q]*i] = false; // 标记为合数
             if(i%primes[q] == 0)
@@ -50,15 +52,15 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     eulerSieve();  // 调用筛法初始化
-    
+
     int t = 1;
     cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

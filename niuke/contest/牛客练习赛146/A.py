@@ -19,7 +19,7 @@ def solve():
             print(n-1) #total一定是奇数
         else:
             print(total - n)
-        
+
 
 if __name__ == "__main__":
     sys.setrecursionlimit(10**7)

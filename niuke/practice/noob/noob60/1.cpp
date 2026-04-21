@@ -1,4 +1,6 @@
+#include <iostream>
 #include<iostream>
+#include <vector>
 #include<vector>
 #include<algorithm>
 #include<map>
@@ -48,19 +50,19 @@ il void solve(){
         default:
             cout << 'C' << '\n';
             break;
-    }    
+    }
 }
 
 int main()
 {
     fastio
-    
+
     int t = 1;
     cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

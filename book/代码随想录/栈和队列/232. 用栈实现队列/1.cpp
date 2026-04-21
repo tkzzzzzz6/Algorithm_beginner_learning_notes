@@ -42,13 +42,13 @@ class MyQueue {
 public:
     stack<int> stackIn,stackOut;
     MyQueue() {
-        
+
     }
-    
+
     void push(int x) {
         stackIn.push(x);
     }
-    
+
     int pop() {
         if(empty())return -1;
         if(stackOut.empty()){
@@ -61,7 +61,7 @@ public:
         stackOut.pop();
         return res;
     }
-    
+
     int peek() {
         if(empty())return -1;
         if(stackOut.empty()){
@@ -72,7 +72,7 @@ public:
         }
         return stackOut.top();
     }
-    
+
     bool empty() {
         return stackIn.empty() && stackOut.empty();
     }

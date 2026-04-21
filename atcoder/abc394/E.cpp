@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 // 定义一个简化的循环宏
 #define rep(i, n) for (int i = 0; i < (n); i++)
 using namespace std;
@@ -14,19 +15,19 @@ int main()
     // 创建n*n的字符矩阵c用于存储输入
     vector<vector<char>> c(n, vector<char>(n));
     rep(i, n) rep(j, n) cin >> c[i][j];
-    
+
     // 创建n*n的距离矩阵a，初始化为无穷大
     vector<vector<int>> a(n, vector<int>(n, inf));
     // 创建队列用于BFS搜索
     queue<pair<int, int>> que;
-    
+
     // 对角线元素距离初始化为0
     rep(i, n)
     {
         que.push({i, i});
         a[i][i] = 0;
     }
-    
+
     // 直接相连的元素距离初始化为1
     rep(i, n) rep(j, n)
     {
@@ -35,16 +36,16 @@ int main()
         que.push({i, j});
         a[i][j] = 1;
     }
-    
+
     // BFS搜索计算所有点对之间的最短距离
     while (!que.empty()) // 当队列不为空时继续搜索
     {
         auto q = que.front(); // 获取队首元素
         que.pop(); // 弹出队首元素
         int i = q.first, j = q.second; // 获取当前处理的点对(i,j)的坐标
-        
+
         // 遍历所有可能的新点对(k,l)
-        rep(k, n) rep(l, n) 
+        rep(k, n) rep(l, n)
         {
             // 判断是否可以通过当前点对(i,j)构建到新点对(k,l)的路径:
             // 1. c[k][i]不是'-' - 表示k到i有边
@@ -60,7 +61,7 @@ int main()
             }
         }
     }
-    
+
     // 输出结果矩阵
     rep(i, n)
     {

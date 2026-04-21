@@ -13,7 +13,7 @@ int main(){
     int current_hour = 8;
     int current_minute = 0;
 
-    //calculate the latest time 
+    //calculate the latest time
     int total_minutes = current_hour * 60 + current_minute - t;
     if (total_minutes < 0){
         total_minutes += 24 * 60;

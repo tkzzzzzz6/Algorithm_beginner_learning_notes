@@ -1,3 +1,4 @@
+#include <vector>
 class Solution
 {
     // 定义状态结构体，用于优先队列

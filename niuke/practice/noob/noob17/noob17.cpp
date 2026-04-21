@@ -10,7 +10,7 @@ int main() {
     int n;
     cin >> n;
 
-    cout << ll(n) * pow(2, 20 - 2);//注意pow对应的计算结果是double,输出采用的是科学计数法
+    cout << ll(n) * pow(2, 20 - 2);//注pow应募double,玫强学
 
     return 0;
 }

@@ -28,10 +28,10 @@ def solve():
     for L in sorted_candidates:
         if tot % L != 0:
             continue
-        
+
         current_counts = cnts.copy()
         possible = True
-        
+
         for u in unique_elements:
             c = current_counts[u]
             if c == 0:
@@ -58,7 +58,7 @@ def solve():
                     break
                 current_counts[u] = 0
                 current_counts[target] -= c
-            
+
         if possible:
             vaild_L.append(L)
 

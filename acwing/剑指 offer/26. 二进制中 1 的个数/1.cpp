@@ -17,9 +17,9 @@ public:
     int NumberOf1(int n) {
         unsigned int us_n = n;
         int s = 0;
-        
+
         while(us_n)s += us_n & 1,us_n >>= 1;
-        
+
         return s;
     }
 };

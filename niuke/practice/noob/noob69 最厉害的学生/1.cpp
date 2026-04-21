@@ -57,14 +57,14 @@ il void solve() {
 
 int main() {
     fastio;
-    
+
     int t = 1;
     cin >> t;
-    
+
     while (t--) {
         solve();
     }
-    
+
     if (!pq.empty()) {
         Student top_student = pq.top();
         cout << top_student.name << " " << top_student.scores["chinese"] << " " << top_student.scores["math"] << " "

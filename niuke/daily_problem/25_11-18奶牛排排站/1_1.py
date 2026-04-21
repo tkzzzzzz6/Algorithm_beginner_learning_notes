@@ -21,7 +21,7 @@ def find_kth(k):
     pos = 0
     current_sum = 0
     log_n = n.bit_length() - 1
-    
+
     for i in range(log_n, -1, -1):
         step = 1 << i
         if pos + step <= n and current_sum + bit[pos + step] < k:
@@ -37,15 +37,15 @@ def precompute_factorials():
 def main():
     global n, bit
     input = sys.stdin.readline
-    
+
     precompute_factorials()
-    
+
     first_line = input().strip()
     if not first_line:
         return
     n_str, q_str = first_line.split()
     n, q = int(n_str), int(q_str)
-    
+
     for _ in range(q):
         type_line = input().strip()
         data_line = input().strip()
@@ -57,17 +57,17 @@ def main():
             bit = [0] * (n + 1)
             for i in range(1, n + 1):
                 update(i, 1)
-            
+
             p = []
             for i in range(n):
                 divisor = fact[n - 1 - i]
                 quotient = k // divisor
                 k %= divisor
-                
+
                 num = find_kth(quotient + 1)
                 p.append(num)
                 update(num, -1)
-            
+
             print(*p)
 
         else: # type_line == 'Q'

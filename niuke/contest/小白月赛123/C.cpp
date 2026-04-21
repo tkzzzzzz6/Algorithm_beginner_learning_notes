@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 typedef long long ll;
@@ -7,7 +8,7 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+
     int t = 0;
     cin >> t;
     while(t--)
@@ -94,7 +95,7 @@ int main()
 
         cout << ans << endl;
     }
-    
+
     return 0;
 }
 

@@ -22,7 +22,7 @@ class Solution:
                 if minSum > pair_sum:
                     minSum = pair_sum
                     target_idx = i
-                
+
             if isAscending:
                 break
 
@@ -31,6 +31,6 @@ class Solution:
             nums.pop(target_idx+1)
         return cnt
 
-        
-    
-        
+
+
+

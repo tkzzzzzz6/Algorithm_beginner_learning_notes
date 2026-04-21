@@ -1,3 +1,4 @@
+#include <unordered_map>
 /*
  * @Author: tkzzzzzz6
  * @Date: 2026-02-05 15:24:28
@@ -5,6 +6,7 @@
  * @LastEditTime: 2026-02-05 15:30:09
  */
 #include <bits/stdc++.h>
+#include <vector>
 #define il inline
 #define endl '\n'
 using namespace std;

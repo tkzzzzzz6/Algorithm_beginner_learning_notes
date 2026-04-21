@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <vector>
 #define il inline
 #define endl '\n'
 using namespace std;
@@ -57,6 +58,6 @@ int main()
     {
         solve();
     }
-    
+
     return 0;
 }

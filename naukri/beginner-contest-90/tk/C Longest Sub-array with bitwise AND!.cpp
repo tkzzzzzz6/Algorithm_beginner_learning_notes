@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 vector<int> bitwiseAnd(int n, int q, vector<int> arr, vector<int> queries)
 {
     // Write your code here.

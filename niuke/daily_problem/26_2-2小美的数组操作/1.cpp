@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 #define endl '\n'
 using namespace std;
 
@@ -12,7 +13,7 @@ int main() {
     cin >> n;
 
     ll sum = 0;
-    vector<ll> nums(n); 
+    vector<ll> nums(n);
     for (int i = 0; i < n; ++i) {
         cin >> nums[i];
         sum += nums[i];
@@ -38,7 +39,7 @@ int main() {
         ll L1 = 0;
         for (ll v : nums)
             L1 += llabs(v - avg);
-        cout << (L1 / 2) << endl; 
+        cout << (L1 / 2) << endl;
     } else {
         ll q = avg; // floor(sum/n)
         ll res = min(calc(q), calc(q + 1));

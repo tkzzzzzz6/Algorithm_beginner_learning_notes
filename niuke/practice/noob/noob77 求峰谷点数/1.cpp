@@ -5,6 +5,7 @@
  * @LastEditTime: 2026-02-08 10:39:50
  */
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 class Solution {
    public:

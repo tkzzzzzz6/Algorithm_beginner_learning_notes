@@ -54,4 +54,3 @@ int main()
     cout << f[num1] * qmi(num2, mod - 2, mod) % mod;
     return 0;
 }
-

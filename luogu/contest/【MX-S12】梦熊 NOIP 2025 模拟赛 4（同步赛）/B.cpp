@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <vector>
 #define il inline
 using namespace std;
 
@@ -99,7 +100,7 @@ il void solve(){
             diff_S[R[col]] ^= W[col];
         }
 
-        
+
         // constuct the difference of s
         point_E[R[col]] += W[col] * (ull)cnt[col];
     }
@@ -163,14 +164,14 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     int t = 1;
     // cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }
 

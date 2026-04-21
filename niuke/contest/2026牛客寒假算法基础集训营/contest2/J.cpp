@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <vector>
 #define il inline
 #define endl '\n'
 using namespace std;
@@ -58,20 +59,20 @@ il void solve(){
         for(auto v:bucket[t])
             sources.pb(v);
 
-        
+
     }
 }
 
 int main()
 {
     fastio;
-    
+
     int t = 1;
     // cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

@@ -1,6 +1,7 @@
 
-//还是超时
+//浅时
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 typedef long long ll;
@@ -22,7 +23,7 @@ int minFlips(vector<int> arr) {
     while (!q.empty()) {
         auto [curr, steps] = q.front();
         q.pop();
-        
+
         for (int k = 2; k <= n; ++k) {
             vector<int> next = curr;
             reverse(next.begin(), next.begin() + k);

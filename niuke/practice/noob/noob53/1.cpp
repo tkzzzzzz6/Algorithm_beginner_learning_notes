@@ -17,7 +17,7 @@ int main()
         {
             break;
         }
-        else if(c == '5')        
+        else if(c == '5')
         {
             c = '*';
         }

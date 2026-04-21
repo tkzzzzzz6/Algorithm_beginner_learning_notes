@@ -2,7 +2,7 @@ import sys
 
 def main():
     sys.setrecursionlimit(1 << 25)
-    
+
     def input():
         return sys.stdin.read()
 
@@ -47,7 +47,7 @@ def main():
         last_time = t
 
     total = 0
-    
+
     # 预处理列操作的总和
     col_sum = 0
     latest_cols = 0  # 记录有多少列有操作

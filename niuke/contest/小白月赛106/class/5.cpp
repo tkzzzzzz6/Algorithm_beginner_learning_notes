@@ -16,7 +16,7 @@ int main()
     int a = 0;
     scanf("%d", &a);
     if (is_prime(a))
-        printf("%d是素数\n", a);
+        printf("%d\n", a);
     else
-        printf("%d不是素数\n", a);
+        printf("%d\n", a);
 }

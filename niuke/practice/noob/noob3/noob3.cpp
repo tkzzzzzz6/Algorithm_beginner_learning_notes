@@ -9,7 +9,7 @@ int main() {
 
     double n;
     cin >> n;
-    cout << n; 
+    cout << n;
 
     return 0;
 }
