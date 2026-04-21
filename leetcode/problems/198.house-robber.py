@@ -14,13 +14,10 @@ class Solution:
     def rob(self, nums: List[int]) -> int:
         n = len(nums)
         f0 ,f1 = 0,0
-        for i,x in enumerate(nums):
-            fnew = f1
-            f0,f1 = fnew,max(f0,f0+x)
+        for x in nums:
+            f0,f1 = f1,max(f1,f0+x)
         
         return f1
-
-        return f[n+1];
 # @lc code=end
 
 
