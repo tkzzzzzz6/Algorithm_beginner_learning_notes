@@ -56,7 +56,7 @@ il void solve() {
     for (int i = 0; i < n; ++i) {
         int x;
         cin >> x;
-        cout << ans[x - 1] << endl; 
+        cout << ans[x - 1] << endl;
     }
 }
 

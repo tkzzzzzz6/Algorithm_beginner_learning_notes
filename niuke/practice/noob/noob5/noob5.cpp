@@ -8,12 +8,12 @@
 //    ios::sync_with_stdio(false), cin.tie(0);
 //
 //    int a;
-//    ll b; 
+//    ll b;
 //    double c; char d;
 //    string e;
-//    
+//
 //    cin >> a >> b >> c >> d >> e;
-//    cout << a << '\n' << b << '\n' << fixed << 
+//    cout << a << '\n' << b << '\n' << fixed <<
 //       setprecision(1) <<  c << '\n' << d << '\n' << e << '\n';
 //    cout.flush();
 //

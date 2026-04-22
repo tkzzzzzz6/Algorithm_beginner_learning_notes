@@ -15,7 +15,7 @@ class Solution:
                     break
 
         ans = 0
-        for i in range(n-1):    
+        for i in range(n-1):
             need_zeros = n - 1 - i
             for j in range(i,n):
                 if tail_zeros[j] >= need_zeros:
@@ -24,5 +24,5 @@ class Solution:
                     break
             else:
                 return -1
-        return ans        
+        return ans
 

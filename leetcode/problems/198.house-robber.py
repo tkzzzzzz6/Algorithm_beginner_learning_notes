@@ -16,7 +16,7 @@ class Solution:
         f0 ,f1 = 0,0
         for x in nums:
             f0,f1 = f1,max(f1,f0+x)
-        
+
         return f1
 # @lc code=end
 

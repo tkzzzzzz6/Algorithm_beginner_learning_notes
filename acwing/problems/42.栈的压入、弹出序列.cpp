@@ -1,4 +1,5 @@
 /*
+#include <vector>
 * @acwing app=acwing.cn id=40 lang=C++
 *
 * 42. 栈的压入、弹出序列

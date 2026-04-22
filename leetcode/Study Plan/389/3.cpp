@@ -32,6 +32,6 @@ int main()
     Solution sol;
     string s = "abcd";
     string t = "abcde";
-    cout << sol.findTheDifference(s, t) << endl; 
+    cout << sol.findTheDifference(s, t) << endl;
     return 0;
 }

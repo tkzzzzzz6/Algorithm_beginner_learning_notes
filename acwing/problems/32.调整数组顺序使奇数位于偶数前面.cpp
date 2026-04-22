@@ -1,4 +1,5 @@
 /*
+#include <vector>
 * @acwing app=acwing.cn id=30 lang=C++
 *
 * 32. 调整数组顺序使奇数位于偶数前面

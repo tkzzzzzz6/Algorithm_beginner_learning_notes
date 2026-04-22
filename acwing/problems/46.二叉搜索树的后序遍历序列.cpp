@@ -1,4 +1,5 @@
 /*
+#include <vector>
 * @acwing app=acwing.cn id=44 lang=C++
 *
 * 46. 二叉搜索树的后序遍历序列

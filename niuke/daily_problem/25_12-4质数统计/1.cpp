@@ -9,8 +9,8 @@ using namespace std;
 typedef long long ll;
 
 const ll N = 10000006;
-int primes[N],j,s[N+1];  
-bool isPrime[N+1];        
+int primes[N],j,s[N+1];
+bool isPrime[N+1];
 
 void eulerSieve()
 {
@@ -21,7 +21,7 @@ void eulerSieve()
             primes[++j] = i;
             s[i]++;
         }
-        for(ll q = 1;q<=j && primes[q] * i <= N;++q) 
+        for(ll q = 1;q<=j && primes[q] * i <= N;++q)
         {
             isPrime[primes[q]*i] = 1;
             if(!(i%primes[q]))
@@ -47,15 +47,15 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     eulerSieve();  // 调用筛法初始化
-    
+
     int t = 1;
     cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

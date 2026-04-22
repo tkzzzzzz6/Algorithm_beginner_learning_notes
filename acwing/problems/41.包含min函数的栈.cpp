@@ -11,9 +11,9 @@ public:
     /** initialize your data structure here. */
     stack<int> st,stmin;
     MinStack() {
-        
+
     }
-    
+
     void push(int x) {
         st.push(x);
         if(stmin.empty()){
@@ -22,17 +22,17 @@ public:
             stmin.push(min(x,stmin.top()));
         }
     }
-    
+
     void pop() {
         if(st.empty())return;
         st.pop();
         stmin.pop();
     }
-    
+
     int top() {
         return st.empty() ? -1 : st.top();
     }
-    
+
     int getMin() {
         return stmin.empty() ? -1 : stmin.top();
     }

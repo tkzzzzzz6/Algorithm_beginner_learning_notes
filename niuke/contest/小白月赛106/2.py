@@ -6,10 +6,10 @@ def solve(n):
     if n == 3:
         return [
             [1, 2, 3],
-            [3, 4, 5], 
+            [3, 4, 5],
             [1, 5, 6]
         ]
-    
+
     # For other n, return None since we don't have a solution
     return None
 

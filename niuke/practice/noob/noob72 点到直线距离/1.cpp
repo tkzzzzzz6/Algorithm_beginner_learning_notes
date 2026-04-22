@@ -23,13 +23,13 @@ double getDistance(point P, line L) {
     // 这个方法适用于所有情况，包括垂直线和水平线
     double dx = L.point_B.x - L.point_A.x;
     double dy = L.point_B.y - L.point_A.y;
-    
+
     // 计算叉积的绝对值: |(B-A) × (A-P)|
     double crossProduct = fabs(dx * (L.point_A.y - P.y) - (L.point_A.x - P.x) * dy);
-    
+
     // 计算线段长度: |B-A|
     double lineLength = sqrt(dx * dx + dy * dy);
-    
+
     // 距离 = 叉积 / 线段长度
     double distance = crossProduct / lineLength;
     return distance;

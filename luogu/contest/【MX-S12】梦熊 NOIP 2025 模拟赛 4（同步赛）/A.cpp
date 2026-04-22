@@ -54,14 +54,14 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     int t = 1;
     cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }
 
@@ -151,7 +151,7 @@ int main() {
 
     for (int col = 1; col <= n; ++col) {
         if (cnt[col] == 0) continue;
-        
+
         // 构建 S 的差分：
         // 颜色在 [L[col], R[col]-1] 这一段“间隙”内是活跃的
         // 所以在 L[col] 处异或 w，在 R[col] 处再次异或 w（消除）
@@ -177,19 +177,19 @@ int main() {
     for (int i = 1; i <= n; ++i) {
         // 1. 计算当前位置的结构哈希 S
         curr_S ^= diff_S[i];
-        
+
         // 2. 计算内容前缀和 C
         curr_C += w[c[i]];
-        
+
         // 3. 计算完结前缀和 E
         curr_E += point_E[i];
-        
+
         // 4. 计算校验哈希 K = C - E
         ull curr_K = curr_C - curr_E;
 
         // 记录状态
         states.push_back({curr_S, curr_K, i});
-        
+
         // 记录权值 v 的前缀和
         sum_v[i] = sum_v[i-1] + v[i];
     }

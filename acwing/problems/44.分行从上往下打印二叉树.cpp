@@ -1,4 +1,5 @@
 /*
+#include <vector>
 * @acwing app=acwing.cn id=42 lang=C++
 *
 * 44. 分行从上往下打印二叉树

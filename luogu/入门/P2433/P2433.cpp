@@ -48,7 +48,7 @@ int main() {
         double PI = 3.141593;
         double volume = 4.0/3*PI*(1000+64);
         double prism;
-        prism = pow(volume,1.0/3); 
+        prism = pow(volume,1.0/3);
         printf("%.0lf\n",prism);
     } else if (T == 14) {
         double a = -1,b=100,c=-2400;

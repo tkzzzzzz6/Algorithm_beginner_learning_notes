@@ -18,7 +18,7 @@ def solve():
         if counts[color] > limit:
             ok = False
             break
-    
+
     print("YES" if ok else "NO")
 if __name__ == "__main__":
     # sys.setrecursionlimit(10**7)

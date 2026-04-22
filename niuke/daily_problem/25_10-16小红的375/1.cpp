@@ -19,7 +19,7 @@ int main() {
 
 	for (char c : str)digits[c - '0']++;
 
-	//judge if str can be div by 
+	//judge if str can be div by
 	int sum = 0;
 	for (char c : str)sum += c - '0';
 	if (sum % 3 != 0) {

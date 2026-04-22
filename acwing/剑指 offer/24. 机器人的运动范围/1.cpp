@@ -1,4 +1,5 @@
 /*
+#include <vector>
  * @Author: tkzzzzzz6
  * @Date: 2026-04-17 18:08:33
  * @LastEditors: tkzzzzzz6
@@ -24,7 +25,7 @@ public:
         return getSingleSum(p.first) + getSingleSum(p.second);
     }
 
-    
+
     int movingCount(int threshold, int rows, int cols)
     {
         if(!rows || !cols)return 0;

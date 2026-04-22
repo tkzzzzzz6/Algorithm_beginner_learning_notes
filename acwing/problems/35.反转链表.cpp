@@ -25,7 +25,7 @@ public:
     ListNode* reverseList(ListNode* head) {
         if(!head || !head->next)return head;
         auto a = head,b = head->next;
-        
+
         while(b){
             auto t = b->next;
             b->next = a;

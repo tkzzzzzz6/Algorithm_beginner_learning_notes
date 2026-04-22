@@ -37,14 +37,14 @@ def precompute_factorials():
 
 def solve():
     global n,bit
-    
+
     precompute_factorials()
 
     first_line = input().strip()
 
     if not first_line:
         return
-    
+
     n_str,q_str = first_line.split()
     n,q = int(n_str),int(q_str)
 
@@ -77,7 +77,7 @@ def solve():
             bit = [0]*(n+1)
             for i in range(1,n+1):
                 update(i,1)
-            
+
             rank = 0
             for i in range(n):
                 rank += query(p[i]-1)*fact[n-1-i]

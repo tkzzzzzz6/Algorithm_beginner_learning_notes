@@ -35,19 +35,19 @@ class Solution:
             if is_nonzero:
                 # 1. 更新 P_count
                 P_count[i + 1] += 1
-                
-                # 2. 更新 P_sum 
-                P_sum[i + 1] = (P_sum[i + 1] + digit_val) % M 
+
+                # 2. 更新 P_sum
+                P_sum[i + 1] = (P_sum[i + 1] + digit_val) % M
                 # P_sum[i+1] 继承了 P_sum[i]，故只需加上 digit_val
-                
+
                 # 3. 更新 P_x (左移一位，加上当前数字)
                 # 这里的 P_x[i+1] 在上一步被设置为 P_x[i]
                 P_x[i + 1] = (P_x[i + 1] * 10 + digit_val) % M
 
         ans = []
         for l, r in queries:
-            
-            idx_s = l 
+
+            idx_s = l
             idx_e = r + 1
 
             count_nozero = P_count[idx_e] - P_count[idx_s]
@@ -65,7 +65,7 @@ class Solution:
 
             # 2. 计算 x (非零数字连接形成的大整数)
             shift = count_nozero
-            
+
             # P_x[l] * 10^(shift) mod M
             shift_term = (P_x[idx_s] * pow10[shift]) % M
 

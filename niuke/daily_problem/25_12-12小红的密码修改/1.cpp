@@ -1,3 +1,4 @@
+#include <vector>
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -57,19 +58,19 @@ il void solve(){
         ans += i[j] * 65;
     }
     cout << ans << endl;
-    
+
 }
 
 int main()
 {
     fastio;
-    
+
     int t = 1;
     cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

@@ -1,3 +1,4 @@
+#include <vector>
 #include<vector>
 class Solution {
    public:

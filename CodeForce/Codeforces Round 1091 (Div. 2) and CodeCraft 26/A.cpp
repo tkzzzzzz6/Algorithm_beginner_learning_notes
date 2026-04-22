@@ -31,19 +31,19 @@ il void solve(){
     }else{
         cout << "NO" << endl;
     }
-    
+
 }
 
 int main()
 {
     fastio;
-    
+
     int t = 1;
     cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

@@ -27,7 +27,7 @@ int main() {
             printf("%3d", a[i][j]);
         cout << endl;
     }
-    
+
     cout << endl;
     return 0;
 }

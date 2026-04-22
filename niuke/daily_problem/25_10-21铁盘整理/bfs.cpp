@@ -22,7 +22,7 @@ int minFlips(vector<int> arr) {
     while (!q.empty()) {
         auto [curr, steps] = q.front();
         q.pop();
-        
+
         for (int k = 2; k <= n; ++k) {
             vector<int> next = curr;
             reverse(next.begin(), next.begin() + k);

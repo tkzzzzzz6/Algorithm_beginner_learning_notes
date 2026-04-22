@@ -1,4 +1,5 @@
 // 树状数组类，用于高效处理前缀和查询和单点更新
+#include <vector>
 class FenwickTree
 {
 private:
@@ -45,7 +46,7 @@ public:
         vector<int> pos2(n);
         // reversedIndexMapping[i]表示nums2中第i个位置对应的nums1中的位置
         vector<int> reversedIndexMapping(n);
-        
+
         // 建立nums2中数字到位置的映射
         for (int i = 0; i < n; i++)
         {
@@ -59,7 +60,7 @@ public:
 
         FenwickTree tree(n);
         long long res = 0;
-        
+
         // 遍历每个数字，计算以该数字为中间元素的好三元组数量
         for (int value = 0; value < n; value++)
         {

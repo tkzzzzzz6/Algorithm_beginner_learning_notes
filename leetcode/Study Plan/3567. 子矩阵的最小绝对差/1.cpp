@@ -1,3 +1,4 @@
+#include <vector>
 #include <climits>
 class Solution {
 public:

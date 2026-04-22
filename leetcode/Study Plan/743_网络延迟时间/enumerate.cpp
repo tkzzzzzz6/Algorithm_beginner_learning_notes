@@ -30,7 +30,7 @@ public:
         dist[k - 1] = 0;  // 起点到自身的距离为0
         // used数组标记节点是否已确定最短路径
         vector<int> used(n);
-        
+
         // Dijkstra算法主循环
         for (int i = 0; i < n; ++i)
         {
@@ -44,7 +44,7 @@ public:
                 }
             }
             used[x] = true;  // 标记节点x已使用
-            
+
             // 更新通过节点x可以到达的其他节点的距离
             for (int y = 0; y < n; ++y)
             {

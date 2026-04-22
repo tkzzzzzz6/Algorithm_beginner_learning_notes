@@ -1,4 +1,5 @@
 /*
+#include <vector>
 * @acwing app=acwing.cn id=28 lang=C++
 *
 * 30. 正则表达式匹配
@@ -16,7 +17,7 @@ public:
         s = _s,p = _p;
         n = s.size();
         m = p.size();
-        
+
         f = vector<vector<int>>(n+1,vector<int>(m+1,-1));
         return dp(0,0);
     }

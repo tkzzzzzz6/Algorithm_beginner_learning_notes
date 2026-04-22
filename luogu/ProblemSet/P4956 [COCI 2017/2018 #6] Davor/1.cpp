@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     int n,x,k;
     cin >> n;
-  
+
     for(x = 100;x>=1;x--)
     {
         int remainder = n - 364*n;

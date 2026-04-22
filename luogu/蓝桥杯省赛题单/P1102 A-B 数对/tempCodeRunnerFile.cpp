@@ -19,7 +19,7 @@ int main(){
 			res += pair.second * cnt_map[pair.first + c];
         }
     }
-    
+
     cout << res << endl;
     return 0;
 }

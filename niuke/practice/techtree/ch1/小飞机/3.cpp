@@ -1,3 +1,4 @@
+#include <vector>
 #include <bits/stdc++.h>
 #include <iomanip>
 using namespace std;

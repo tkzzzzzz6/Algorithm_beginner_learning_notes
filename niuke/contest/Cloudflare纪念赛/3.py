@@ -22,7 +22,7 @@ def solve():
             if cnt == -1:
                 res += 1
                 cnt = 1
-    
+
     if(cnt > 0):
         res += cnt // 2
 

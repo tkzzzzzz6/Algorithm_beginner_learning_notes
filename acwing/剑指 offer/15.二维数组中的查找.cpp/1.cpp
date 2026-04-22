@@ -1,4 +1,5 @@
 /*
+#include <vector>
 * @acwing app=acwing.cn id=16 lang=C++
 *
 * 15. 二维数组中的查找

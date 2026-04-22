@@ -21,7 +21,7 @@ def solve():
 
     best = 0
     for v,f in zip(a,floors):
-        cand = v + (S-f)*y    
+        cand = v + (S-f)*y
         if cand > best:
             best = cand
 
@@ -33,5 +33,5 @@ if __name__ == "__main__":
     out = []
     for _ in range(t):
         solve()
-    
+
     sys.stdout.write("\n".join(out))

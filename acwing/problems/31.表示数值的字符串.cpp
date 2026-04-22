@@ -12,13 +12,13 @@ public:
         // 去除前后空格
         int i = 0;
         // 删除 s 前面的空格
-        while(i < s.size() && s[i] == ' ')++i; 
+        while(i < s.size() && s[i] == ' ')++i;
         s = s.substr(i);
         // 删除 s 后面的空格
         while(s.size() && s.back() == ' ')s.pop_back();
 
         if(s.empty())return false;
-        
+
         bool numFlag = false;
         bool dotFlag = false;
         bool eFlag = false;

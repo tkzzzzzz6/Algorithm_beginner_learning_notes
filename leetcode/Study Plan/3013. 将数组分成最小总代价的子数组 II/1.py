@@ -19,7 +19,7 @@ class Solution:
             nonlocal sum_left
             sum_left -= x
             R.add(x)
-        
+
         def R2L()->None:
             x = R.pop(0)
             nonlocal sum_left
@@ -45,13 +45,13 @@ class Solution:
                 L.add(in_val)
             else:
                 R.add(in_val)
-        
+
             # 维护大小
             if len(L) == k - 1:
                 R2L()
             elif len(L) == k + 1:
                 L2R()
-            
+
             ans = min(ans,sum_left)
 
-        return ans 
+        return ans

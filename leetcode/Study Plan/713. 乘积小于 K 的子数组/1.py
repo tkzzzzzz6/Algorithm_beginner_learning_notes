@@ -8,7 +8,7 @@ class Solution:
         left = 0
         prod = 1
 
-       
+
 
         for right,x in enumerate(nums):
             prod*= x

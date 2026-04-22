@@ -4,7 +4,7 @@ import heapq, bisect
 input = lambda: sys.stdin.readline().rstrip()
 
 def solve():
-    
+
     n = int(input())
     s = str(input())
 
@@ -13,7 +13,7 @@ def solve():
         direction[c] = direction.get(c,0) + 1
 
     ans = 0
-    
+
     cntR = direction.get("R",0)
     cntL = direction.get("L",0)
     cntU = direction.get("U",0)

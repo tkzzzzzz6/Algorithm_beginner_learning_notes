@@ -12,7 +12,7 @@ double calculate(int n){
     for(int i = 1; i <= n; i++){
         sum1 *= n1;
         sum2 *= n2;
-    }   
+    }
     return (sum1 - sum2)/sqrt(5);
 }
 

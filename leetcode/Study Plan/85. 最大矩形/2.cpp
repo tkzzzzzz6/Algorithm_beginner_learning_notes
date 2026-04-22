@@ -1,4 +1,5 @@
 // 单调栈
+#include <vector>
 #include<vector>
 
 using namespace std;

@@ -37,7 +37,7 @@ public:
     class MyQueue{
         public:
             deque<int> q;
-            
+
             void pop(int x){
                 if(!q.empty() && q.front() == x)q.pop_front(); //队首是当前窗口的最大值,与 front 对比不能和 back 对比
             }

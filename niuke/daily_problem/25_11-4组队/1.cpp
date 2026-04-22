@@ -16,14 +16,14 @@ int main()
     while(T--){
         int n, k, i, a[MAXN], l, r, longest = 0;
         cin >> n >> k;  // n: 人数, k: 能力值差的最大值
-        
+
         // 读入每个人的能力值
         for (int i = 0; i < n;++i)
             cin >> a[i];
-        
+
         // 对能力值进行排序，方便使用双指针
         sort(a, a + n);
-        
+
         // 双指针/滑动窗口：找满足条件的最长区间
         // l 是左指针，r 是右指针
         for (l = 0, r = 0; l < n; l++){
@@ -32,12 +32,12 @@ int main()
             // 因为数组已排序，所以 a[r] - a[l] 就是区间的最大差值
             while(r < n && a[r] - a[l] <= k)
                 r++;
-            
+
             // 更新最长区间的长度
             // r - l 是以 l 为左端点时，满足条件的最长区间长度
             longest = max(longest, r - l);
         }
-        
+
         // 输出最长区间的长度，即最多可以组队的人数
         cout << longest << '\n';
     }
@@ -61,14 +61,14 @@ int main()
     while(T--){
         int n, k, i, a[MAXN], l, r, longest = 0;
         cin >> n >> k;  // n: 人数, k: 能力值差的最大值
-        
+
         // 读入每个人的能力值
         for (int i = 0; i < n;++i)
             cin >> a[i];
-        
+
         // 对能力值进行排序，方便使用双指针
         sort(a, a + n);
-        
+
         // 双指针/滑动窗口：找满足条件的最长区间
         // l 是左指针，r 是右指针
         for (l = 0, r = 0; l < n; l++){
@@ -77,12 +77,12 @@ int main()
             // 因为数组已排序，所以 a[r] - a[l] 就是区间的最大差值
             while(r < n && a[r] - a[l] <= k)
                 r++;
-            
+
             // 更新最长区间的长度
             // r - l 是以 l 为左端点时，满足条件的最长区间长度
             longest = max(longest, r - l);
         }
-        
+
         // 输出最长区间的长度，即最多可以组队的人数
         cout << longest << '\n';
     }

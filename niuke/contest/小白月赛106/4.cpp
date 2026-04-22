@@ -19,12 +19,12 @@ int vis[MAXN][MAXK];
 int bfs() {
     memset(vis, 0, sizeof(vis));
     queue<State> q;
-    
+
     // 检查输入范围
     if(a < 1 || a > n || b < 1 || b > n || K < 0 || K >= MAXK) {
         return -1;
     }
-    
+
     q.push(State(a, K, 0));
     vis[a][K] = 1;
 
@@ -68,15 +68,15 @@ int bfs() {
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
+
     cin >> n >> K >> a >> b >> x >> y;
-    
+
     // 检查输入范围
     if(n <= 0 || n >= MAXN) {
         cout << -1 << endl;
         return 0;
     }
-    
+
     cout << bfs() << endl;
     return 0;
 }

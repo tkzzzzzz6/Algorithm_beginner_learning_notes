@@ -11,4 +11,4 @@ for i in range(1, min(n,m)+1):
 cnt_rectangle = sum_all - cnt_square
 
 # 输出结果，使用print()函数输出正方形和长方形的数量
-print(cnt_square, cnt_rectangle)        
+print(cnt_square, cnt_rectangle)

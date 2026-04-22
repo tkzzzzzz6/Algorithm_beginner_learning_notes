@@ -33,7 +33,7 @@ def solve():
     for name in offer_list:
         printSentence2(name)
 
-    
+
 
 if __name__ == "__main__":
     sys.setrecursionlimit(10**7)

@@ -26,6 +26,6 @@ int main()
             s.insert(a[i]);
         }
         cout << res << endl;
-    }    
+    }
     return 0;
 }

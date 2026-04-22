@@ -1,3 +1,4 @@
+#include <vector>
 #include <bits/stdc++.h>
 using namespace std;
 long long maxEdges(int n, vector<pair<int, int>> edges)

@@ -14,7 +14,7 @@ class Solution:
 
         ans = 0
         # for i in range(1,n):
-        #     capacity = min(pre_max[i],suf_max[i]) 
+        #     capacity = min(pre_max[i],suf_max[i])
         #     if capacity - height[i] > 0:
         #         ans += capacity - height[i]
 

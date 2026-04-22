@@ -22,7 +22,7 @@ bool isLegal(int row, int col) {
 void searchChilds(int row) {
 	if (row == N + 1) {
 		++num;
-		for (int i = 1; i <= N; ++i) 
+		for (int i = 1; i <= N; ++i)
 			cout << result[i] << endl;
 		cout << endl;
 		return;
@@ -41,7 +41,7 @@ void searchChilds(int row) {
 
 int main() {
 	cin >> N;
-	
+
 	for (int i = 1; i <= N; ++i) {
 		for (int j = 0; j < N; ++j) {
 			result[i][j] = '.';

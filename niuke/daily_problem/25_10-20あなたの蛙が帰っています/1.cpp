@@ -4,7 +4,7 @@ typedef long long ll;
 
 const ll MOD = 998244353;  // 模数
 
-// 快速幂算法 
+// 快速幂算法
 // 功能：计算 a^b % mod
 // 原理：利用二进制拆分，将指数b表示为二进制形式
 // 例如：3^13 = 3^(1101?) = 3^8 × 3^4 × 3^1
@@ -29,7 +29,7 @@ ll power(ll a, ll b, ll mod) {
     return result;
 }
 
-// 模逆元 
+// 模逆元
 // 功能：计算 a 在模 mod 下的乘法逆元
 // 定义：若 a × x ≡ 1 (mod p)，则称x为a的逆元，记作a^(-1)
 // 原理：根据费马小定理，当p为质数时，a^(p-1) ≡ 1 (mod p)
@@ -44,7 +44,7 @@ int main() {
     ios::sync_with_stdio(false), cin.tie(0);
 
     int T;
-    cin >> T; 
+    cin >> T;
 
     // 卡特兰数C(n)表示:n个元素的合法出栈序列数
     // 卡特兰数：C(n) = (2n)! / ((n+1)! × n!)
@@ -55,7 +55,7 @@ int main() {
     catalan[0] = 1;  // C(0) = 1
     catalan[1] = 1;  // C(1) = 1
 
-    // 递推计算卡特兰数 
+    // 递推计算卡特兰数
     // 递推公式：C(n) = C(n-1) × 2(2n-1) / (n+1)
     // 推导过程：
     // C(n) = (2n)! / ((n+1)! × n!)
@@ -79,7 +79,7 @@ int main() {
         catalan[i] = catalan[i] * inv(i + 1, MOD) % MOD;
     }
 
-    // 处理每个测试用例 
+    // 处理每个测试用例
     for (int caseNum = 1; caseNum <= T; caseNum++) {
         int n;
         cin >> n;

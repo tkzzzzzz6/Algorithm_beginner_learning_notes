@@ -31,9 +31,9 @@ int main() {
     Solution solution;
     std::vector<int> nums = {2, 1, 8};
     int k = 10;
-    
+
     int result = solution.minimumSubarrayLength(nums, k);
     std::cout << "Result: " << result << std::endl;
-    
+
     return 0;
 }

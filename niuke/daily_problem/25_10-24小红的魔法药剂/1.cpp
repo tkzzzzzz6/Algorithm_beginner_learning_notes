@@ -1,4 +1,5 @@
 // brute solution,有问题
+#include <vector>
 #include <bits/stdc++.h>
 using namespace std;
 
