@@ -17,7 +17,8 @@ import heapq, bisect
 input = lambda: sys.stdin.readline().rstrip()
 
 def solve():
-    nums = list(map(int,input().split()))
+    # nums = list(map(int,input().split()))
+    nums = [int(x) for x in input().split()]
     print(nums)
 
 if __name__ == "__main__":
