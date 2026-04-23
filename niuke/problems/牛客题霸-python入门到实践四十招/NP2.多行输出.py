@@ -4,10 +4,8 @@
 # [NP2] 多行输出
 
 # @nc code=start
-
-import sys
-
-str1 = ":"
+print("Hello World!")
+print("Hello Nowcoder!")
 
 
 # @nc code=end
