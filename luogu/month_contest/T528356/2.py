@@ -12,4 +12,3 @@ for i in range(n):
 
 if cnt == 0:
     print("No solution")
-

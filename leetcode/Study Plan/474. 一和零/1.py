@@ -13,4 +13,3 @@ class Solution:
             return res
 
         return dfs(len(strs)-1,m,n)
-

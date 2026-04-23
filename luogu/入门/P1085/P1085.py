@@ -13,4 +13,3 @@ if max_value > 8:
     print(week.index(max_value)+1)
 else:
     print(0)
-

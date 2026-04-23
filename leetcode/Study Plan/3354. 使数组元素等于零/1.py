@@ -27,4 +27,3 @@ class Solution:
                     nonZeros -= 1
             curr += direction
         return nonZeros == 0
-

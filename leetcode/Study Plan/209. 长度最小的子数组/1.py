@@ -19,4 +19,3 @@ class Solution:
             if(s-target >= 0):
                 ans = min(ans,right-left +1)
         return ans if ans <= n else 0
-

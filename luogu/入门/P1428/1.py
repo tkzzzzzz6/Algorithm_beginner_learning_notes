@@ -8,4 +8,3 @@ for i in range(n):
         if fish_size[j] < fish_size[i]:
             cnt += 1
     print(cnt,end=' ')
-

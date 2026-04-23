@@ -10,4 +10,3 @@ else:
     for i in range(n):
         sum += a[i]
     print(sum)
-

@@ -22,4 +22,3 @@ else:
         print(f"{a}-{b}-{c}-X")
     else:
         print(f"{a}-{b}-{c}-{s}")
-

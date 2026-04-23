@@ -50,4 +50,3 @@ int main() {
     return 0;
 }
 // 64 位输出请用 printf("%lld")
-

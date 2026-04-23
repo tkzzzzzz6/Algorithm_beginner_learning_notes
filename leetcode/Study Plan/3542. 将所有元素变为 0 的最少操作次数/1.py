@@ -12,4 +12,3 @@ class Solution:
 
         return ans + len(st) - (st[0] == 0) # 0 is not needed to be operated
 
-

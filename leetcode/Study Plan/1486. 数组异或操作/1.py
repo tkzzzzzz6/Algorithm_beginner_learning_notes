@@ -5,4 +5,3 @@ class Solution:
             start += 2
             ans ^= start
         return ans
-

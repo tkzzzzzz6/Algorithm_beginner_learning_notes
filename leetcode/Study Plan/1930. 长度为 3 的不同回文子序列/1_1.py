@@ -20,4 +20,3 @@ class Solution:
                 charset.add(s[k])
             res += len(charset)
         return res
-
