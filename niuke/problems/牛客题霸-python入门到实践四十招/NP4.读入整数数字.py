@@ -10,7 +10,22 @@ LastEditTime: 2026-04-22 22:02:46
 # [NP4] 读入整数数字
 
 # @nc code=start
+import sys, math
+from collections import deque, defaultdict, Counter
+import heapq, bisect
+input = lambda: sys.stdin.readline().rstrip()
 
+def solve():
+    num = int(input())
+    print(num)
+    print(type(num))
+
+if __name__ == "__main__":
+    sys.setrecursionlimit(10**7)
+    t = 1
+    # t = int(input())
+    for _ in range(t):
+        solve()
 
 
 # @nc code=end
