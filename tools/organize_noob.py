@@ -5,7 +5,7 @@ import re
 def organize_files():
     # Define the target directory relative to the project root
     base_dir = os.path.join("niuke", "practice", "noob")
-    
+
     # Check if directory exists
     if not os.path.exists(base_dir):
         print(f"Error: Directory {base_dir} does not exist.")
@@ -24,7 +24,7 @@ def organize_files():
     for i in range(1, 131):
         folder_name = f"noob{i}"
         folder_path = os.path.join(base_dir, folder_name)
-        
+
         # Create the folder if it doesn't exist
         if not os.path.exists(folder_path):
             try:
@@ -33,17 +33,17 @@ def organize_files():
             except Exception as e:
                 print(f"Error creating directory {folder_name}: {e}")
                 continue
-        
+
         # Define regex pattern to match files for this number
         # Pattern: starts with "noob" + i + (end of string OR non-digit char)
         # This ensures "noob1" matches "noob1.cpp" but not "noob10.cpp"
         pattern = re.compile(f"^noob{i}(\\D.*)?$")
-        
+
         for filename in files:
             if pattern.match(filename):
                 src_path = os.path.join(base_dir, filename)
                 dst_path = os.path.join(folder_path, filename)
-                
+
                 try:
                     shutil.move(src_path, dst_path)
                     print(f"Moved {filename} -> {folder_name}/")

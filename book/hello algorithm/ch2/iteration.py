@@ -19,7 +19,7 @@ def while_loopii(n):
     while i < n:
         res += i;
         i = 2*i + 2
-    
+
     return res
 
 def nested_for_loop(n)->str:

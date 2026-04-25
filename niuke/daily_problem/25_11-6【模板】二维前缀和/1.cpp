@@ -23,7 +23,7 @@ int main() {
         {
             scanf("%d", &tmp);
             mat[i][j] = mat[i-1][j]+mat[i][j-1]-mat[i-1][j-1]+tmp;
-            
+
         }
     }
     int x1, y1, x2, y2;

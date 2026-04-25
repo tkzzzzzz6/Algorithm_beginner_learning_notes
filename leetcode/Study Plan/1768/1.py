@@ -7,6 +7,6 @@ class Solution:
             if i < len(word2):
                 str += word2[i]
         return str
-    
+
 s = Solution()
 print(s.mergeAlternately("abc", "pqr"))

@@ -37,7 +37,7 @@ il void solve(){
 int main()
 {
     fastio;
-    
+
     cin >> n >> m;
     cin >> s;
     while(m--)
@@ -45,6 +45,6 @@ int main()
         solve();
     }
     cout << s << "\n";
-    
+
     return 0;
 }

@@ -1,3 +1,4 @@
+#include <vector>
 // 包含C++标准库和atcoder的并查集库
 #include <bits/stdc++.h>
 #include <atcoder/dsu>

@@ -17,5 +17,5 @@ else:
     print("Not triangle")
 
 
-    
+
 

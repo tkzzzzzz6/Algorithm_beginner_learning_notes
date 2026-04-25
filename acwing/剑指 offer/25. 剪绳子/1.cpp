@@ -21,7 +21,7 @@ public:
 
         if(length % 3 == 1)length-=4,res = 4;
         else if(length % 3 == 2)length-=2,res =2;
-        
+
         while(length)res*=3,length-=3;
         return res;
     }

@@ -13,7 +13,7 @@ input = lambda: sys.stdin.readline().rstrip()
 def solve():
     friends = input().split()
     remove_friends_name = input()
-    
+
     if remove_friends_name in friends:
         friends.remove(remove_friends_name)
     print(friends)

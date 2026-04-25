@@ -12,5 +12,5 @@ class Solution:
             delete -= 1 if c == 'a' else -1
             if delete < ans:
                 ans = delete
-            
+
         return ans

@@ -1,3 +1,4 @@
+#include <vector>
 #include <bits/c++.h>
 
 // 滑动窗口

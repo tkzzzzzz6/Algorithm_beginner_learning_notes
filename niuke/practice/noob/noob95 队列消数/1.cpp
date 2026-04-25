@@ -27,6 +27,6 @@ public:
             ans += min(tickets[k] - 1,tickets[i]);
         }
     }
-    return ans;  
+    return ans;
   }
 };

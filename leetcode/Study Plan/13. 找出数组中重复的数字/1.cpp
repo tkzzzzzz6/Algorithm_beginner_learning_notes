@@ -1,3 +1,4 @@
+#include <vector>
 /*
  * @Author: tkzzzzzz6
  * @Date: 2026-04-13 10:20:31
@@ -7,6 +8,6 @@
 class Solution {
 public:
     int duplicateInArray(vector<int>& nums) {
-        
+
     }
 };

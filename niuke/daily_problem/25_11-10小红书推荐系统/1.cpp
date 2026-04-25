@@ -1,3 +1,4 @@
+#include <vector>
 // 哈希表加排序,输出频次从高到低,频次相同的按照字典序升序进行排序
 #include<bits/stdc++.h>
 using namespace std;
@@ -57,7 +58,7 @@ int main()
     {
         cout << keyword.getWord() << '\n';
     }
-    
+
     return 0;
 }
 

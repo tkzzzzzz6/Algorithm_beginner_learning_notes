@@ -53,7 +53,7 @@ public:
                 eFlag = true;
                 numFlag = false; //e 后面必须有数字,这里需要重置 numFlag
             }else if((s[i] == '+' || s[i] == '-') && (i == 0 || s[i-1] == 'e' || s[i-1] == 'E')){
-                
+
             }
             else{
                 return false;

@@ -14,7 +14,7 @@ class Solution:
         prehead = ListNode(-1)
 
         # prev指针用于构建新的链表
-        prev = prehead 
+        prev = prehead
 
         # 当两个链表都不为空时，进行合并操作
         while l1 and l2:
@@ -23,12 +23,12 @@ class Solution:
                 # 如果l1的值小于或等于l2的值，将l1的节点连接到prev
                 prev.next = l1
                 # 移动l1到下一个节点
-                l1 = l1.next 
+                l1 = l1.next
             else:
                 # 如果l2的值小于l1的值，将l2的节点连接到prev
                 prev.next = l2
                 # 移动l2到下一个节点
-                l2 = l2.next 
+                l2 = l2.next
             # 移动prev到下一个节点
             prev = prev.next
 

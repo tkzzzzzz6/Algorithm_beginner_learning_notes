@@ -19,7 +19,7 @@ def solve():
             out.append("Yes" if s in traps else "No")
         print("\n".join(out))
         return
-    
+
     # 取出所有陷阱出现的时间
     t_list = [t for t,_ in traps]
 
@@ -48,7 +48,7 @@ def solve():
         l = alpha
         if L < l:
             l = r = 0
-        else:       
+        else:
             if(L&1) == (alpha & 1):
                 r = L
             else:
@@ -70,7 +70,7 @@ def solve():
                 out.append("Yes")
             else:
                 out.append("No")
-        
+
     else:
         L_total = s_fixed_min
         R_total = s_fixed_max

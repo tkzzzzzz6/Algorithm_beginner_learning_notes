@@ -17,7 +17,7 @@ using namespace std;
 
 void solve() {
     int n,m;
-    cin >> n >> m; 
+    cin >> n >> m;
     long long l = 0,r = 2e5;
     long long r1 = 2e5;
     while(l<=r){

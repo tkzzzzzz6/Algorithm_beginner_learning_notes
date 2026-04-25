@@ -2,7 +2,7 @@
 #include <utility>
 #include <set>
 #include <algorithm>
-#define ll long long 
+#define ll long long
 using namespace std;
 
 // 使用lower_bound会先找到比自己小的第一个元素的
@@ -43,7 +43,7 @@ int main() {
             vp.insert(temp);
             res = 2+b-a;
         }
-        else   
+        else
         {
             auto it = vp.lower_bound(temp);
             if (it == vp.begin())
@@ -63,7 +63,7 @@ int main() {
                     res = max(b-a+2,res);
                 }
             }
-            else 
+            else
             {
                 auto it1 = it;
                 it--;

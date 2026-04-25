@@ -1,3 +1,4 @@
+#include <vector>
 /*
 * @acwing app=acwing.cn id=39 lang=C++
 *
@@ -10,7 +11,7 @@ class Solution {
 public:
     vector<int> printMatrix(vector<vector<int> > matrix) {
         if(matrix.empty() || matrix[0].empty())return vector<int>();
-        
+
         vector<int> res;
         int n = matrix.size(),m = matrix[0].size();
         int dx[4] = {0,1,0,-1},dy[4] = {1,0,-1,0};

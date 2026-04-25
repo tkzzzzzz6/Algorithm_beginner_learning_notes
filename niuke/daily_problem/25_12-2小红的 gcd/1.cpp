@@ -24,13 +24,13 @@ il void solve(){
     ll b;
     cin >> str;
     cin >> b;
-    
+
     ll ans = 0;
     for(char c : str)
     {
         ans = (ans * 10 + (c - '0')) % b;
     }
-    
+
     ll res = gcd(ans, b);
     cout << res << endl;
 }
@@ -38,13 +38,13 @@ il void solve(){
 int main()
 {
     fastio
-    
+
     int t = 1;
     // cin >> t;
     while(t--)
     {
         solve();
     }
-    
+
     return 0;
 }

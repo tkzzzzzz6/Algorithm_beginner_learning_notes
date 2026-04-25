@@ -34,15 +34,15 @@ using namespace std;
 // @lc code=start
 class MyStack {
 public:
-    queue<int> q1; 
+    queue<int> q1;
     MyStack() {
-        
+
     }
-    
+
     void push(int x) {
         q1.push(x);
     }
-    
+
     int pop() {
         int n = q1.size();
         if(n < 1)return -1;
@@ -56,7 +56,7 @@ public:
         q1.pop();
         return res;
     }
-    
+
     int top() {
         int n = q1.size();
         if(n < 1)return -1;
@@ -71,7 +71,7 @@ public:
         q1.pop();
         return res;
     }
-    
+
     bool empty() {
         return q1.empty();
     }

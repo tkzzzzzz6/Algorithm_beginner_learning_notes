@@ -1,3 +1,4 @@
+#include <vector>
 // 单调栈
 #include<vector>
 

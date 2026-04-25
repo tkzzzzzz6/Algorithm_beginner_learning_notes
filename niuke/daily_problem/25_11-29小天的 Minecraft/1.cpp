@@ -19,7 +19,7 @@ void solve()
         cout << fixed << setprecision(10) << 0.0 << endl;
         return;
     }
-    
+
     double p_a = a / 16.0;
     double p_b = b / 16.0;
     double p_c = c / 16.0;
