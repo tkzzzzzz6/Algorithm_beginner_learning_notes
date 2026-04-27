@@ -1,14 +1,14 @@
 /*
  * @Author: tkzzzzzz6
- * @Date: 2026-04-26 13:58:47
+ * @Date: 2026-04-26 16:17:37
  * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-04-26 13:59:07
+ * @LastEditTime: 2026-04-26 16:17:38
  */
 /*
- * @lc app=leetcode.cn id=104 lang=cpp
+ * @lc app=leetcode.cn id=112 lang=cpp
  * @lcpr version=30204
  *
- * [104] 二叉树的最大深度
+ * [112] 路径总和
  */
 
 // @lcpr-template-start
@@ -44,25 +44,36 @@ using namespace std;
  */
 class Solution {
 public:
-  int maxDepth(TreeNode *root) {
+  bool hasPathSum(TreeNode *root, int targetSum) {
     if (!root)
-      return 0;
-    // int lhegiht = maxDepth(root->left);
-    // int rheight = maxDepth(root->right);
+      return false;
+    if (!root->left && !root->right && targetSum == root->val) {
+      return true;
+    }
 
-    // return 1 + max(lhegiht, rheight);
-    return 1 + max(maxDepth(root->left), maxDepth(root->right));
+    if (root->left)
+      if (hasPathSum(root->left, targetSum - root->val))
+        return true;
+    if (root->right)
+      if (hasPathSum(root->right, targetSum - root->val))
+        return true;
+
+    return false;
   }
 };
 // @lc code=end
 
 /*
 // @lcpr case=start
-// [3,9,20,null,null,15,7]\n
+// [5,4,8,11,null,13,4,7,2,null,null,null,1]\n22\n
 // @lcpr case=end
 
 // @lcpr case=start
-// [1,null,2]\n
+// [1,2,3]\n5\n
+// @lcpr case=end
+
+// @lcpr case=start
+// []\n0\n
 // @lcpr case=end
 
  */

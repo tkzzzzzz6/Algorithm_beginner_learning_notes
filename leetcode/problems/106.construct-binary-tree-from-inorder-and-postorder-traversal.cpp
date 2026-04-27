@@ -1,14 +1,8 @@
 /*
- * @Author: tkzzzzzz6
- * @Date: 2026-04-26 13:58:47
- * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-04-26 13:59:07
- */
-/*
- * @lc app=leetcode.cn id=104 lang=cpp
+ * @lc app=leetcode.cn id=106 lang=cpp
  * @lcpr version=30204
  *
- * [104] 二叉树的最大深度
+ * [106] 从中序与后序遍历序列构造二叉树
  */
 
 // @lcpr-template-start
@@ -44,25 +38,33 @@ using namespace std;
  */
 class Solution {
 public:
-  int maxDepth(TreeNode *root) {
-    if (!root)
-      return 0;
-    // int lhegiht = maxDepth(root->left);
-    // int rheight = maxDepth(root->right);
+  vector<int> inorder, postorder;
+  unordered_map<int, int> hash;
+  TreeNode *buildTree(vector<int> &_inorder, vector<int> &_postorder) {
+    inorder = _inorder;
+    postorder = _postorder;
+    for (int i = 0; i < inorder.size(); ++i) {
+      hash[inorder[i]] == i;
+    }
 
-    // return 1 + max(lhegiht, rheight);
-    return 1 + max(maxDepth(root->left), maxDepth(root->right));
+    auto dummy = new TreeNode(-1);
+    build(dummy, 0, inorder.size() - 1, 0, posterorder.size() - 1);
+  }
+
+  void build(TreeNode *root, int l1, int r1, int l2, int r2) {
+    int reslove = postprder[r2];
+    l1 = hash[resolve], l2 = build(root->left, )
   }
 };
 // @lc code=end
 
 /*
 // @lcpr case=start
-// [3,9,20,null,null,15,7]\n
+// [9,3,15,20,7]\n[9,15,7,20,3]\n
 // @lcpr case=end
 
 // @lcpr case=start
-// [1,null,2]\n
+// [-1]\n[-1]\n
 // @lcpr case=end
 
  */
