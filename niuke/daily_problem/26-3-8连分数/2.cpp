@@ -2,7 +2,7 @@
  * @Author: tkzzzzzz6
  * @Date: 2026-03-09 00:02:35
  * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-03-09 00:04:41
+ * @LastEditTime: 2026-04-26 22:29:23
  */
 #include <iostream>
 #include <vector>
@@ -10,39 +10,46 @@ using namespace std;
 
 using ll = long long;
 
-void murname(){
-    ll p,q,cnt1 = 0,cnt2 = 0;
+void murname() {
+    ll p, q, cnt1 = 0, cnt2 = 0;
     cin >> p >> q;
     cout << p << '/' << q << " = ";
     vector<ll> ans;
-    while(p%q){
-        ans.push_back(p/q);
+    while (p % q) {
+        ans.push_back(p / q);
         p = p % q;
-        swap(p,q);
-        cnt1++;cnt2++;
-    }ans.push_back(p/q);
-    if(cnt1 == 0){
+        swap(p, q);
+        cnt1++;
+        cnt2++;
+    }
+    ans.push_back(p / q);
+    if (cnt1 == 0) {
         cout << p / q;
         return;
-    }cnt1--;
-    for(auto x:ans){
+    }
+    cnt1--;
+    for (auto x : ans) {
         cout << x;
-        if(cnt1 >= 0)cout << "+1/";
-        if(cnt1 > 0)cout << '{';
+        if (cnt1 >= 0)
+            cout << "+1/";
+        if (cnt1 > 0)
+            cout << '{';
         cnt1--;
-    }while(cnt2-- > 1)cout << '}';
+    }
+    while (cnt2-- > 1)
+        cout << '}';
 }
 
-int main(){
+int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while(t--){
+    while (t--) {
         murname();
         cout << '\n';
     }
-    
+
     return 0;
 }
