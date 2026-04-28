@@ -1,7 +1,7 @@
 .vs
 .vscode
-.cursor
 .cache/
 *.exe
 .cph
 .DS_Store
+__pycache__/
