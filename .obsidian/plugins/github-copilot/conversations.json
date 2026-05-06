@@ -1,0 +1,29 @@
+{
+  "conversations": [
+    {
+      "id": "1757858064623",
+      "title": "obsidian://open?vault=note&fil...",
+      "messages": [
+        {
+          "id": "1757858064623",
+          "content": "obsidian://open?vault=note&file=%E5%AD%A6%E4%B9%A0%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%89%E7%BA%A7%2F%E6%95%B0%E6%8D%AE%E5%BA%93%2FPasted%20image%2020250914215315.png",
+          "role": "user",
+          "timestamp": 1757858064623
+        },
+        {
+          "id": "chatcmpl-CFhTOuGTYN8rFQq6OwdkOKYKQZhnb",
+          "content": "你发的是一个 Obsidian 深层链接。已解码的文件路径如下：\n学习/计算机三级/数据库/Pasted image 20250914215315.png（Vault：note）\n\n想做什么操作？我可以帮你：\n- 在笔记中嵌入图片（推荐，维基链接）：![[学习/计算机三级/数据库/Pasted image 20250914215315.png]]\n- 指定显示宽度：![[学习/计算机三级/数据库/Pasted image 20250914215315.png|400]]\n- 用 Markdown 方式：![描述](学习/计算机三级/数据库/Pasted image 20250914215315.png)\n\n打不开 obsidian:// 链接时，请确认：\n- Vault 名称是否正是 note\n- 文件路径与大小写是否完全一致\n- 路径中的空格与中文已正确编码（你给的链接已编码无误）\n\n如果你需要我对这张图片做内容提取（OCR）或整理，请把图片直接上传给我。你希望我把它转换成哪种形式？",
+          "role": "assistant",
+          "timestamp": 1757858085998
+        }
+      ],
+      "createdAt": 1757858064623,
+      "updatedAt": 1757858085998,
+      "model": {
+        "label": "GPT-5",
+        "value": "gpt-5"
+      }
+    }
+  ],
+  "activeConversationId": "1757858064623"
+}
