@@ -1,9 +1,9 @@
 .vs
 .vscode
-.cursor
 .cache/
 *.exe
 .cph
 .DS_Store
 
 *.out
+__pycache__/
