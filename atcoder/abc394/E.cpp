@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 // 定义一个简化的循环宏
 #define rep(i, n) for (int i = 0; i < (n); i++)
 using namespace std;

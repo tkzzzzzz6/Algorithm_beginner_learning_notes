@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 #define endl '\n'
 using namespace std;
 

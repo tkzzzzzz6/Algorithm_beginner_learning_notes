@@ -5,6 +5,7 @@
  * @LastEditTime: 2026-02-05 16:48:25
  */
 #include <bits/stdc++.h>
+#include <vector>
 #define il inline
 #define endl '\n'
 using namespace std;

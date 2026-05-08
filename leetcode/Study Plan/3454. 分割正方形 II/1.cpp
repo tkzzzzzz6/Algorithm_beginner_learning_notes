@@ -1,3 +1,4 @@
+#include <vector>
 class SegmentTree {
    private:
     vector<int> count;

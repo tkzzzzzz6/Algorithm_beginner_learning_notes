@@ -1,3 +1,4 @@
+#include <vector>
 class Solution {
   int f(vector<int> &a) {
     ranges::sort(a);

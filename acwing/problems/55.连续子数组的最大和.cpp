@@ -7,6 +7,7 @@
 // @acwing code start
 
 #include <climits>
+#include <vector>
 class Solution {
    public:
     int maxSubArray(vector<int> &nums) {

@@ -1,3 +1,4 @@
+#include <vector>
 /*
  * @acwing app=acwing.cn id=56 lang=C++
  *

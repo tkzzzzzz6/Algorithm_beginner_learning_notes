@@ -1,6 +1,7 @@
 
-//还是超时
+//浅时
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 typedef long long ll;

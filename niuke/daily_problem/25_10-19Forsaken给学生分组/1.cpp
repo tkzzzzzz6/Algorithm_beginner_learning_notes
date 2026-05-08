@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 typedef long long ll;
 using namespace std;
 

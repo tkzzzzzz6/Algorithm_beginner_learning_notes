@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 //375 = 3 * 125 = 3 * 5^3
@@ -75,4 +76,4 @@ int main() {
 	return 0;
 
 }
-// 64 位输出请用 printf("%lld")
+// 64 位 printf("%lld")
