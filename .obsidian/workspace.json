@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "93476c92678c07b0",
+        "id": "92f18092818f3dda",
         "type": "tabs",
         "children": [
           {
-            "id": "374b18ccd27d2379",
+            "id": "c8b38f4e71e9a4fd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "acwing/problems/74.数组中唯一只出现一次的数字.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "74.数组中唯一只出现一次的数字"
             }
           }
         ]
@@ -40,7 +54,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -170,20 +184,34 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "374b18ccd27d2379",
+  "active": "c8b38f4e71e9a4fd",
   "lastOpenFiles": [
-    "a.out",
+    "acwing/problems/75.和为S的两个数字.cpp",
+    "acwing/problems/73.数组中只出现一次的两个数字.md",
+    "acwing/problems/74.md",
+    "Excalidraw/Drawing 2026-05-06 12.58.59.excalidraw.md",
+    "acwing/problems/74.数组中唯一只出现一次的数字.md",
+    "conflict-files-obsidian-git.md",
+    "Excalidraw",
+    "niuke/problems/编程入门-C/CPP2.实现四舍五入.cpp",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP99.修改属性2.py",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP98.修改属性1.py",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP97.班级管理.py",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP96.球的表面积.py",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP95.兔子的数量.py",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP94.函数求差.py",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP93.创建集合.py",
+    "niuke/problems/牛客题霸-python入门到实践四十招/NP92.公式计算器.py",
     "计算机组成原理/实验5/实验五_任务指导书.md",
     "计算机组成原理/实验5/实验五_详细步骤说明.md",
     "计算机组成原理/实验5/实验五_完整实验报告.md"
