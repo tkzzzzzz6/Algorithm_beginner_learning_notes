@@ -9,3 +9,7 @@
 __pycache__/
 
 .cursor
+
+
+# obsidian
+workspace.json
