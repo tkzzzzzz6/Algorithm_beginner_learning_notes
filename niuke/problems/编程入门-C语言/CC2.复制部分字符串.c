@@ -1,3 +1,9 @@
+/*
+ * @Author: tkzzzzzz6
+ * @Date: 2026-05-06 22:48:30
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-05-20 21:55:58
+ */
 /**
  * @nc app=nowcoder id=8f5b923683b94e549880e3c8370e3e55 topic=291 question=2185436 lang=C
  * 2026-05-06 22:48:30
@@ -19,3 +25,5 @@ int main() {
 }
 
 /** @nc code=end */
+
+
