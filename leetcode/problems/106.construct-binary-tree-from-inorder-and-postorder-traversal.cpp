@@ -1,4 +1,10 @@
 /*
+ * @Author: tkzzzzzz6
+ * @Date: 2026-04-26 21:11:03
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-04-27 21:04:44
+ */
+/*
  * @lc app=leetcode.cn id=106 lang=cpp
  * @lcpr version=30204
  *
@@ -37,24 +43,30 @@ using namespace std;
  * };
  */
 class Solution {
-public:
-  vector<int> inorder, postorder;
-  unordered_map<int, int> hash;
-  TreeNode *buildTree(vector<int> &_inorder, vector<int> &_postorder) {
-    inorder = _inorder;
-    postorder = _postorder;
-    for (int i = 0; i < inorder.size(); ++i) {
-      hash[inorder[i]] == i;
+   public:
+    vector<int> inorder, postorder;
+    unordered_map<int, int> pos;
+    TreeNode *buildTree(vector<int> &_inorder, vector<int> &_postorder) {
+        inorder = _inorder;
+        postorder = _postorder;
+        int n = inorder.size();
+        for (int i = 0; i < n; ++i) {
+            pos[inorder[i]] = i;
+        }
+
+        return build(0, n - 1, 0, n - 1);
     }
 
-    auto dummy = new TreeNode(-1);
-    build(dummy, 0, inorder.size() - 1, 0, posterorder.size() - 1);
-  }
-
-  void build(TreeNode *root, int l1, int r1, int l2, int r2) {
-    int reslove = postprder[r2];
-    l1 = hash[resolve], l2 = build(root->left, )
-  }
+    TreeNode *build(int l1, int r1, int l2, int r2) {
+        if (l1 > r1)
+            return nullptr;
+        int rootVal = postorder[r2];
+        auto root = new TreeNode(rootVal);
+        int k = pos[rootVal];
+        root->left = build(l1, k - 1, l2, l2 + (k - l1) - 1);
+        root->right = build(k + 1, r1, l2 + (k - l1), r2 - 1);
+        return root;
+    }
 };
 // @lc code=end
 

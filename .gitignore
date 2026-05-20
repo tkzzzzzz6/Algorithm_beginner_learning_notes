@@ -4,4 +4,12 @@
 *.exe
 .cph
 .DS_Store
+
+*.out
 __pycache__/
+
+.cursor
+
+
+# obsidian
+workspace.json
