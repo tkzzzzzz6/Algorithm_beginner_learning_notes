@@ -1,0 +1,61 @@
+{
+  "tkcpp": {
+    "prefix": ["tkcpp"],
+    "description": "C++ 快速模板（竞赛/练习）",
+    "scope": "cpp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "    ios::sync_with_stdio(false);",
+      "    cin.tie(nullptr);",
+      "",
+      "    $0",
+      "",
+      "    return 0;",
+      "}"
+    ]
+  },
+  "tkpy": {
+    "prefix": ["tkpy"],
+    "description": "Python 竞赛快速模板",
+    "scope": "python",
+    "body": [
+      "import sys",
+      "from collections import defaultdict, deque, Counter",
+      "from heapq import heappush, heappop",
+      "from bisect import bisect_left, bisect_right",
+      "from itertools import permutations, combinations",
+      "from math import gcd, lcm, sqrt, ceil, floor",
+      "",
+      "input = sys.stdin.readline",
+      "",
+      "def solve():",
+      "    $0",
+      "    pass",
+      "",
+      "def main():",
+      "    # t = int(input())",
+      "    # for _ in range(t):",
+      "    #     solve()",
+      "    solve()",
+      "",
+      "if __name__ == \"__main__\":",
+      "    main()"
+    ]
+  },
+  "tkpy_basic": {
+    "prefix": ["tkpy_basic"],
+    "description": "Python 基础模板",
+    "scope": "python",
+    "body": [
+      "def solve():",
+      "    $0",
+      "    pass",
+      "",
+      "if __name__ == \"__main__\":",
+      "    solve()"
+    ]
+  }
+}
