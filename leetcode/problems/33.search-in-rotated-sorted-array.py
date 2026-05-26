@@ -1,3 +1,9 @@
+'''
+Author: tkzzzzzz6
+Date: 2026-05-25 15:08:44
+LastEditors: tkzzzzzz6
+LastEditTime: 2026-05-25 15:09:42
+'''
 #
 # @lc app=leetcode.cn id=33 lang=python3
 # @lcpr version=30204
