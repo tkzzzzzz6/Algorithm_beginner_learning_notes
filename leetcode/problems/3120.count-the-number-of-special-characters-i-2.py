@@ -2,7 +2,7 @@
 Author: tkzzzzzz6
 Date: 2026-05-26 21:21:16
 LastEditors: tkzzzzzz6
-LastEditTime: 2026-05-26 21:25:35
+LastEditTime: 2026-05-26 21:37:07
 '''
 #
 # @lc app=leetcode.cn id=3120 lang=python3
@@ -18,16 +18,11 @@ LastEditTime: 2026-05-26 21:25:35
 # @lc code=start
 class Solution:
     def numberOfSpecialChars(self, word: str) -> int:
-        upper  = set()
-        lower = set()
+        mask = [0]*2
+        for c in map(ord,word):
+            mask[c >>  5 & 1] |= 1<<(c & 31)
 
-        for c in word:
-            if c == c.lower():
-                lower.add(c)
-            else:
-                upper.add(c.lower())
-
-        return  len(upper & lower)
+        return bin(mask[0] & mask[1]).count("1")
 # @lc code=end
     
 
