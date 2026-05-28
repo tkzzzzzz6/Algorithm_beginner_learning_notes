@@ -2,12 +2,10 @@
  * @Author: tkzzzzzz6
  * @Date: 2026-05-26 22:11:02
  * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-05-26 22:52:41
+ * @LastEditTime: 2026-05-27 07:58:22
  */
 #include <cmath>
 #include <cstdio>
-#include <iomanip>
-#include <iostream>
 
 using namespace std;
 const int N = 1e5 + 10;
