@@ -2,7 +2,7 @@
  * @Author: tkzzzzzz6
  * @Date: 2026-05-27 15:46:17
  * @LastEditors: tkzzzzzz6
- * @LastEditTime: 2026-05-27 16:10:22
+ * @LastEditTime: 2026-05-27 19:12:17
  */
 #include <iostream>
 #include <vector>
@@ -10,9 +10,13 @@
 
 using namespace std;
 
-typedef struct {
+struct Tree {
     int x, y;
-} Tree;
+    bool operator<(const Tree &other) const {
+        if (x != other.x) return x < other.x;
+        return y < other.y;
+    }
+};
 
 int main() {
     int n, L, S;
@@ -25,7 +29,7 @@ int main() {
         int x, y;
         cin >> x >> y;
         Trees[i] = {x, y};
-        st.insert(Trees[i]);
+        st.insert({x, y});
     }
 
     // 2.读入藏宝图,注意这里我们的 bMap 从左下角开始
@@ -46,16 +50,16 @@ int main() {
         bool ok = true;
         for (int i = 0; i <= S && ok; ++i) {
             for (int j = 0; j <= S; ++j) {
-                bool hasTree = st.count(({x + i, y + j}));
+                bool hasTree = st.count((Tree{x + i, y + j}));
 
                 if (bMap[i][j] == 1 && !hasTree) {
                     ok = false;
                     break;
-                };
+                }
                 if (bMap[i][j] == 0 && hasTree) {
                     ok = false;
-                    break
-                };
+                    break;
+                }
             }
         }
         if (ok) ++ans;
