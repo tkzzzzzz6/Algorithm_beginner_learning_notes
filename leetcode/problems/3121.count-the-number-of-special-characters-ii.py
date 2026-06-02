@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+'''
+Author: tkzzzzzz6
+Date: 2026-05-27 19:13:54
+LastEditors: tkzzzzzz6
+LastEditTime: 2026-06-01 14:50:30
+'''
+>>>>>>> b530710 (fix: 修复树结构定义和插入逻辑，优化代码可读性)
 #
 # @lc app=leetcode.cn id=3121 lang=python3
 # @lcpr version=30204

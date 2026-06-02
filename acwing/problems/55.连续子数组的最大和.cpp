@@ -8,7 +8,7 @@
 
 #include <climits>
 class Solution {
-   public:
+public:
     int maxSubArray(vector<int> &nums) {
         int res = INT_MIN, s = 0;
         for (auto x : nums) {
