@@ -5,13 +5,14 @@
 *.exe
 .cph
 .DS_Store
+*.bin
 
 *.out
 __pycache__/
 
 .cursor
+.exe.dSYM
 
 
 # obsidian
 workspace.json
-.exe
