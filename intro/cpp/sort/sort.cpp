@@ -1,3 +1,9 @@
+/*
+ * @Author: tkzzzzzz6
+ * @Date: 2025-10-15 21:42:28
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-07-13 09:49:38
+ */
 #define FILE_IO
 #define bob_sort
 #include <stdio.h>
