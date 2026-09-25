@@ -1,4 +1,10 @@
 /*
+ * @Author: tkzzzzzz6
+ * @Date: 2026-05-24 08:51:22
+ * @LastEditors: tkzzzzzz6
+ * @LastEditTime: 2026-09-01 17:20:38
+ */
+/*
  * @lc app=leetcode.cn id=257 lang=cpp
  * @lcpr version=30204
  *
@@ -38,38 +44,38 @@ using namespace std;
  */
 class Solution {
 public:
-  void traverse(TreeNode *root, vector<int> &path, vector<string> &res) {
-    if (!root)
-      return;
+    void traverse(TreeNode *root, vector<int> &path, vector<string> &res) {
+        if (!root)
+            return;
 
-    path.push_back(root->val);
-    if (!root->left && !root->right) {
-      string s;
-      int size = path.size() - 1;
-      int i = 0;
-      for (; i < size; ++i) {
-        s += to_string(path[i]) + "->";
-      }
-      s += to_string(path[i]);
+        path.push_back(root->val);
+        if (!root->left && !root->right) {
+            string s;
+            int size = path.size() - 1;
+            int i = 0;
+            for (; i < size; ++i) {
+                s += to_string(path[i]) + "->";
+            }
+            s += to_string(path[i]);
 
-      res.push_back(s);
+            res.push_back(s);
+        }
+        if (root->left) {
+            traverse(root->left, path, res);
+        }
+
+        if (root->right) {
+            traverse(root->right, path, res);
+        }
+        path.pop_back();
     }
-    if (root->left) {
-      traverse(root->left, path, res);
-    }
+    vector<string> binaryTreePaths(TreeNode *root) {
+        vector<string> res;
+        vector<int> path;
+        traverse(root, path, res);
 
-    if (root->right) {
-      traverse(root->right, path, res);
+        return res;
     }
-    path.pop_back();
-  }
-  vector<string> binaryTreePaths(TreeNode *root) {
-    vector<string> res;
-    vector<int> path;
-    traverse(root, path, res);
-
-    return res;
-  }
 };
 // @lc code=end
 
