@@ -16,3 +16,5 @@ __pycache__/
 
 # obsidian
 workspace.json
+
+.DS_Store
