@@ -1,0 +1,350 @@
+{
+    "contestId": 141369,
+    "problems": [
+        {
+            "info": {
+                "submitPersonCount": 131,
+                "tagId": 310847,
+                "index": "A",
+                "avgAcSubmitCount": 1.17,
+                "title": "输出第一个字符",
+                "totalScore": 5,
+                "score": 5,
+                "acceptedCount": 115,
+                "submitCount": 190,
+                "avgScore": 4.07,
+                "myStatus": "通过",
+                "problemId": 324293,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11881232",
+                "subTagId": "1",
+                "doneQuestionId": "141369",
+                "content": "## 题目描述\n\n输入一个字符串，输出这个字符串的第一个字符。  \n保证字符串仅由**小写字母**构成，不含空格、换行符。  \n  \n\n\n## 输入描述\n\n一行一个字符串，长度至少为 $1$ ，不超过 $100$ 。  \n\n\n## 输出描述\n\n一行一个字符，表示输入字符串的第一个字符。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "helloworld",
+                        "output": "h",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 126,
+                "tagId": 310848,
+                "index": "B",
+                "avgAcSubmitCount": 1.39,
+                "title": "小h是雨",
+                "totalScore": 5,
+                "score": 5,
+                "acceptedCount": 118,
+                "submitCount": 203,
+                "avgScore": 4.07,
+                "myStatus": "通过",
+                "problemId": 324313,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11881413",
+                "subTagId": "1",
+                "doneQuestionId": "141369",
+                "content": "## 题目描述\n\n小h去云南旅游了。  \n他吃了本地的特产**菌子**,出现了幻觉,并说出了一句很有哲理的话\"**我是雨**!\"  \n\n  \n\n\n## 输入描述\n\n无  \n\n\n## 输出描述\n\n打印雨滴  \n#  \n###  \n#####  \n#######  \n#######  \n#######  \n#####  \n###  \n#  \n你若觉得不像,那也没办法,我不会画  \n  \n\n\n",
+                "examples": [
+                    {
+                        "input": "无",
+                        "output": "#\n  ###\n #####\n#######\n#######\n#######\n #####\n  ###\n   #",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 113,
+                "tagId": 310850,
+                "index": "C",
+                "avgAcSubmitCount": 1.6,
+                "title": "判断三角形",
+                "totalScore": 10,
+                "score": 10,
+                "acceptedCount": 97,
+                "submitCount": 205,
+                "avgScore": 7.38,
+                "myStatus": "通过",
+                "problemId": 324353,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11881886",
+                "subTagId": "1",
+                "doneQuestionId": "141369",
+                "content": "## 题目描述\n\n输入三个正整数 $a$ 、 $b$ 、 $c$ ，表示三条边的长度。  \n\n首先判断这三条边能否构成一个三角形：  \n\n- 如果能构成三角形，再判断它属于哪种类型：  \n- 若三边都相等，输出 “Equilateral”（等边三角形）  \n- 若只有两边相等，输出 “Isosceles”（等腰三角形）  \n- 若三边都不相等，输出 “Scalene”（普通三角形）  \n- 如果不能构成三角形，输出 “Not a triangle”  \n不需要输出引号和后面的括号。  \n\n\n## 输入描述\n\n一行三个正整数 $a$ 、 $b$ 、 $c$ （ $1 \\le a,b,c \\le 1000$ ），用空格隔开。  \n  \n\n\n## 输出描述\n\n按题目要求输出对应的字符串。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3 3 3",
+                        "output": "Equilateral",
+                        "tips": ""
+                    },
+                    {
+                        "input": "3 3 5",
+                        "output": "Isosceles",
+                        "tips": ""
+                    },
+                    {
+                        "input": "3 4 5",
+                        "output": "Scalene",
+                        "tips": ""
+                    },
+                    {
+                        "input": "1 2 3",
+                        "output": "Not a triangle",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 37,
+                "tagId": 310849,
+                "index": "D",
+                "avgAcSubmitCount": 1.14,
+                "title": "乘积等于和",
+                "totalScore": 10,
+                "score": 10,
+                "acceptedCount": 29,
+                "submitCount": 52,
+                "avgScore": 2.05,
+                "myStatus": "通过",
+                "problemId": 324302,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11881282",
+                "subTagId": "1",
+                "doneQuestionId": "141369",
+                "content": "## 题目描述\n\n给定一个正整数 $n$ ，请你构造一个长度为 $n$ 的正整数数组 $a$ ，满足：  \n\n- 数组中的所有元素都是正整数，且任意元素 $a_i$ 的值不得超过 $10^8$ ；  \n- 所有元素的乘积等于所有元素的和，且这个和不得超过 $10^{18}$ 。  \n\n输出任意一个满足条件的数组即可。题目保证一定有解。  \n  \n\n\n## 输入描述\n\n一行，一个整数 $n$ （ $1 \\le n \\le 10^6$ ）。  \n\n\n## 输出描述\n\n输出一行 $n$ 个正整数，表示你构造的数组。  \n如果有多种答案，输出任意一种即可。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3",
+                        "output": "1 2 3",
+                        "tips": "$1 + 2 + 3 = 6$ ， $1 × 2 × 3 = 6$ ，满足条件。  \n"
+                    },
+                    {
+                        "input": "2",
+                        "output": "2 2",
+                        "tips": "$2 + 2 = 4$ ， $2 × 2 = 4$ ，满足条件。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 55,
+                "tagId": 310851,
+                "index": "E",
+                "avgAcSubmitCount": 1.29,
+                "title": "买文具",
+                "totalScore": 15,
+                "score": 15,
+                "acceptedCount": 51,
+                "submitCount": 77,
+                "avgScore": 5.3,
+                "myStatus": "未通过",
+                "problemId": 324351,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11881882",
+                "subTagId": "1",
+                "doneQuestionId": "141369",
+                "content": "## 题目描述\n\n小明带了 $N$ 元钱去文具店，准备买三种文具，每种至少买 $1$ 件：  \n\n- 钢笔每支 $5$ 元  \n- 笔记本每本 $3$ 元  \n- 橡皮每块 $1$ 元  \n\n请问：一共有多少种购买方案，能正好把 $N$ 元花完？  \n\n\n## 输入描述\n\n一行一个整数 $N$ （ $1 \\le N \\le 200$ ），表示总钱数。  \n\n\n## 输出描述\n\n一行一个整数 $ans$ ，表示方案总数。  \n  \n\n\n",
+                "examples": [
+                    {
+                        "input": "20",
+                        "output": "8",
+                        "tips": "具体方案如下（依次为钢笔、笔记本、橡皮的数量）  \n$1$  $1$  $12$   \n$1$  $2$  $9$   \n$1$  $3$  $6$   \n$1$  $4$  $3$   \n$2$  $1$  $7$   \n$2$  $2$  $4$   \n$2$  $3$  $1$   \n$3$  $1$  $2$   \n  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 43,
+                "tagId": 310852,
+                "index": "F",
+                "avgAcSubmitCount": 1.24,
+                "title": "西瓜投手",
+                "totalScore": 15,
+                "score": 15,
+                "acceptedCount": 41,
+                "submitCount": 55,
+                "avgScore": 4.26,
+                "myStatus": "未通过",
+                "problemId": 324304,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 29,
+                "tagId": 310853,
+                "index": "G",
+                "avgAcSubmitCount": 1.43,
+                "title": "小h的飞机",
+                "totalScore": 20,
+                "score": 20,
+                "acceptedCount": 28,
+                "submitCount": 48,
+                "avgScore": 3.98,
+                "myStatus": "未通过",
+                "problemId": 324323,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 24,
+                "tagId": 310854,
+                "index": "H",
+                "avgAcSubmitCount": 1,
+                "title": "阶梯数",
+                "totalScore": 20,
+                "score": 20,
+                "acceptedCount": 21,
+                "submitCount": 24,
+                "avgScore": 2.95,
+                "myStatus": "未通过",
+                "problemId": 324355,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 11,
+                "tagId": 310855,
+                "index": "I",
+                "avgAcSubmitCount": 1,
+                "title": "小h的能量球",
+                "totalScore": 25,
+                "score": 25,
+                "acceptedCount": 10,
+                "submitCount": 12,
+                "avgScore": 1.79,
+                "myStatus": "未通过",
+                "problemId": 324321,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 12,
+                "tagId": 310856,
+                "index": "J",
+                "avgAcSubmitCount": 1.09,
+                "title": "增高垫（Easy Version）",
+                "totalScore": 25,
+                "score": 25,
+                "acceptedCount": 11,
+                "submitCount": 13,
+                "avgScore": 1.95,
+                "myStatus": "未通过",
+                "problemId": 324298,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 4,
+                "tagId": 310857,
+                "index": "K",
+                "avgAcSubmitCount": 1,
+                "title": "小h的地毯(easy)",
+                "totalScore": 25,
+                "score": 25,
+                "acceptedCount": 4,
+                "submitCount": 4,
+                "avgScore": 0.69,
+                "myStatus": "未通过",
+                "problemId": 324319,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 11,
+                "tagId": 310858,
+                "index": "L",
+                "avgAcSubmitCount": 1.3,
+                "title": "增高垫（Hard Version）",
+                "totalScore": 25,
+                "score": 25,
+                "acceptedCount": 10,
+                "submitCount": 15,
+                "avgScore": 1.74,
+                "myStatus": "未通过",
+                "problemId": 324300,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 310859,
+                "index": "M",
+                "avgAcSubmitCount": 0,
+                "title": "矩阵猎手",
+                "totalScore": 30,
+                "score": 30,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 324295,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 1,
+                "tagId": 310860,
+                "index": "N",
+                "avgAcSubmitCount": 2,
+                "title": "小h的地毯(hard)",
+                "totalScore": 30,
+                "score": 30,
+                "acceptedCount": 1,
+                "submitCount": 2,
+                "avgScore": 0.21,
+                "myStatus": "未通过",
+                "problemId": 324317,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 310861,
+                "index": "O",
+                "avgAcSubmitCount": 0,
+                "title": "小h的实验",
+                "totalScore": 30,
+                "score": 30,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 324315,
+                "info": {}
+            }
+        }
+    ]
+}
