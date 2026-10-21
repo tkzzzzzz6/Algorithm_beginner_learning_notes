@@ -1,27 +1,25 @@
-//分数求和
-
-//题目描述 Time Limit : 1000 ms Memory Limit : 256 mb 有一分数序列： 2 / 1 3 / 2 5 / 3 8 / 5 13 / 8 21 / 13...... 
-// 求出这个数列的前N项之和，保留两位小数。
-//1 +1 1+1/2 1+2/3 1+3/5
 #include <iostream>
 #include <iomanip>
 
 using namespace std;
 
 int main() {
-    int a = 1, b = 2;
-    double ans = 0;
+    // a、b 分别表示当前项的分母和分子，首项为 2 / 1。
+    long double a = 1, b = 2;
+    long double ans = 0;
 
     int n;
     cin >> n;
 
     while (n--) {
-        ans += double(b) / a;
-        int temp = a;
+        // 当前项为 b / a；下一项的分子、分母分别为 a + b、b。
+        ans += b / a;
+        long double temp = a;
         a = b;
         b = temp + b;
     }
 
+    // 按题意保留两位小数输出。
     cout << fixed << setprecision(2) << ans << endl;
 
     return 0;
