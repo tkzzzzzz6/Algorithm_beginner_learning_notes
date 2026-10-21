@@ -1,0 +1,252 @@
+{
+    "contestId": 140732,
+    "problems": [
+        {
+            "info": {
+                "submitPersonCount": 5,
+                "tagId": 270645,
+                "index": "A",
+                "avgAcSubmitCount": 1.5,
+                "title": "A Bit Common",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 4,
+                "submitCount": 7,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274926,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "10943865",
+                "subTagId": "1",
+                "doneQuestionId": "140732",
+                "content": "## 题目描述\n\nGiven two integers $n$ and $m$ , among all the sequences containing $n$ non-negative integers less than $2^m$ , you need to count the number of such sequences $A$ that there exists a non-empty subsequence of $A$ in which the bitwise AND of the integers is $1$ .  \n\nNote that a non-empty subsequence of a sequence $A$ is a non-empty sequence that can be obtained by deleting zero or more elements from $A$ and arranging the remaining elements in their original order.  \n\nSince the answer may be very large, output it modulo a positive integer $q$ .  \n\n  \nThe bitwise AND of non-negative integers $A$ and $B$ , $A\\ \\texttt{AND}\\ B$ is defined as follows:  \n- When $A\\ \\texttt{AND}\\ B$ is written in base two, the digit in the $2^d$ 's place ( $d \\ge 0$ ) is $1$ if those of $A$ and $B$ are**both** $1$ , and $0$ otherwise.\n\n  \nFor example, we have $4\\ \\texttt{AND}\\ 6$ = $4$ (in base two: $100\\ \\texttt{AND}\\ 110$ = $100$ ).  \n\nGenerally, the bitwise AND of $k$ non-negative integers $p_1, p_2, \\ldots, p_k$ is defined as  \n$(\\ldots((p_1\\ \\texttt{AND}\\ p_2)\\ \\texttt{AND}\\ p_3)\\ \\texttt{AND}\\ \\ldots\\ \\texttt{AND}\\ p_k)$   \nand we can prove that this value does not depend on the order of $p_1, p_2, \\ldots, p_k$ .  \n  \n\n\n## 输入描述\n\nThe only line contains three integers $n$ ( $1 \\le n \\le 5\\,000$ ), $m$ ( $1 \\le m \\le 5\\,000$ ) and $q$ ( $1 \\le q \\le 10^9$ ).  \n\n\n## 输出描述\n\nOutput a line containing an integer, denoting the answer.  \n\n\n",
+                "examples": [
+                    {
+                        "input": "2 3 998244353",
+                        "output": "17",
+                        "tips": ""
+                    },
+                    {
+                        "input": "5000 5000 998244353",
+                        "output": "2274146",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 270646,
+                "index": "B",
+                "avgAcSubmitCount": 0,
+                "title": "A Bit More Common",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274928,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "",
+                "questionId": "",
+                "subTagId": "",
+                "doneQuestionId": "",
+                "content": "## 题目描述\n\n\n\n## 输入描述\n\n\n\n## 输出描述\n\n\n\n",
+                "examples": []
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 28,
+                "tagId": 270647,
+                "index": "C",
+                "avgAcSubmitCount": 1.71,
+                "title": "Sum of Suffix Sums",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 24,
+                "submitCount": 51,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274985,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "10943877",
+                "subTagId": "1",
+                "doneQuestionId": "140732",
+                "content": "## 题目描述\n\nGiven an array which is initially empty, you need to perform $q$ operations:  \n- Given two non-negative integers $t$ and $v$ , take out the element from the end of the array for $t$ times and then append $v$ to the end of the array. It is guaranteed that $t$ does not exceed the length of the array before this operation.\n\n  \nAfter each operation, let $a_1, a_2, \\ldots, a_n$ be the current array, find the**sum**of $s_1, s_2, \\ldots, s_n$ , where $s_i = a_i + a_{i+1} + \\ldots + a_n$ is the sum of the suffix starting from position $i$ .  \n\nSince the answers may be very large, output them modulo $1\\,000\\,000\\,007$ .  \n\n\n## 输入描述\n\nThe first line contains an integer $q$ ( $1 \\le q \\le 5 \\times 10^5$ ), denoting the number of operations.  \n\nEach of the following $q$ lines contains two non-negative integers $t$ and $v$ ( $0 \\le v \\le 10^9$ ), describing an operation, where $t$ does not exceed the length of the array before this operation.  \n\n\n## 输出描述\n\nOutput $q$ lines, each of which contains an integer, denoting the answer.  \n\n\n",
+                "examples": [
+                    {
+                        "input": "5\n0 1\n0 2\n1 3\n0 6\n2 100000",
+                        "output": "1\n5\n7\n25\n200001",
+                        "tips": "After the first operation, the current array is $[1]$ , the suffix sum array is $[1]$ , and the sum of the suffix sums is $1$ .  \nAfter the second operation, the current array is $[1,2]$ , the suffix sum array is $[3,2]$ , and the sum of the suffix sums is $5$ .  \nAfter the third operation, the current array is $[1,3]$ , the suffix sum array is $[4,3]$ , and the sum of the suffix sums is $7$ .  \nAfter the fourth operation, the current array is $[1,3,6]$ , the suffix sum array is $[10,9,6]$ , and the sum of the suffix sums is $25$ .  \nAfter the fifth operation, the current array is $[1,100\\,000]$ , the suffix sum array is $[100\\,001,100\\,000]$ , and the sum of the suffix sums is $200\\,001$ .  \n"
+                    },
+                    {
+                        "input": "1\n0 1000000000",
+                        "output": "1000000000",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 270648,
+                "index": "D",
+                "avgAcSubmitCount": 0,
+                "title": "XOR of Suffix Sums",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274990,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 270649,
+                "index": "E",
+                "avgAcSubmitCount": 0,
+                "title": "Product of Suffix Sums",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274992,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 270650,
+                "index": "F",
+                "avgAcSubmitCount": 0,
+                "title": "Career Path",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 275002,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 270651,
+                "index": "G",
+                "avgAcSubmitCount": 0,
+                "title": "3/2 Square Strings",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 275004,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 17,
+                "tagId": 270652,
+                "index": "H",
+                "avgAcSubmitCount": 1.31,
+                "title": "World Finals",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 16,
+                "submitCount": 23,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274994,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "10944469",
+                "subTagId": "1",
+                "doneQuestionId": "140732",
+                "content": "## 题目描述\n\nThe ICPC World Finals are coming. Due to some reasons, the 46th and 47th World Finals will be held simultaneously. For the teams qualified in both competitions, they should choose one to take part in.  \n\nAs we know, lzr010506's team is double-qualified and should make a choice. To make a wiser choice, lzr010506 looked up the qualified lists for two competitions and trained a magic model to predict the results for all participants among the two competitions. Moreover, a result contains the number of solved problems and the time penalty. The more solved problems, the better the result is, and if two teams solved the same number of problems, the result with the lower time penalty is better.  \n\nNow, lzr010506 wants to know the best possible ranking if the actual results are all the same as predicted and that the competition choices of the double-qualified teams can be arbitrarily arranged by him.  \n\n\n## 输入描述\n\nThe first line contains one integer $n\\,(1 \\le n \\le 10^5)$ , denoting the number of teams qualified in the 46th World Finals.  \n\nNext $n$ lines each contain one string $S\\,(1 \\le |S| \\le 10)$ and two integers $p,t\\,(1 \\le p,t \\le 10^9)$ , denoting the name, the predicted number of solved problems, and time penalty of one team in the 46th World Finals respectively.  \n\nNext one line contains one integer $m\\,(1 \\le m \\le 10^5)$ , denoting the number of teams qualified in the 47th World Finals.  \n\nNext $m$ lines each contain one string $S\\,(1 \\le |S| \\le 10)$ and two integers $p,t\\,(1 \\le p,t \\le 10^9)$ , denoting the name, the predicted number of solved problems, and time penalty of one team in the 47th World Finals respectively.  \n\nIt is guaranteed that:  \n· the team names only containdigits andEnglish letters;  \n·the team names in one competition are different from each other;  \n·no two teams have the same predicted number of solved problems and the time penalty simultaneously in one competition;  \n·the same names among two qualified name lists refer to the same team in real;  \n·``lzr010506'' appears in both two qualified name lists.  \n  \n\n\n## 输出描述\n\nOutput one line containing one integer, denoting the best possible ranking of lzr010506's team.  \n\n\n",
+                "examples": [
+                    {
+                        "input": "5\npku 10 1513\nthu 8 1195\nlzr010506 8 1234\nMIT 9 816\nntu 8 1325\n4\nmipt 9 1143\nntu 7 962\nlzr010506 9 1523\npku 9 1068",
+                        "output": "2",
+                        "tips": "There are three double-qualified teams: lzr010506, pku, ntu.  \n\nOne possible arrangement is that pku takes part in the 46th World Finals while lzr010506 and ntu take part in the 47th World Finals. As a result, lzr010506's team could get rank 2 in the 47th World Finals. According to the arrangement, we can get the boards of the two competitions as follows:  \n\n· The board of the 46th World Finals:  \n1. pku, solved 10, penalty 1513  \n2. MIT, solved 9, penalty 816  \n3. thu, solved 8, penalty 1195  \n\n·The board of the 47th World Finals:  \n1.mipt, solved 9, penalty 1143  \n2.lzr010506, solved 9, penalty 1523  \n3. ntu, solved 7, penalty 962  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 1,
+                "tagId": 270653,
+                "index": "I",
+                "avgAcSubmitCount": 0,
+                "title": "Mirror Maze",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 1,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274996,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 270654,
+                "index": "J",
+                "avgAcSubmitCount": 0,
+                "title": "2D Travel",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 274998,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 0,
+                "tagId": 270655,
+                "index": "K",
+                "avgAcSubmitCount": 0,
+                "title": "Matching Problem",
+                "totalScore": 100,
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 0,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 275000,
+                "info": {}
+            }
+        }
+    ]
+}
