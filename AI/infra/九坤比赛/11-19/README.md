@@ -17,6 +17,8 @@
 - **测试规模** `N` 为 65,536、131,072、262,144、524,288、1,048,576。
 - **实现** 对齐且协同网格能同时驻留时，使用单次协同 kernel 合并块内扫描和跨块前缀。其他情况使用 1024 元素分块，依次执行块内扫描、块尾扫描和跨块补偿。两条路径都直接复用输出缓冲区存放块和。
 
+![11-19 A · Cumulative Sum 官方题面](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/iquest-practice-2026-11/iquest-2026-11-19-a-cumsum-cf0aac8f3b0080ec.png)
+
 ## B · Diagonal Matrix Multiplication
 
 计算对角矩阵 `diag(A)` 左乘矩阵 `B` 的结果。每个输出元素满足 `C[i][j] = A[i] * B[i][j]`，也就是用 `A[i]` 缩放 `B` 的第 `i` 行。
@@ -26,6 +28,8 @@
 - **测试规模** `(n, m)` 为 `(2048, 2048)`、`(4096, 4096)`、`(6144, 6144)`、`(8192, 4096)`。
 - **实现** 单次 kernel 按行缩放。对齐时使用 `float4`，根据行宽选择分块大小和缓存策略，其他情况逐元素处理。
 
+![11-19 B · Diagonal Matrix Multiplication 官方题面](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/iquest-practice-2026-11/iquest-2026-11-19-b-diagonal-matmul-1b47b06fba94377a.png)
+
 ## C · ECC Point Negation (Batched)
 
 对曲线 $y^2 \equiv x^3 + 7 \pmod p$ 上的一批点取负，其中 $p = 2^{61} - 1$。对每个点保留 `x`，把 `y` 换成 `(p - y) % p`。`y` 为 `0` 时结果仍为 `0`。
@@ -34,6 +38,8 @@
 - **输出** 长度为 `2*n` 的 `uint64_t` 数组 `out_xy`。`out_xy[2*i] = xs[i]`，`out_xy[2*i + 1] = (p - ys[i]) % p`。
 - **测试规模** `n` 为 262,144、524,288、1,048,576、2,097,152。
 - **实现** 输出地址满足 16 字节对齐时，每个线程处理两个点，每个点的两个坐标合并写入。其余情况用逐点路径。
+
+![11-19 C · ECC Point Negation (Batched) 官方题面](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/iquest-practice-2026-11/iquest-2026-11-19-c-ecc-point-negation-810992621fc193ba.png)
 
 ## 官方评测记录
 

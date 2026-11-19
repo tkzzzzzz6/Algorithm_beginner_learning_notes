@@ -17,6 +17,8 @@
 - **测试规模** `(size, K)` 为 `(64, 3)`、`(32, 9)`、`(96, 11)`、`(128, 5)`、`(256, 7)`、`(512, 9)`。
 - **实现** 用共享内存缓存每块输入及其边界邻域，一次为同一深度方向上的四个位置累加，常见核尺寸有专用路径。
 
+![11-18 A · 3D Square Convolution 官方题面](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/iquest-practice-2026-11/iquest-2026-11-18-a-conv-square-3d-9f51febddb8d859c.png)
+
 ## B · Cosine Similarity
 
 对 `predictions` 与 `targets` 的第 `i` 行计算 `1 - dot(x, y) / (max(1e-8, norm(x)) * max(1e-8, norm(y)))`。`norm` 为 L2 范数，两个范数各自应用下限。
@@ -26,6 +28,8 @@
 - **测试规模** `d = 4096`，`n` 为 4096、8192、10240、16384。
 - **实现** 每个线程块归约一行，同时累加点积和两行的平方和。列数和地址满足对齐条件时用 `float4` 读取。
 
+![11-18 B · Cosine Similarity 官方题面](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/iquest-practice-2026-11/iquest-2026-11-18-b-cosine-similarity-0c55a26d011a5daf.png)
+
 ## C · Cumulative Product
 
 计算包含当前位置的前缀乘积。`output[i]` 等于 `input[0]` 到 `input[i]` 的乘积，第一个输出元素等于第一个输入元素。
@@ -34,6 +38,8 @@
 - **输出** 长度为 `N` 的 `float` 向量 `output`。例如，`[2, -3, 4, 0]` 得到 `[2, -6, -24, 0]`。
 - **测试规模** `N` 为 65,536、131,072、262,144、524,288、1,048,576。
 - **实现** 先扫描块内乘积，再扫描块尾乘积并补上跨块前缀。浮点并行分组在极端溢出或下溢附近可能与参考结果有差异。
+
+![11-18 C · Cumulative Product 官方题面](https://tk-pichost-1325224430.cos.ap-chengdu.myqcloud.com/blog/iquest-practice-2026-11/iquest-2026-11-18-c-cumprod-bf8abfc60ee18e75.png)
 
 ## 验证记录
 
