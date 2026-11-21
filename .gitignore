@@ -14,6 +14,9 @@ __pycache__/
 .exe.dSYM
 .venv/
 
+.claude/
+.cursor/
+
 # obsidian
 workspace.json
 
