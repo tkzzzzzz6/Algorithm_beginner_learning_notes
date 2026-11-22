@@ -1,0 +1,219 @@
+{
+    "contestId": 144393,
+    "problems": [
+        {
+            "info": {
+                "submitPersonCount": 18,
+                "tagId": 314024,
+                "index": "A",
+                "avgAcSubmitCount": 1.11,
+                "title": "欢迎来到赛场",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 18,
+                "submitCount": 20,
+                "avgScore": 0,
+                "myStatus": "通过",
+                "problemId": 329209,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "",
+                "questionId": "",
+                "subTagId": "",
+                "doneQuestionId": "",
+                "content": "## 题目描述\n\n\n\n## 输入描述\n\n\n\n## 输出描述\n\n\n\n",
+                "examples": []
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 5,
+                "tagId": 314025,
+                "index": "B",
+                "avgAcSubmitCount": 1,
+                "title": "罗德岛的影像室",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 3,
+                "submitCount": 6,
+                "avgScore": 0,
+                "myStatus": "通过",
+                "problemId": 329215,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 1,
+                "tagId": 314026,
+                "index": "C",
+                "avgAcSubmitCount": 1,
+                "title": "今州的回声消除",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 1,
+                "submitCount": 1,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329217,
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11966272",
+                "subTagId": "1",
+                "doneQuestionId": "144393",
+                "content": "## 题目描述\n\n任务简报  \n今州的一台演练终端收集了 2n 枚回声符片，分成 n 类，每一类恰好出现两次，并按采集顺序排列。  \n\n漂泊者可以选择一个仍然存在的编号，清除它最左与最右出现位置之间的整段符片。终端按本次实际清除数量的平方计分，剩余符片随即按原顺序拼接。  \n\n研究员提醒：“先清掉中间的一段，后面能清掉的数量也会改变。”漂泊者停下手，决定先算出能获得的最大总分。这些消除与计分规则仅用于本题演练。  \n题目描述  \n给定长为`2n`的数组`a`，其中`1`到`n`每个整数恰好出现两次。初始得分为`0`。  \n\n数组非空时，可以重复进行以下操作：  \n- 选择一个当前仍在数组中的值`x`。\n- 令`l,r`分别为`x`在当前数组中最左、最右的出现位置；若只剩一次，则`l=r`。\n- 得到`(r-l+1)^2`分，然后删除当前数组中的整段`a_l,...,a_r`。\n- 剩余部分按原有相对顺序拼接，并从`1`重新编号。\n\n求把数组完全删空后能够获得的最大总分。  \n  \n\n\n## 输入描述\n\n- 第一行一个整数n，1 ≤ n ≤ 2×10^5。\n- 第二行2n个整数a_i，1 ≤ a_i ≤ n。\n- 保证每个编号恰好出现两次。\n  \n\n\n## 输出描述\n\n输出一个整数，表示最大总分，不需要取模。答案可能超过 32 位整数范围，请使用 64 位整数类型。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3\n1 1 2 3 3 2",
+                        "output": "20",
+                        "tips": "先选择编号 1，清除长度为 2 的一段，再选择编号 2，清除剩下长度为 4 的一段，总分 2²+4²=20。  \n"
+                    },
+                    {
+                        "input": "4\n1 2 3 4 1 2 3 4",
+                        "output": "28",
+                        "tips": "先选择编号 2，清除 [2,3,4,1,2]，获得 25 分。剩余 [1,3,4] 各自清除，总分为 28。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 5,
+                "tagId": 314027,
+                "index": "D",
+                "avgAcSubmitCount": 1,
+                "title": "笑声最长的一段",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 5,
+                "submitCount": 5,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329219,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 7,
+                "tagId": 314028,
+                "index": "E",
+                "avgAcSubmitCount": 1.17,
+                "title": "璃月港的整包票券",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 6,
+                "submitCount": 8,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329221,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 4,
+                "tagId": 314029,
+                "index": "F",
+                "avgAcSubmitCount": 1.5,
+                "title": "星槎海的擦除讯号",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 4,
+                "submitCount": 6,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329223,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 3,
+                "tagId": 314030,
+                "index": "G",
+                "avgAcSubmitCount": 1,
+                "title": "莫宁的观测日志",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 3,
+                "submitCount": 3,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329225,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 2,
+                "tagId": 314031,
+                "index": "H",
+                "avgAcSubmitCount": 1.5,
+                "title": "罗德岛的演武场",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 2,
+                "submitCount": 3,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329227,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 1,
+                "tagId": 314032,
+                "index": "I",
+                "avgAcSubmitCount": 2,
+                "title": "拉海洛的污染扩散",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 1,
+                "submitCount": 2,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329229,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 3,
+                "tagId": 314033,
+                "index": "J",
+                "avgAcSubmitCount": 1.5,
+                "title": "枫丹的特价牌",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 2,
+                "submitCount": 4,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329231,
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "submitPersonCount": 1,
+                "tagId": 314034,
+                "index": "K",
+                "avgAcSubmitCount": 0,
+                "title": "须弥的缺号档案",
+                "totalScore": 0,
+                "score": 0,
+                "acceptedCount": 0,
+                "submitCount": 1,
+                "avgScore": 0,
+                "myStatus": "未通过",
+                "problemId": 329243,
+                "info": {}
+            }
+        }
+    ]
+}
