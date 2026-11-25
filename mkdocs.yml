@@ -1,8 +1,8 @@
 site_name: Algorithm Learning Notes
 site_description: ICPC/CCPC 算法学习笔记与竞赛模板库
-site_url: https://tkzzzzzz6.github.io/Algorithm_beginner_learning_notes/
-repo_url: https://github.com/tkzzzzzz6/Algorithm_beginner_learning_notes
-repo_name: tkzzzzzz6/Algorithm_beginner_learning_notes
+site_url: https://tanke.asia/Template/
+repo_url: https://github.com/tkzzzzzz6/Template
+repo_name: tkzzzzzz6/Template
 edit_uri: edit/main/docs/
 
 theme:
