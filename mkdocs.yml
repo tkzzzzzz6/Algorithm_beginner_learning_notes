@@ -1,0 +1,87 @@
+site_name: Algorithm Learning Notes
+site_description: ICPC/CCPC 算法学习笔记与竞赛模板库
+site_url: https://tanke.asia/algo-notebook/
+repo_url: https://github.com/tkzzzzzz6/algo-notebook
+repo_name: tkzzzzzz6/algo-notebook
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search:
+      lang: zh
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets:
+      base_path:
+        - .          # 使 --8<-- 可以引用仓库根目录下的文件(如 Template/*.cpp)
+        - docs
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 数学:
+    - math/index.md
+    - 快速幂: math/fast_power.md
+  - 数据结构:
+    - data_structure/index.md
+  - 图论:
+    - graph/index.md
+  - 字符串:
+    - string/index.md
+  - 计算几何:
+    - geometry/index.md
+  - 动态规划:
+    - dp/index.md
+  - 杂项:
+    - misc/index.md

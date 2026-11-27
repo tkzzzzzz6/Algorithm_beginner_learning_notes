@@ -20,3 +20,6 @@ __pycache__/
 workspace.json
 
 .DS_Store
+
+# mkdocs build output
+site/
